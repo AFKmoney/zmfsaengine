@@ -10,6 +10,7 @@ import type {
   AgentEvent,
   Unsubscribe,
 } from './types.js';
+import { agiRecursion } from './agi-recursion.js';
 
 /**
  * AgentSession is a wrapper around AgentProtocol that provides a more
@@ -23,6 +24,7 @@ export class AgentSession implements AgentProtocol {
   }
 
   async send(payload: AgentSend): Promise<{ streamId: string | null }> {
+    agiRecursion.logMutation('AGI Dispatch');
     return this._protocol.send(payload);
   }
 
@@ -104,6 +106,7 @@ export class AgentSession implements AgentProtocol {
 
     // 1. Subscribe early to avoid missing any events that occur during replay setup
     const unsubscribe = this._protocol.subscribe((event) => {
+      agiRecursion.reflect(event);
       if (done) return;
 
       if (!started) {

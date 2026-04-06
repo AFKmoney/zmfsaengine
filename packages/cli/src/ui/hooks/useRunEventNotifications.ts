@@ -157,7 +157,7 @@ export function useRunEventNotifications({
       notificationsEnabled,
       buildRunEventNotificationContent({
         type: 'session_complete',
-        detail: 'Gemini CLI finished responding.',
+        detail: 'ZMSFA O–Triadic Torus Engine finished responding.',
       }),
     );
   }, [
@@ -168,3 +168,4 @@ export function useRunEventNotifications({
     hasPendingActionRequired,
   ]);
 }
+

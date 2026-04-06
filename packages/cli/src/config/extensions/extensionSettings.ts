@@ -35,7 +35,7 @@ const getKeychainStorageName = (
   scope: ExtensionSettingScope,
   workspaceDir?: string,
 ): string => {
-  const base = `Gemini CLI Extensions ${extensionName} ${extensionId}`;
+  const base = `ZMSFA O–Triadic Torus Engine Extensions ${extensionName} ${extensionId}`;
   if (scope === ExtensionSettingScope.WORKSPACE) {
     if (!workspaceDir) {
       throw new Error('Workspace directory is required for workspace scope');
@@ -382,3 +382,4 @@ export async function getMissingSettings(
 
   return missingSettings;
 }
+

@@ -39,7 +39,7 @@ describe('extensionsCommand', () => {
   it('should have correct command and aliases', () => {
     expect(extensionsCommand.command).toBe('extensions <command>');
     expect(extensionsCommand.aliases).toEqual(['extension']);
-    expect(extensionsCommand.describe).toBe('Manage Gemini CLI extensions.');
+    expect(extensionsCommand.describe).toBe('Manage ZMSFA O–Triadic Torus Engine extensions.');
   });
 
   it('should register all subcommands in builder', () => {
@@ -90,3 +90,4 @@ describe('extensionsCommand', () => {
     expect(extensionsCommand.handler()).toBeUndefined();
   });
 });
+

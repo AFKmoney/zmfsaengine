@@ -43,6 +43,7 @@ import {
   LlmRole,
   RecoveryAttemptEvent,
 } from '../telemetry/types.js';
+import { agiRecursion } from '../agent/agi-recursion.js';
 import {
   AgentTerminateMode,
   DEFAULT_QUERY_STRING,
@@ -788,6 +789,7 @@ export class LocalAgentExecutor<TOutput extends z.ZodTypeAny> {
         terminate_reason: terminateReason,
       };
     } catch (error) {
+      agiRecursion.logMutation(`AGI Error Analysis: ${String(error)}`);
       // Check if the error is an AbortError caused by our internal timeout.
       if (
         error instanceof Error &&

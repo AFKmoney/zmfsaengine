@@ -147,7 +147,7 @@ describe('<HistoryItemDisplay />', () => {
     const { lastFrame, unmount } = await renderWithProviders(
       <HistoryItemDisplay {...baseItem} item={item} />,
     );
-    expect(lastFrame()).toContain('About Gemini CLI');
+    expect(lastFrame()).toContain('About ZMSFA O–Triadic Torus Engine');
     unmount();
   });
 
@@ -414,3 +414,4 @@ describe('<HistoryItemDisplay />', () => {
     },
   );
 });
+

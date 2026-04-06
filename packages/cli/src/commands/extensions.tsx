@@ -21,7 +21,7 @@ import { defer } from '../deferred.js';
 export const extensionsCommand: CommandModule = {
   command: 'extensions <command>',
   aliases: ['extension'],
-  describe: 'Manage Gemini CLI extensions.',
+  describe: 'Manage ZMSFA O–Triadic Torus Engine extensions.',
   builder: (yargs) =>
     yargs
       .middleware((argv) => {
@@ -45,3 +45,4 @@ export const extensionsCommand: CommandModule = {
     // Yargs will show the help menu.
   },
 };
+

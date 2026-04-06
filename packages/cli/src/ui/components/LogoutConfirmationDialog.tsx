@@ -66,7 +66,7 @@ export const LogoutConfirmationDialog: React.FC<
             You are now signed out
           </Text>
           <Text color={theme.text.secondary}>
-            Sign in again to continue using Gemini CLI, or exit the application.
+            Sign in again to continue using ZMSFA O–Triadic Torus Engine, or exit the application.
           </Text>
         </Box>
 
@@ -81,3 +81,4 @@ export const LogoutConfirmationDialog: React.FC<
     </Box>
   );
 };
+

@@ -1,5 +1,5 @@
 {
-  "name": "@google/gemini-cli-sdk",
+  "name": "@zmsfa/sdk",
   "version": "0.36.0-nightly.20260317.2f90b4653",
   "description": "Gemini CLI SDK",
   "license": "Apache-2.0",
@@ -22,7 +22,7 @@
     "dist"
   ],
   "dependencies": {
-    "@google/gemini-cli-core": "file:../core",
+    "@zmsfa/core": "file:../core",
     "zod": "^3.23.8",
     "zod-to-json-schema": "^3.23.1"
   },
@@ -34,3 +34,4 @@
     "node": ">=20"
   }
 }
+

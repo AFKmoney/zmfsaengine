@@ -515,6 +515,7 @@ describe('gemini.tsx main function kitty protocol', () => {
       recordResponses: undefined,
       rawOutput: undefined,
       acceptRawOutputRisk: undefined,
+      autonomous: undefined,
       isCommand: undefined,
     });
 
@@ -573,6 +574,7 @@ describe('gemini.tsx main function kitty protocol', () => {
       recordResponses: undefined,
       rawOutput: undefined,
       acceptRawOutputRisk: undefined,
+      autonomous: undefined,
       isCommand: undefined,
     });
 

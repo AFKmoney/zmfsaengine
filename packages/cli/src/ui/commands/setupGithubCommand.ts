@@ -65,7 +65,7 @@ function getOpenUrlsCommands(readmeUrl: string): string[] {
   return commands;
 }
 
-// Add Gemini CLI specific entries to .gitignore file
+// Add ZMSFA O–Triadic Torus Engine specific entries to .gitignore file
 export async function updateGitignore(gitRepoRoot: string): Promise<void> {
   const gitignoreEntries = ['.gemini/', 'gha-creds-*.json'];
 
@@ -276,3 +276,4 @@ export const setupGithubCommand: SlashCommand = {
     };
   },
 };
+

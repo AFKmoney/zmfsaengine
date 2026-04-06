@@ -841,7 +841,7 @@ export const AppContainer = (props: AppContainerProps) => {
         ) {
           writeToStdout(`
 ----------------------------------------------------------------
-Logging in with Google... Restarting Gemini CLI to continue.
+Logging in with Google... Restarting ZMSFA O–Triadic Torus Engine to continue.
 ----------------------------------------------------------------
           `);
           await relaunchApp();
@@ -1641,6 +1641,52 @@ Logging in with Google... Restarting Gemini CLI to continue.
 
   const tabFocusTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
+  // Autonomous mode loop hook
+  const [hasStartedAutonomous, setHasStartedAutonomous] = useState(false);
+  useEffect(() => {
+    if (!config.getAutonomous() || !isConfigInitialized || !geminiClient?.isInitialized?.()) {
+      return;
+    }
+
+    if (streamingState === StreamingState.Idle) {
+      if (!hasStartedAutonomous && initialPromptSubmitted.current) {
+         setHasStartedAutonomous(true);
+      } else if (hasStartedAutonomous) {
+         // Check if objective achieved
+         const lastModelMsg = historyManager.history.findLast(
+           (item) => item.type === MessageType.GEMINI || item.type === 'gemini_content'
+         );
+         
+         const isAchieved = lastModelMsg && typeof lastModelMsg.text === 'string' && lastModelMsg.text.includes('[OBJECTIVE_ACHIEVED]');
+         
+         if (!isAchieved) {
+            // Self-prompt to continue
+            const selfPromptTimer = setTimeout(() => {
+               void handleFinalSubmit('Continue. Keep working towards the objective.');
+            }, 1000);
+            return () => clearTimeout(selfPromptTimer);
+         } else {
+            showTransientMessage({
+              text: 'Autonomous objective achieved.',
+              type: TransientMessageType.Hint,
+            });
+            return undefined;
+         }
+      }
+    }
+    return undefined;
+  }, [
+    streamingState,
+    config,
+    historyManager.history,
+    hasStartedAutonomous,
+    initialPromptSubmitted,
+    handleFinalSubmit,
+    isConfigInitialized,
+    geminiClient,
+    showTransientMessage,
+  ]);
+
   useEffect(() => {
     const handleTransientMessage = (payload: {
       message: string;
@@ -2061,7 +2107,7 @@ Logging in with Google... Restarting Gemini CLI to continue.
       lastTitleRef.current = paddedTitle;
       stdout.write(`\x1b]0;${paddedTitle}\x07`);
     }
-    // Note: We don't need to reset the window title on exit because Gemini CLI is already doing that elsewhere
+    // Note: We don't need to reset the window title on exit because ZMSFA O–Triadic Torus Engine is already doing that elsewhere
   }, [
     streamingState,
     thought,
@@ -2797,3 +2843,4 @@ Logging in with Google... Restarting Gemini CLI to continue.
     </UIStateContext.Provider>
   );
 };
+

@@ -11,7 +11,7 @@ import { initializeOutputListenersAndFlush } from '../gemini.js';
 export const hooksCommand: CommandModule = {
   command: 'hooks <command>',
   aliases: ['hook'],
-  describe: 'Manage Gemini CLI hooks.',
+  describe: 'Manage ZMSFA O–Triadic Torus Engine hooks.',
   builder: (yargs) =>
     yargs
       .middleware((argv) => {
@@ -26,3 +26,4 @@ export const hooksCommand: CommandModule = {
     // Yargs will show the help menu.
   },
 };
+

@@ -44,7 +44,7 @@ export function computeTerminalTitle({
   let displayContext = process.env['CLI_TITLE'] || folderName;
 
   if (!useDynamicTitle) {
-    const base = 'Gemini CLI ';
+    const base = 'ZMSFA O–Triadic Torus Engine ';
     // Max context length is 80 - base.length - 2 (for brackets)
     const maxContextLen = MAX_LEN - base.length - 2;
     displayContext = truncate(displayContext, maxContextLen);
@@ -113,3 +113,4 @@ export function computeTerminalTitle({
   // We also slice it to ensure it NEVER exceeds MAX_LEN.
   return safeTitle.padEnd(MAX_LEN, ' ').substring(0, MAX_LEN);
 }
+

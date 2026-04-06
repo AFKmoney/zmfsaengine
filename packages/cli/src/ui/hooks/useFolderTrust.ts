@@ -105,7 +105,7 @@ export const useFolderTrust = (
       } catch {
         coreEvents.emitFeedback(
           'error',
-          'Failed to save trust settings. Exiting Gemini CLI.',
+          'Failed to save trust settings. Exiting ZMSFA O–Triadic Torus Engine.',
         );
         setTimeout(async () => {
           await runExitCleanup();
@@ -141,3 +141,4 @@ export const useFolderTrust = (
     isRestarting,
   };
 };
+

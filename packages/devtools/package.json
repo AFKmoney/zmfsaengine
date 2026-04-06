@@ -1,5 +1,5 @@
 {
-  "name": "@google/gemini-cli-devtools",
+  "name": "@zmsfa/devtools",
   "version": "0.36.0-nightly.20260317.2f90b4653",
   "license": "Apache-2.0",
   "type": "module",
@@ -30,3 +30,4 @@
     "ws": "^8.16.0"
   }
 }
+

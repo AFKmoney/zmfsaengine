@@ -12,7 +12,7 @@ import {
 
 export const settingsCommand: SlashCommand = {
   name: 'settings',
-  description: 'View and edit Gemini CLI settings',
+  description: 'View and edit ZMSFA O–Triadic Torus Engine settings',
   kind: CommandKind.BUILT_IN,
   autoExecute: true,
   isSafeConcurrent: true,
@@ -21,3 +21,4 @@ export const settingsCommand: SlashCommand = {
     dialog: 'settings',
   }),
 };
+

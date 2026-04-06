@@ -162,7 +162,7 @@ export function ModelDialog({ onClose }: ModelDialogProps): React.JSX.Element {
         value: DEFAULT_GEMINI_MODEL_AUTO,
         title: getDisplayString(DEFAULT_GEMINI_MODEL_AUTO),
         description:
-          'Let Gemini CLI decide the best model for the task: gemini-2.5-pro, gemini-2.5-flash',
+          'Let ZMSFA O–Triadic Torus Engine decide the best model for the task: gemini-2.5-pro, gemini-2.5-flash',
         key: DEFAULT_GEMINI_MODEL_AUTO,
       },
       {
@@ -180,8 +180,8 @@ export function ModelDialog({ onClose }: ModelDialogProps): React.JSX.Element {
         value: PREVIEW_GEMINI_MODEL_AUTO,
         title: getDisplayString(PREVIEW_GEMINI_MODEL_AUTO),
         description: useGemini31
-          ? 'Let Gemini CLI decide the best model for the task: gemini-3.1-pro, gemini-3-flash'
-          : 'Let Gemini CLI decide the best model for the task: gemini-3-pro, gemini-3-flash',
+          ? 'Let ZMSFA O–Triadic Torus Engine decide the best model for the task: gemini-3.1-pro, gemini-3-flash'
+          : 'Let ZMSFA O–Triadic Torus Engine decide the best model for the task: gemini-3-pro, gemini-3-flash',
         key: PREVIEW_GEMINI_MODEL_AUTO,
       });
     }
@@ -365,3 +365,4 @@ export function ModelDialog({ onClose }: ModelDialogProps): React.JSX.Element {
     </Box>
   );
 }
+

@@ -1,4 +1,4 @@
-# Example Policy Rules for Gemini CLI Extension
+# Example Policy Rules for ZMSFA O–Triadic Torus Engine Extension
 #
 # Extensions run in Tier 2 (Extension Tier).
 # Security Note: 'allow' decisions and 'yolo' mode configurations are ignored.
@@ -26,3 +26,4 @@ priority = 300
 type = "in-process"
 name = "allowed-path"
 required_context = ["environment"]
+

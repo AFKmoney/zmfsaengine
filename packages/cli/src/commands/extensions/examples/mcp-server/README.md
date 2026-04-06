@@ -1,8 +1,8 @@
 # MCP Server Example
 
 This is a basic example of an MCP (Model Context Protocol) server used as a
-Gemini CLI extension. It demonstrates how to expose tools and prompts to the
-Gemini CLI.
+ZMSFA O–Triadic Torus Engine extension. It demonstrates how to expose tools and prompts to the
+ZMSFA O–Triadic Torus Engine.
 
 ## Description
 
@@ -15,7 +15,7 @@ The contents of this directory are a valid MCP server implementation using the
 ## Structure
 
 - `example.js`: The main server entry point.
-- `gemini-extension.json`: The configuration file that tells Gemini CLI how to
+- `gemini-extension.json`: The configuration file that tells ZMSFA O–Triadic Torus Engine how to
   use this extension.
 - `package.json`: Helper for dependencies.
 
@@ -33,3 +33,4 @@ The contents of this directory are a valid MCP server implementation using the
     ```
 
 This example is typically used by `gemini extensions new`.
+

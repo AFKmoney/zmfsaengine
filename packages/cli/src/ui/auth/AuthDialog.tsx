@@ -194,7 +194,7 @@ export function AuthDialog({
         alignItems="flex-start"
       >
         <Text color={theme.text.primary}>
-          Logging in with Google... Restarting Gemini CLI to continue.
+          Logging in with Google... Restarting ZMSFA O–Triadic Torus Engine to continue.
         </Text>
       </Box>
     );
@@ -239,7 +239,7 @@ export function AuthDialog({
         </Box>
         <Box marginTop={1}>
           <Text color={theme.text.primary}>
-            Terms of Services and Privacy Notice for Gemini CLI
+            Terms of Services and Privacy Notice for ZMSFA O–Triadic Torus Engine
           </Text>
         </Box>
         <Box marginTop={1}>
@@ -251,3 +251,4 @@ export function AuthDialog({
     </Box>
   );
 }
+

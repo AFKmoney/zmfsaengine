@@ -60,7 +60,7 @@ export class AboutCommand implements Command {
 
     return {
       name: this.name,
-      data: `Gemini CLI Info:\n${info}`,
+      data: `ZMSFA O–Triadic Torus Engine Info:\n${info}`,
     };
   }
 }
@@ -72,3 +72,4 @@ async function getIdeClientName(context: CommandContext) {
   const ideClient = await IdeClient.getInstance();
   return ideClient?.getDetectedIdeDisplayName() ?? '';
 }
+

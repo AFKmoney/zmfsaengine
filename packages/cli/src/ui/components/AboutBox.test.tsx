@@ -29,7 +29,7 @@ describe('AboutBox', () => {
       <AboutBox {...defaultProps} />,
     );
     const output = lastFrame();
-    expect(output).toContain('About Gemini CLI');
+    expect(output).toContain('About ZMSFA O–Triadic Torus Engine');
     expect(output).toContain('1.0.0');
     expect(output).toContain('mock-commit-hash');
     expect(output).toContain('gemini-pro');
@@ -74,3 +74,4 @@ describe('AboutBox', () => {
     unmount();
   });
 });
+

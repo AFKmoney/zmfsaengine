@@ -57,6 +57,7 @@ import { getStartupWarnings } from './utils/startupWarnings.js';
 import { getUserStartupWarnings } from './utils/userStartupWarnings.js';
 import { ConsolePatcher } from './ui/utils/ConsolePatcher.js';
 import { runNonInteractive } from './nonInteractiveCli.js';
+import { runAutonomous } from './autonomousCli.js';
 import {
   cleanupCheckpoints,
   registerCleanup,
@@ -447,7 +448,7 @@ export async function main() {
   }
 
   // We are now past the logic handling potentially launching a child process
-  // to run Gemini CLI. It is now safe to perform expensive initialization that
+  // to run ZMSFA O–Triadic Torus Engine. It is now safe to perform expensive initialization that
   // may have side effects.
   {
     const loadConfigHandle = startupProfiler.start('load_cli_config');
@@ -704,13 +705,23 @@ export async function main() {
 
     initializeOutputListenersAndFlush();
 
-    await runNonInteractive({
-      config,
-      settings,
-      input,
-      prompt_id,
-      resumedSessionData,
-    });
+    if (argv.autonomous) {
+      await runAutonomous({
+        config,
+        settings,
+        input,
+        prompt_id,
+        resumedSessionData,
+      });
+    } else {
+      await runNonInteractive({
+        config,
+        settings,
+        input,
+        prompt_id,
+        resumedSessionData,
+      });
+    }
     // Call cleanup before process.exit, which causes cleanup to not run
     await runExitCleanup();
     process.exit(ExitCodes.SUCCESS);
@@ -786,3 +797,4 @@ function setupAdminControlsListener() {
     },
   };
 }
+

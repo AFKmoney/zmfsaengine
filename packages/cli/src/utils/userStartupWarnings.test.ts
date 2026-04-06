@@ -75,7 +75,7 @@ describe('getUserStartupWarnings', () => {
         expect.objectContaining({
           id: 'home-directory',
           message: expect.stringContaining(
-            'Warning you are running Gemini CLI in your home directory',
+            'Warning you are running ZMSFA O–Triadic Torus Engine in your home directory',
           ),
           priority: WarningPriority.Low,
         }),
@@ -176,3 +176,4 @@ describe('getUserStartupWarnings', () => {
     });
   });
 });
+

@@ -178,7 +178,7 @@ export const TriageIssues = ({
     async (issue: Issue): Promise<AnalysisResult> => {
       const client = config.getBaseLlmClient();
       const prompt = `
-I am triaging GitHub issues for the Gemini CLI project. I need to identify issues that should be closed because they are:
+I am triaging GitHub issues for the ZMSFA O–Triadic Torus Engine project. I need to identify issues that should be closed because they are:
 - Bogus (not a real issue/request)
 - Not reproducible (insufficient info, "it doesn't work" without logs/details)
 - Abusive or offensive
@@ -672,3 +672,4 @@ Return a JSON object with:
     </Box>
   );
 };
+

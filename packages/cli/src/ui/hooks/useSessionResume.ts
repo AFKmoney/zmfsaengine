@@ -83,7 +83,7 @@ export function useSessionResume({
           workspaceContext.addDirectories(resumedData.conversation.directories);
         }
 
-        // Give the history to the Gemini client.
+        // Give the history to the ZMSFA O–Triadic Torus Engineent.
         await config.getGeminiClient()?.resumeChat(clientHistory, resumedData);
       } catch (error) {
         coreEvents.emitFeedback(
@@ -127,3 +127,4 @@ export function useSessionResume({
 
   return { loadHistoryForResume, isResuming };
 }
+

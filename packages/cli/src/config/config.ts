@@ -105,6 +105,7 @@ export interface CliArgs {
   startupMessages?: string[];
   rawOutput: boolean | undefined;
   acceptRawOutputRisk: boolean | undefined;
+  autonomous: boolean | undefined;
   isCommand: boolean | undefined;
 }
 
@@ -162,7 +163,7 @@ export async function parseArguments(
     .locale('en')
     .scriptName('gemini')
     .usage(
-      'Usage: gemini [options] [command]\n\nGemini CLI - Defaults to interactive mode. Use -p/--prompt for non-interactive (headless) mode.',
+      'Usage: gemini [options] [command]\n\nZMSFA O–Triadic Torus Engine - Defaults to interactive mode. Use -p/--prompt for non-interactive (headless) mode.',
     )
     .option('isCommand', {
       type: 'boolean',
@@ -262,7 +263,7 @@ export async function parseArguments(
   yargsInstance.command(hooksCommand);
 
   yargsInstance
-    .command('$0 [query..]', 'Launch Gemini CLI', (yargsInstance) =>
+    .command('$0 [query..]', 'Launch ZMSFA O–Triadic Torus Engine', (yargsInstance) =>
       yargsInstance
         .positional('query', {
           description:
@@ -443,6 +444,12 @@ export async function parseArguments(
         .option('accept-raw-output-risk', {
           type: 'boolean',
           description: 'Suppress the security warning when using --raw-output.',
+        })
+        .option('autonomous', {
+          alias: 'A',
+          type: 'boolean',
+          description: 'Run in autonomous mode (self-prompting).',
+          default: false,
         }),
     )
     .version(await getVersion()) // This will enable the --version flag based on package.json
@@ -1104,3 +1111,4 @@ async function resolveWorktreeSettings(
     baseSha: worktreeBaseSha,
   };
 }
+

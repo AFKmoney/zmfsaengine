@@ -682,6 +682,7 @@ export interface ConfigParameters {
   disableAlwaysAllow?: boolean;
   rawOutput?: boolean;
   acceptRawOutputRisk?: boolean;
+  autonomous?: boolean;
   dynamicModelConfiguration?: boolean;
   modelConfigServiceConfig?: ModelConfigServiceConfig;
   enableHooks?: boolean;
@@ -906,6 +907,7 @@ export class Config implements McpContext, AgentLoopContext {
   private readonly disableAlwaysAllow: boolean;
   private readonly rawOutput: boolean;
   private readonly acceptRawOutputRisk: boolean;
+  private readonly autonomous: boolean;
   private readonly dynamicModelConfiguration: boolean;
   private pendingIncludeDirectories: string[];
   private readonly enableHooks: boolean;
@@ -1333,6 +1335,7 @@ export class Config implements McpContext, AgentLoopContext {
     this.disableYoloMode = params.disableYoloMode ?? false;
     this.rawOutput = params.rawOutput ?? false;
     this.acceptRawOutputRisk = params.acceptRawOutputRisk ?? false;
+    this.autonomous = params.autonomous ?? false;
 
     if (params.hooks) {
       this.hooks = params.hooks;
@@ -2613,6 +2616,14 @@ export class Config implements McpContext, AgentLoopContext {
 
   getAcceptRawOutputRisk(): boolean {
     return this.acceptRawOutputRisk;
+  }
+
+  getAutonomous(): boolean {
+    return this.autonomous;
+  }
+
+  getDynamicModelConfiguration(): boolean {
+    return this.dynamicModelConfiguration;
   }
 
   getExperimentalDynamicModelConfiguration(): boolean {

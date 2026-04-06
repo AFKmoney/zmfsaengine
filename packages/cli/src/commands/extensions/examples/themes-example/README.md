@@ -1,6 +1,6 @@
 # Themes Example
 
-This is an example of a Gemini CLI extension that adds a custom theme.
+This is an example of a ZMSFA O–Triadic Torus Engine extension that adds a custom theme.
 
 ## How to use
 
@@ -29,3 +29,4 @@ This is an example of a Gemini CLI extension that adds a custom theme.
     CLI's UI. The background will be a dark green, the primary text a lighter
     green, and various other UI elements will display different shades of green,
     as defined in this extension's `gemini-extension.json` file.
+

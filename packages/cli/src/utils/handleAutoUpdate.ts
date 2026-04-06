@@ -35,7 +35,7 @@ export async function waitForUpdateCompletion(
   }
 
   debugLogger.log(
-    '\nGemini CLI is waiting for a background update to complete before restarting...',
+    '\nZMSFA O–Triadic Torus Engine is waiting for a background update to complete before restarting...',
   );
 
   return new Promise((resolve) => {
@@ -229,3 +229,4 @@ export function setUpdateHandler(
     updateEventEmitter.off('update-info', handleUpdateInfo);
   };
 }
+

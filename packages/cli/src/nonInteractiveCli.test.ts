@@ -656,7 +656,7 @@ describe('runNonInteractive', () => {
       processedQuery: processedParts,
     });
 
-    // Mock a simple stream response from the Gemini client
+    // Mock a simple stream response from the ZMSFA O–Triadic Torus Engineent
     const events: ServerGeminiStreamEvent[] = [
       { type: GeminiEventType.Content, value: 'Summary complete.' },
       {
@@ -2234,3 +2234,4 @@ describe('runNonInteractive', () => {
     });
   });
 });
+

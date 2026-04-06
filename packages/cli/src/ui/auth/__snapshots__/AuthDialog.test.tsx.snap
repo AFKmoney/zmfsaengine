@@ -13,7 +13,7 @@ exports[`AuthDialog > Snapshots > renders correctly with auth error 1`] = `
 │                                                                                                  │
 │   (Use Enter to select)                                                                          │
 │                                                                                                  │
-│   Terms of Services and Privacy Notice for Gemini CLI                                            │
+│   Terms of Services and Privacy Notice for ZMSFA O�Triadic Torus Engine                                            │
 │                                                                                                  │
 │   https://geminicli.com/docs/resources/tos-privacy/                                              │
 │                                                                                                  │
@@ -32,7 +32,7 @@ exports[`AuthDialog > Snapshots > renders correctly with default props 1`] = `
 │                                                                                                  │
 │   (Use Enter to select)                                                                          │
 │                                                                                                  │
-│   Terms of Services and Privacy Notice for Gemini CLI                                            │
+│   Terms of Services and Privacy Notice for ZMSFA O�Triadic Torus Engine                                            │
 │                                                                                                  │
 │   https://geminicli.com/docs/resources/tos-privacy/                                              │
 │                                                                                                  │
@@ -51,10 +51,11 @@ exports[`AuthDialog > Snapshots > renders correctly with enforced auth type 1`] 
 │                                                                                                  │
 │   (Use Enter to select)                                                                          │
 │                                                                                                  │
-│   Terms of Services and Privacy Notice for Gemini CLI                                            │
+│   Terms of Services and Privacy Notice for ZMSFA O�Triadic Torus Engine                                            │
 │                                                                                                  │
 │   https://geminicli.com/docs/resources/tos-privacy/                                              │
 │                                                                                                  │
 ╰──────────────────────────────────────────────────────────────────────────────────────────────────╯
 "
 `;
+
