@@ -18,7 +18,7 @@ import {
   isHeadlessMode,
   coreEvents,
   type HeadlessModeOptions,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { Settings } from './settings.js';
 import stripJsonComments from 'strip-json-comments';
 
@@ -389,3 +389,4 @@ export function isWorkspaceTrusted(
     headlessOptions,
   );
 }
+

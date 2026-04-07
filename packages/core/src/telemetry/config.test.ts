@@ -181,3 +181,4 @@ describe('telemetry/config helpers', () => {
     });
   });
 });
+

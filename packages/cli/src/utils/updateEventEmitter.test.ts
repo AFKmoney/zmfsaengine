@@ -20,3 +20,4 @@ describe('updateEventEmitter', () => {
     updateEventEmitter.off(eventName, callback);
   });
 });
+

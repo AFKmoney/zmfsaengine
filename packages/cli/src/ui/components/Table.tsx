@@ -86,3 +86,4 @@ export function Table<T>({ data, columns }: TableProps<T>) {
     </Box>
   );
 }
+

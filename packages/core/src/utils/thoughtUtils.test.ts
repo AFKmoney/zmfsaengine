@@ -78,3 +78,4 @@ describe('parseThought', () => {
     expect(parseThought(rawText)).toEqual(expected);
   });
 });
+

@@ -176,3 +176,4 @@ export class MacOsSandboxManager implements SandboxManager {
     return tempFile;
   }
 }
+

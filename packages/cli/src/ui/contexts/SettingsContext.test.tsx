@@ -164,3 +164,4 @@ describe('SettingsContext', () => {
     consoleSpy.mockRestore();
   });
 });
+

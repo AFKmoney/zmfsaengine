@@ -788,3 +788,4 @@ describe('HookRegistry', () => {
     });
   });
 });
+

@@ -10,7 +10,7 @@ import {
   Storage,
   loadSkillsFromDir,
   type SkillDefinition,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { cloneFromGit } from '../config/extensions/github.js';
 import extract from 'extract-zip';
 import * as fs from 'node:fs/promises';
@@ -298,3 +298,4 @@ export async function uninstallSkill(
   await fs.rm(skillDir, { recursive: true, force: true });
   return { location: skillDir };
 }
+

@@ -20,3 +20,4 @@ export const themeCommand: SlashCommand = {
     dialog: 'theme',
   }),
 };
+

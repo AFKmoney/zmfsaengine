@@ -6,12 +6,12 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { setupWorktree } from './worktreeSetup.js';
-import * as coreFunctions from '@google/gemini-cli-core';
+import * as coreFunctions from '@zmsfa/core';
 
 // Mock dependencies
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     getProjectRootForWorktree: vi.fn(),
@@ -122,3 +122,4 @@ describe('setupWorktree', () => {
     mockExit.mockRestore();
   });
 });
+

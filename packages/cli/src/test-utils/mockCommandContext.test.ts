@@ -64,3 +64,4 @@ describe('createMockCommandContext', () => {
     expect(context.services.logger).toBeDefined();
   });
 });
+

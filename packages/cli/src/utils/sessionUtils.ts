@@ -12,7 +12,7 @@ import {
   type Config,
   type ConversationRecord,
   type MessageRecord,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import * as fs from 'node:fs/promises';
 import path from 'node:path';
 import { stripUnsafeCharacters } from '../ui/utils/textUtils.js';
@@ -625,3 +625,4 @@ export function convertSessionToHistoryFormats(
     uiHistory,
   };
 }
+

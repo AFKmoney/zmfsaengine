@@ -144,3 +144,4 @@ export function stableStringify(obj: unknown): string {
 
   return stringify(obj, new Set(), true);
 }
+

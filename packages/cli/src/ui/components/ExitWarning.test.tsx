@@ -62,3 +62,4 @@ describe('ExitWarning', () => {
     unmount();
   });
 });
+

@@ -41,7 +41,7 @@ import {
   getTransformedImagePath,
 } from './text-buffer.js';
 import { cpLen } from '../../utils/textUtils.js';
-import { escapePath } from '@google/gemini-cli-core';
+import { escapePath } from '@zmsfa/core';
 
 const defaultVisualLayout: VisualLayout = {
   visualLines: [''],
@@ -3387,3 +3387,4 @@ describe('Transformation Utilities', () => {
     });
   });
 });
+

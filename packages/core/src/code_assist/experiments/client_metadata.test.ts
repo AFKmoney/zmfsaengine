@@ -112,3 +112,4 @@ describe('client_metadata', () => {
     });
   });
 });
+

@@ -313,3 +313,4 @@ function getSandboxMode(): snippets.SandboxMode {
   if (process.env['SANDBOX']) return 'generic';
   return 'outside';
 }
+

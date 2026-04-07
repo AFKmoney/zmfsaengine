@@ -24,3 +24,4 @@ export function useKittyKeyboardProtocol(): KittyProtocolStatus {
 
   return status;
 }
+

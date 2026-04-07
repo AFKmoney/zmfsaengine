@@ -15,7 +15,7 @@ import {
   type Config,
   deleteSessionArtifactsAsync,
   deleteSubagentSessionDirAndArtifactsAsync,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { Settings, SessionRetentionSettings } from '../config/settings.js';
 import { getAllSessionFiles, type SessionFileEntry } from './sessionUtils.js';
 
@@ -603,3 +603,4 @@ export async function cleanupToolOutputFiles(
 
   return result;
 }
+

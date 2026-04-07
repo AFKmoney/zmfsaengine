@@ -8,7 +8,7 @@ import {
   getPackageJson,
   type SandboxConfig,
   FatalSandboxError,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import commandExists from 'command-exists';
 import * as os from 'node:os';
 import type { Settings } from './settings.js';
@@ -166,3 +166,4 @@ export async function loadSandboxConfig(
     ? { enabled: true, allowedPaths, networkAccess, command, image }
     : undefined;
 }
+

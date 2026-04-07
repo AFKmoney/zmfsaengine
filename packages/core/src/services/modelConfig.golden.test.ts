@@ -114,3 +114,4 @@ describe('ModelConfigService Golden Test', () => {
     ).toEqual(goldenData);
   });
 });
+

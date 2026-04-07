@@ -107,3 +107,4 @@ export function parsePosixSandboxDenials(
     filePaths: filePaths.size > 0 ? Array.from(filePaths) : undefined,
   };
 }
+

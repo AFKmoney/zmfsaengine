@@ -447,3 +447,4 @@ export function _resetGlobalMemoryMonitorForTests(): void {
   }
   globalMemoryMonitor = null;
 }
+

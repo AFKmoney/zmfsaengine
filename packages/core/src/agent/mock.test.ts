@@ -245,3 +245,4 @@ describe('MockAgentProtocol', () => {
     ).rejects.toThrow('Actions not supported in MockAgentProtocol: foo');
   });
 });
+

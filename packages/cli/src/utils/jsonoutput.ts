@@ -46,3 +46,4 @@ export function tryParseJSON(input: string): object | null {
     return null;
   }
 }
+

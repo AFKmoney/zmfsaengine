@@ -8,7 +8,7 @@ import type {
   MCPServerConfig,
   ExtensionInstallMetadata,
   CustomTheme,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import { INSTALL_METADATA_FILENAME } from './extensions/variables.js';
@@ -67,3 +67,4 @@ export function loadInstallMetadata(
     return undefined;
   }
 }
+

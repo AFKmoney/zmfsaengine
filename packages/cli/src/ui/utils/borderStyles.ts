@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { CoreToolCallStatus } from '@google/gemini-cli-core';
+import { CoreToolCallStatus } from '@zmsfa/core';
 import { isShellTool } from '../components/messages/ToolShared.js';
 import { theme } from '../semantic-colors.js';
 import type {
@@ -125,3 +125,4 @@ export function getToolGroupBorderAppearance(
 
   return { borderColor, borderDimColor };
 }
+

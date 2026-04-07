@@ -209,3 +209,4 @@ export type AllToolCallsCompleteHandler = (
 ) => Promise<void>;
 
 export type ToolCallsUpdateHandler = (toolCalls: ToolCall[]) => void;
+

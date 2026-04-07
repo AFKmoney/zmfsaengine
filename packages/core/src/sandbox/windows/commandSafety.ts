@@ -148,3 +148,4 @@ export function isDangerousCommand(args: string[]): boolean {
 
   return dangerous.has(cmd);
 }
+

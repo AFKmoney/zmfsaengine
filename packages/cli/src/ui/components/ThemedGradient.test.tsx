@@ -37,3 +37,4 @@ describe('ThemedGradient', () => {
   // as it often renders as plain text or ANSI codes.
   // We mainly ensure it doesn't crash and renders content.
 });
+

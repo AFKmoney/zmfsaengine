@@ -418,3 +418,4 @@ const getLanguageFromExtension = (extension: string): string | null => {
   };
   return languageMap[extension] || null; // Return null if extension not found
 };
+

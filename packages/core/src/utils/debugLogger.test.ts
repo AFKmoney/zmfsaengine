@@ -80,3 +80,4 @@ describe('DebugLogger', () => {
     expect(warnSpy).toHaveBeenCalledTimes(1);
   });
 });
+

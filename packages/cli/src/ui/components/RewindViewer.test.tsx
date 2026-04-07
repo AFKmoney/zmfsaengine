@@ -12,7 +12,7 @@ import { waitFor } from '../../test-utils/async.js';
 import type {
   ConversationRecord,
   MessageRecord,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 vi.mock('ink', async () => {
   const actual = await vi.importActual<typeof import('ink')>('ink');
@@ -32,9 +32,9 @@ vi.mock('../utils/formatters.js', async (importOriginal) => {
   };
 });
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
 
   const partToStringRecursive = (part: unknown): string => {
     if (!part) {
@@ -453,3 +453,4 @@ it('renders accessible screen reader view when screen reader is enabled', async 
   vi.mocked(useIsScreenReaderEnabled).mockReturnValue(false);
   unmount();
 });
+

@@ -435,3 +435,4 @@ export async function shutdownTelemetry(
     activeTelemetryEmail = undefined;
   }
 }
+

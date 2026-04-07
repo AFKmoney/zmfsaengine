@@ -17,7 +17,7 @@ import {
 } from './setupGithubCommand.js';
 import type { CommandContext } from './types.js';
 import * as commandUtils from '../utils/commandUtils.js';
-import { debugLogger, type ToolActionReturn } from '@google/gemini-cli-core';
+import { debugLogger, type ToolActionReturn } from '@zmsfa/core';
 
 vi.mock('child_process');
 
@@ -338,3 +338,4 @@ describe('updateGitignore', () => {
     consoleSpy.mockRestore();
   });
 });
+

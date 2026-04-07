@@ -20,7 +20,7 @@ import {
   EDIT_DISPLAY_NAME,
   READ_FILE_DISPLAY_NAME,
   GLOB_DISPLAY_NAME,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type {
   HistoryItem,
   HistoryItemWithoutId,
@@ -1069,3 +1069,4 @@ describe('<ToolGroupMessage />', () => {
     );
   });
 });
+

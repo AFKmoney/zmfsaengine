@@ -528,3 +528,4 @@ export function convertColorToHex(
   }
   return defaultColor;
 }
+

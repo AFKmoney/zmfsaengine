@@ -60,3 +60,4 @@ describe('<ToolsList />', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

@@ -66,7 +66,7 @@ describe('ask_user', () => {
       'packages/core/src/index.ts': '// index\nexport const version = "1.0.0";',
       'packages/core/src/util.ts': '// util\nexport function help() {}',
       'packages/core/package.json': JSON.stringify({
-        name: '@google/gemini-cli-core',
+        name: '@zmsfa/core',
       }),
       'README.md': '# Gemini CLI',
     },
@@ -129,3 +129,4 @@ describe('ask_user', () => {
     },
   });
 });
+

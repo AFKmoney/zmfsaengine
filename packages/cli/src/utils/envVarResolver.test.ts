@@ -320,3 +320,4 @@ describe('resolveEnvVarsInObject', () => {
     expect(result.secondary).not.toBe(obj2); // New object created
   });
 });
+

@@ -119,3 +119,4 @@ describe('useSettingsNavigation', () => {
     expect(result.current.activeIndex).toBe(1); // 'c' is now at index 1
   });
 });
+

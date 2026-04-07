@@ -39,3 +39,4 @@ export const useMemoryMonitor = ({ addItem }: MemoryMonitorOptions) => {
     return () => clearInterval(intervalId);
   }, [addItem]);
 };
+

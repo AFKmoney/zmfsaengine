@@ -6,7 +6,7 @@
 
 import { useState } from 'react';
 import { Box, Text } from 'ink';
-import { type AgentDefinition } from '@google/gemini-cli-core';
+import { type AgentDefinition } from '@zmsfa/core';
 import { theme } from '../semantic-colors.js';
 import {
   RadioButtonSelect,
@@ -133,3 +133,4 @@ export const NewAgentsNotification = ({
     </Box>
   );
 };
+

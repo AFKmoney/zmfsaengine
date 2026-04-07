@@ -45,3 +45,4 @@ export function computeModelAddedAndRemovedLines(stats: DiffStat | undefined): {
     removedLines: stats.model_removed_lines,
   };
 }
+

@@ -12,7 +12,7 @@ import {
   getCompatibilityWarnings,
   WarningPriority,
   type StartupWarning,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { Settings } from '../config/settingsSchema.js';
 import {
   isFolderTrustEnabled,
@@ -115,4 +115,5 @@ export async function getUserStartupWarnings(
 
   return warnings;
 }
+
 

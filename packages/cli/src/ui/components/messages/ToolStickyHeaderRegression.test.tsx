@@ -15,7 +15,7 @@ import { Box, Text } from 'ink';
 import { act, useRef, useEffect } from 'react';
 import { waitFor } from '../../../test-utils/async.js';
 import { SHELL_COMMAND_NAME } from '../../constants.js';
-import { CoreToolCallStatus } from '@google/gemini-cli-core';
+import { CoreToolCallStatus } from '@zmsfa/core';
 
 // Mock child components that might be complex
 vi.mock('../TerminalOutput.js', () => ({
@@ -211,3 +211,4 @@ describe('ToolMessage Sticky Header Regression', () => {
     unmount();
   });
 });
+

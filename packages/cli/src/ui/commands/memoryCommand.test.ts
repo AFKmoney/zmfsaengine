@@ -19,11 +19,11 @@ import {
   addMemory,
   listMemoryFiles,
   flattenMemory,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...original,
     getErrorMessage: vi.fn((error: unknown) => {
@@ -458,3 +458,4 @@ describe('memoryCommand', () => {
     });
   });
 });
+

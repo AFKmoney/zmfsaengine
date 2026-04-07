@@ -116,3 +116,4 @@ describe('policyCatalog', () => {
     expect(policy.stateTransitions.unknown).toBe('terminal');
   });
 });
+

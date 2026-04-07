@@ -1552,3 +1552,4 @@ describe('Scheduler MCP Progress', () => {
     );
   });
 });
+

@@ -5,7 +5,7 @@
  */
 
 import { createContext, useContext } from 'react';
-import type { StartupWarning } from '@google/gemini-cli-core';
+import type { StartupWarning } from '@zmsfa/core';
 
 export interface AppState {
   version: string;
@@ -21,3 +21,4 @@ export const useAppContext = () => {
   }
   return context;
 };
+

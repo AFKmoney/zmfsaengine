@@ -51,3 +51,4 @@ export const GeminiMessage: React.FC<GeminiMessageProps> = ({
     </Box>
   );
 };
+

@@ -163,3 +163,4 @@ process.on('SIGINT', () => {
 });
 
 render(<Demo />, { alternateBuffer: true });
+

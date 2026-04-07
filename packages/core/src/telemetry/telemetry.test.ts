@@ -72,3 +72,4 @@ describe('telemetry', () => {
     expect(mockNodeSdk.shutdown).toHaveBeenCalled();
   });
 });
+

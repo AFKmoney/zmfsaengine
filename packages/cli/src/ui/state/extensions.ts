@@ -5,7 +5,7 @@
  */
 
 import type { ExtensionUpdateInfo } from '../../config/extension.js';
-import { checkExhaustive } from '@google/gemini-cli-core';
+import { checkExhaustive } from '@zmsfa/core';
 
 export enum ExtensionUpdateState {
   CHECKING_FOR_UPDATES = 'checking for updates',
@@ -144,3 +144,4 @@ export function extensionUpdatesReducer(
       checkExhaustive(action);
   }
 }
+

@@ -247,3 +247,4 @@ export class MockModifiableTool
     return new MockModifiableToolInvocation(this, params, messageBus);
   }
 }
+

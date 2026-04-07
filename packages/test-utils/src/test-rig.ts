@@ -11,7 +11,7 @@ import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { env } from 'node:process';
 import { setTimeout as sleep } from 'node:timers/promises';
-import { PREVIEW_GEMINI_MODEL, GEMINI_DIR } from '@google/gemini-cli-core';
+import { PREVIEW_GEMINI_MODEL, GEMINI_DIR } from '@zmsfa/core';
 export { GEMINI_DIR };
 import * as pty from '@lydell/node-pty';
 import stripAnsi from 'strip-ansi';
@@ -1586,3 +1586,4 @@ export function normalizePath(p: string | undefined): string | undefined {
   if (!p) return p;
   return p.replace(/\\/g, '/');
 }
+

@@ -89,3 +89,4 @@ describe('text-buffer performance', () => {
     expect(duration).toBeLessThan(500);
   });
 });
+

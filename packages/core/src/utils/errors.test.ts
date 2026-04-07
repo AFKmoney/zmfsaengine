@@ -381,3 +381,4 @@ describe('getErrorType', () => {
     expect(getErrorType(new _AbortError2('test'))).toBe('AbortError');
   });
 });
+

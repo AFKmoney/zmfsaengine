@@ -717,3 +717,4 @@ export class RipGrepTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(RIP_GREP_DEFINITION, modelId);
   }
 }
+

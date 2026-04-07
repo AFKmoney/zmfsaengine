@@ -2154,3 +2154,4 @@ describe('ShellExecutionService environment variables', () => {
     vi.unstubAllEnvs();
   });
 });
+

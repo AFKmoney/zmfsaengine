@@ -80,3 +80,4 @@ describe('DeadlineTimer', () => {
     expect(signal.aborted).toBe(true);
   });
 });
+

@@ -23,3 +23,4 @@ export const footerCommand: SlashCommand = {
     component: <FooterConfigDialog onClose={context.ui.removeComponent} />,
   }),
 };
+

@@ -118,3 +118,4 @@ describe('useBanner', () => {
     expect(result.current.bannerText).toBe('Line1\nLine2');
   });
 });
+

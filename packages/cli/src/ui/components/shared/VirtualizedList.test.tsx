@@ -345,3 +345,4 @@ describe('<VirtualizedList />', () => {
     unmount();
   });
 });
+

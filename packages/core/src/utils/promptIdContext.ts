@@ -26,3 +26,4 @@ export function getPromptIdWithFallback(componentName: string): string {
   );
   return fallbackId;
 }
+

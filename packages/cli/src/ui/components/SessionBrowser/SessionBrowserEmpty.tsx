@@ -17,3 +17,4 @@ export const SessionBrowserEmpty = (): React.JSX.Element => (
     <Text color={Colors.Gray}>Press q to exit</Text>
   </Box>
 );
+

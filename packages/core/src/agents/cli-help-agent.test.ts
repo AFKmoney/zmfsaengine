@@ -64,3 +64,4 @@ describe('CliHelpAgent', () => {
     expect(processed).toBe(JSON.stringify(mockOutput, null, 2));
   });
 });
+

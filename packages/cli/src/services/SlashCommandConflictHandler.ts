@@ -9,7 +9,7 @@ import {
   CoreEvent,
   type SlashCommandConflictsPayload,
   type SlashCommandConflict,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { CommandKind } from '../ui/commands/types.js';
 
 /**
@@ -173,3 +173,4 @@ export class SlashCommandConflictHandler {
     }
   }
 }
+

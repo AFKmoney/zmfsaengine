@@ -10,11 +10,11 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { SettingScope, type LoadedSettings } from '../../config/settings.js';
 import { act } from 'react';
 import { waitFor } from '../../test-utils/async.js';
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     isEditorAvailable: () => true, // Mock to behave predictably in CI
@@ -176,3 +176,4 @@ describe('EditorSettingsDialog', () => {
     expect(frame).toContain('(Also modified');
   });
 });
+

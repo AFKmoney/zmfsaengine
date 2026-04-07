@@ -52,3 +52,4 @@ export function parseThought(rawText: string): ThoughtSummary {
 
   return { subject, description };
 }
+

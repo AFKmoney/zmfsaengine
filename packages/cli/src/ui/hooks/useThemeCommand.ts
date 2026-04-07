@@ -120,3 +120,4 @@ export const useThemeCommand = (
     handleThemeHighlight,
   };
 };
+

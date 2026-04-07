@@ -198,3 +198,4 @@ describe('safeTemplateReplace', () => {
     expect(safeTemplateReplace(tmpl, replacements)).toBe('Value: $&');
   });
 });
+

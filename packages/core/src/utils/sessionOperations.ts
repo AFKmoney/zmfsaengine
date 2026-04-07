@@ -120,3 +120,4 @@ export async function deleteSubagentSessionDirAndArtifactsAsync(
     await fs.rm(subagentDir, { recursive: true, force: true }).catch(() => {});
   }
 }
+

@@ -423,3 +423,4 @@ describe('toOutputType', () => {
     expect(toOutputType(undefined)).toBeUndefined();
   });
 });
+

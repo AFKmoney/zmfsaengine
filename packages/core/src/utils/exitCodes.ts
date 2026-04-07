@@ -11,3 +11,4 @@ export const ExitCodes = {
   FATAL_CONFIG_ERROR: 52,
   FATAL_CANCELLATION_ERROR: 130,
 } as const;
+

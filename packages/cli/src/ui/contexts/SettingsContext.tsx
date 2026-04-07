@@ -12,7 +12,7 @@ import type {
   SettingsFile,
 } from '../../config/settings.js';
 import { SettingScope } from '../../config/settings.js';
-import { checkExhaustive } from '@google/gemini-cli-core';
+import { checkExhaustive } from '@zmsfa/core';
 
 export const SettingsContext = React.createContext<LoadedSettings | undefined>(
   undefined,
@@ -83,3 +83,4 @@ export const useSettingsStore = (): SettingsStoreValue => {
     [settings, store],
   );
 };
+

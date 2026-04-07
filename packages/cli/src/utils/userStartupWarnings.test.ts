@@ -16,7 +16,7 @@ import {
 import {
   getCompatibilityWarnings,
   WarningPriority,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 // Mock os.homedir to control the home directory in tests
 vi.mock('os', async (importOriginal) => {
@@ -27,9 +27,9 @@ vi.mock('os', async (importOriginal) => {
   };
 });
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     homedir: () => os.homedir(),
@@ -176,4 +176,5 @@ describe('getUserStartupWarnings', () => {
     });
   });
 });
+
 

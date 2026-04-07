@@ -11,7 +11,7 @@ import {
   UserTierId,
   getCodeAssistServer,
   debugLogger,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export interface PrivacyState {
   isLoading: boolean;
@@ -141,3 +141,4 @@ async function setRemoteDataCollectionOptIn(
   }
   return resp.freeTierDataCollectionOptin ?? optIn;
 }
+

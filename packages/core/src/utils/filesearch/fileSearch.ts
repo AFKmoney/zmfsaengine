@@ -295,3 +295,4 @@ export class FileSearchFactory {
     return new DirectoryFileSearch(options);
   }
 }
+

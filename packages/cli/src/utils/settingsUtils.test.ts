@@ -840,3 +840,4 @@ describe('SettingsUtils', () => {
     });
   });
 });
+

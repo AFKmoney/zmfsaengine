@@ -47,3 +47,4 @@ describe('getMCPServerPrompts', () => {
     expect(result).toEqual([]);
   });
 });
+

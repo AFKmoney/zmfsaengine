@@ -284,3 +284,4 @@ export function createAnalyzeScreenshotTool(
 ): AnalyzeScreenshotTool {
   return new AnalyzeScreenshotTool(browserManager, config, messageBus);
 }
+

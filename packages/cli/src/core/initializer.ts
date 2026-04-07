@@ -14,7 +14,7 @@ import {
   logCliConfiguration,
   startupProfiler,
   debugLogger,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { type LoadedSettings } from '../config/settings.js';
 import { performInitialAuth } from './auth.js';
 import { validateTheme } from './theme.js';
@@ -78,3 +78,4 @@ export async function initializeApp(
     geminiMdFileCount: config.getGeminiMdFileCount(),
   };
 }
+

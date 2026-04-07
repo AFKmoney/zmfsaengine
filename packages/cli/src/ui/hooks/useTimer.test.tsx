@@ -147,3 +147,4 @@ describe('useTimer', () => {
     expect(result.current).toBe(1);
   });
 });
+

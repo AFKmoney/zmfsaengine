@@ -115,3 +115,4 @@ export class IgnoreFileParser implements IgnoreFileFilter {
     return this.patterns.length > 0;
   }
 }
+

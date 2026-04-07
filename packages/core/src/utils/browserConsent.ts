@@ -92,3 +92,4 @@ async function markConsentAsAcknowledged(
     void 0;
   }
 }
+

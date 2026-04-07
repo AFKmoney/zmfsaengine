@@ -11,14 +11,14 @@ import {
   logIdeConnection,
   logCliConfiguration,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { performInitialAuth } from './auth.js';
 import { validateTheme } from './theme.js';
 import { type LoadedSettings } from '../config/settings.js';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     IdeClient: {
@@ -157,3 +157,4 @@ describe('initializer', () => {
     expect(result.themeError).toBe('Theme not found');
   });
 });
+

@@ -186,3 +186,4 @@ export class GetInternalDocsTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(GET_INTERNAL_DOCS_DEFINITION, modelId);
   }
 }
+

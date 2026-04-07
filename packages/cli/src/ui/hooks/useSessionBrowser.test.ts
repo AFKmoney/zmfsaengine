@@ -19,12 +19,12 @@ import {
   type ConversationRecord,
   type MessageRecord,
   CoreToolCallStatus,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   coreEvents,
   convertSessionToClientHistory,
   uiTelemetryService,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 // Mock modules
 vi.mock('fs/promises');
@@ -37,9 +37,9 @@ vi.mock('../../utils/sessionUtils.js', async (importOriginal) => {
     getSessionFiles: vi.fn(),
   };
 });
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     uiTelemetryService: {
@@ -345,3 +345,4 @@ describe('convertSessionToHistoryFormats', () => {
     });
   });
 });
+

@@ -13,7 +13,7 @@ vi.mock('node:os', () => ({
   homedir: vi.fn(),
 }));
 
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   homedir: () => os.homedir(),
 }));
 
@@ -37,3 +37,4 @@ describe('resolvePath', () => {
     expect(resolvePath('/foo//bar/../baz')).toBe(path.normalize('/foo/baz'));
   });
 });
+

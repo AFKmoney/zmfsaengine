@@ -36,3 +36,4 @@ describe('LoopDetectionConfirmation', () => {
     unmount();
   });
 });
+

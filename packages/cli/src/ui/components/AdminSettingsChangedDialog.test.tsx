@@ -57,3 +57,4 @@ describe('AdminSettingsChangedDialog', () => {
     expect(handleRestartMock).toHaveBeenCalled();
   });
 });
+

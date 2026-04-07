@@ -10,7 +10,7 @@ import {
   getErrorMessage,
   type ExtensionInstallMetadata,
   type GeminiCLIExtension,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { ExtensionUpdateState } from '../../ui/state/extensions.js';
 import * as os from 'node:os';
 import * as https from 'node:https';
@@ -573,3 +573,4 @@ export async function extractFile(file: string, dest: string): Promise<void> {
     throw new Error(`Unsupported file extension for extraction: ${file}`);
   }
 }
+

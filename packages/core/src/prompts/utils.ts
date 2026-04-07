@@ -111,3 +111,4 @@ export function isSectionEnabled(key: string): boolean {
   const lowerEnvVar = envVar?.trim().toLowerCase();
   return lowerEnvVar !== '0' && lowerEnvVar !== 'false';
 }
+

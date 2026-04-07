@@ -34,3 +34,4 @@ describe('tasksCommand', () => {
     expect(tasksCommand.autoExecute).toBe(true);
   });
 });
+

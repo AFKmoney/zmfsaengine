@@ -829,3 +829,4 @@ describe('getPolicyDirectories', () => {
     expect(dirs[4]).toBe(defaultDir);
   });
 });
+

@@ -50,3 +50,4 @@ export function getNormalizedRelativePath(
 
   return normalized;
 }
+

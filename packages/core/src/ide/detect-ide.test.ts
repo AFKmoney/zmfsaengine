@@ -256,3 +256,4 @@ describe('detectIde with ideInfoFromFile', () => {
     );
   });
 });
+

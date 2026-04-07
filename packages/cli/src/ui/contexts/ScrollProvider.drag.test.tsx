@@ -442,3 +442,4 @@ describe('ScrollProvider Drag', () => {
     expect(scrollTo).toHaveBeenCalledWith(60, 0);
   });
 });
+

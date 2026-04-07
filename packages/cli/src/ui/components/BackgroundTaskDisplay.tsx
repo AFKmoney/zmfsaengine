@@ -15,7 +15,7 @@ import {
   type AnsiOutput,
   type AnsiLine,
   type AnsiToken,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { cpLen, cpSlice, getCachedStringWidth } from '../utils/textUtils.js';
 import { type BackgroundTask } from '../hooks/useExecutionLifecycle.js';
 import { Command } from '../key/keyMatchers.js';
@@ -486,3 +486,4 @@ export const BackgroundTaskDisplay = ({
     </Box>
   );
 };
+

@@ -19,8 +19,8 @@ import type {
   ModelMetrics,
   RoleMetrics,
   ToolCallStats,
-} from '@google/gemini-cli-core';
-import { uiTelemetryService, sessionId } from '@google/gemini-cli-core';
+} from '@zmsfa/core';
+import { uiTelemetryService, sessionId } from '@zmsfa/core';
 
 export enum ToolCallDecision {
   ACCEPT = 'accept',
@@ -279,3 +279,4 @@ export const useSessionStats = () => {
   }
   return context;
 };
+

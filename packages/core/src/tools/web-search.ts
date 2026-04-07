@@ -255,3 +255,4 @@ export class WebSearchTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(WEB_SEARCH_DEFINITION, modelId);
   }
 }
+

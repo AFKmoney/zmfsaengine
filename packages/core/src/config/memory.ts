@@ -39,3 +39,4 @@ export function flattenMemory(memory?: string | HierarchicalMemory): string {
 
   return sections.map((s) => `--- ${s.name} ---\n${s.content}`).join('\n\n');
 }
+

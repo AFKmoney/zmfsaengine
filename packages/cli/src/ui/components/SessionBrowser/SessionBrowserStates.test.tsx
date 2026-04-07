@@ -30,3 +30,4 @@ describe('SessionBrowser UI States', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

@@ -19,3 +19,4 @@ describe('Conseca Integration', () => {
     expect(checker).toBe(ConsecaSafetyChecker.getInstance());
   });
 });
+

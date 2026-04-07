@@ -180,3 +180,4 @@ export async function generateSummary(config: Config): Promise<void> {
     );
   }
 }
+

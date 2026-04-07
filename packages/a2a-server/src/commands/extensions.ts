@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { listExtensions } from '@google/gemini-cli-core';
+import { listExtensions } from '@zmsfa/core';
 import type {
   Command,
   CommandContext,
@@ -39,3 +39,4 @@ export class ListExtensionsCommand implements Command {
     return { name: this.name, data };
   }
 }
+

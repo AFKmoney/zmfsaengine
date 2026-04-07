@@ -138,3 +138,4 @@ export function convertSessionToClientHistory(
 
   return clientHistory;
 }
+

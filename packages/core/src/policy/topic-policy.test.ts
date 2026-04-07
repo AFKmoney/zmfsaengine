@@ -62,3 +62,4 @@ describe('Topic Tool Policy', () => {
     expect(result.decision).toBe(PolicyDecision.ALLOW);
   });
 });
+

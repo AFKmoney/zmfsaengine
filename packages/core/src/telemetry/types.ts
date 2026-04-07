@@ -2443,3 +2443,4 @@ export class TokenStorageInitializationEvent implements BaseTelemetryEvent {
     return `Token storage initialized. Type: ${this.type}. Forced: ${this.forced}`;
   }
 }
+

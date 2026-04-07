@@ -63,3 +63,4 @@ export function renderAgentActionFeedback(
   const s = formatScopeItem(totalAffectedScopes[0]);
   return `Agent "${agentName}" ${actionVerb} ${preposition} ${s} settings.`;
 }
+

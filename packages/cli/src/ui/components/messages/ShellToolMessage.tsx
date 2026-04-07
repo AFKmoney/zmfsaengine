@@ -28,7 +28,7 @@ import {
   type Config,
   ShellExecutionService,
   CoreToolCallStatus,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   calculateShellMaxLines,
   calculateToolContentMaxLines,
@@ -211,3 +211,4 @@ export const ShellToolMessage: React.FC<ShellToolMessageProps> = ({
     </>
   );
 };
+

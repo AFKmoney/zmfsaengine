@@ -167,3 +167,4 @@ describe('performRestore', () => {
     expect(nextResult.done).toBe(true);
   });
 });
+

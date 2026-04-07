@@ -58,3 +58,4 @@ describe('MemoryUsageDisplay', () => {
     unmount();
   });
 });
+

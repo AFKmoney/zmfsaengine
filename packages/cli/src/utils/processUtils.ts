@@ -29,3 +29,4 @@ export async function relaunchApp(): Promise<void> {
   await runExitCleanup();
   process.exit(RELAUNCH_EXIT_CODE);
 }
+

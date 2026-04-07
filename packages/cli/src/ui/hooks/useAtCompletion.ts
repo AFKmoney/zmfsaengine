@@ -13,7 +13,7 @@ import {
   FileDiscoveryService,
   type Config,
   type FileSearch,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   MAX_SUGGESTIONS_TO_SHOW,
   type Suggestion,
@@ -451,3 +451,4 @@ export function useAtCompletion(props: UseAtCompletionProps): void {
     };
   }, [state.status, state.pattern, config, cwd]);
 }
+

@@ -86,3 +86,4 @@ export function setSimulate429(
   fallbackOccurred = false; // Reset fallback state when simulation is re-enabled
   resetRequestCounter();
 }
+

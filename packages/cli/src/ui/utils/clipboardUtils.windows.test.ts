@@ -10,9 +10,9 @@ import { saveClipboardImage } from './clipboardUtils.js';
 
 // Mock dependencies
 vi.mock('node:fs/promises');
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     spawnAsync: vi.fn(),
@@ -45,7 +45,7 @@ describe('saveClipboardImage Windows Path Escaping', () => {
   });
 
   it('should escape single quotes in path for PowerShell script', async () => {
-    const { spawnAsync } = await import('@google/gemini-cli-core');
+    const { spawnAsync } = await import('@zmsfa/core');
     vi.mocked(spawnAsync).mockResolvedValue({
       stdout: 'success',
       stderr: '',
@@ -65,3 +65,4 @@ describe('saveClipboardImage Windows Path Escaping', () => {
     expect(script).toMatch(/'C:\\User''s Files/);
   });
 });
+

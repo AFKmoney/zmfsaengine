@@ -7,7 +7,7 @@
 import { vi, describe, it, expect, beforeEach } from 'vitest';
 import { SkillCommandLoader } from './SkillCommandLoader.js';
 import { CommandKind } from '../ui/commands/types.js';
-import { ACTIVATE_SKILL_TOOL_NAME } from '@google/gemini-cli-core';
+import { ACTIVATE_SKILL_TOOL_NAME } from '@zmsfa/core';
 
 describe('SkillCommandLoader', () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -135,3 +135,4 @@ describe('SkillCommandLoader', () => {
     expect(commands[0].extensionName).toBe('ext1');
   });
 });
+

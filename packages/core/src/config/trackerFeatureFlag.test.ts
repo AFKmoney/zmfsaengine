@@ -49,3 +49,4 @@ describe('Config Tracker Feature Flag', () => {
     expect(registry.getTool(TRACKER_CREATE_TASK_TOOL_NAME)).toBeUndefined();
   });
 });
+

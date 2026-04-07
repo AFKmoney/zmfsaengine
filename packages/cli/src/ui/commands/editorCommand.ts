@@ -20,3 +20,4 @@ export const editorCommand: SlashCommand = {
     dialog: 'editor',
   }),
 };
+

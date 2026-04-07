@@ -324,3 +324,4 @@ export function fromGenerateContentResponseUsage(
     totalTokenCount: metadata.totalTokenCount,
   };
 }
+

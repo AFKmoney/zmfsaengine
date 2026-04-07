@@ -30,3 +30,4 @@ export const WarningMessage: React.FC<WarningMessageProps> = ({ text }) => {
     </Box>
   );
 };
+

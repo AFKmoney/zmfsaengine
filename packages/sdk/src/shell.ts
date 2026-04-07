@@ -9,7 +9,7 @@ import {
   ShellExecutionService,
   ShellTool,
   type Config as CoreConfig,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type {
   AgentShell,
   AgentShellResult,
@@ -72,3 +72,4 @@ export class SdkAgentShell implements AgentShell {
     };
   }
 }
+

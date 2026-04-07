@@ -80,3 +80,4 @@ export const UserMessage: React.FC<UserMessageProps> = ({ text, width }) => {
     </HalfLinePaddedBox>
   );
 };
+

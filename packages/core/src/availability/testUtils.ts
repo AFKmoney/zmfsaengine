@@ -29,3 +29,4 @@ export function createAvailabilityServiceMock(
   // eslint-disable-next-line @typescript-eslint/no-unsafe-type-assertion
   return service as unknown as ModelAvailabilityService;
 }
+

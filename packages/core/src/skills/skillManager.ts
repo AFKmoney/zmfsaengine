@@ -204,3 +204,4 @@ export class SkillManager {
     return this.activeSkillNames.has(name);
   }
 }
+

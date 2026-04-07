@@ -71,3 +71,4 @@ export const AgentsStatus: React.FC<AgentsStatusProps> = ({
     </Box>
   );
 };
+

@@ -7,7 +7,7 @@
 import {
   ModelSlashCommandEvent,
   logModelSlashCommand,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   type CommandContext,
   CommandKind,
@@ -72,3 +72,4 @@ export const modelCommand: SlashCommand = {
   action: async (context: CommandContext, args: string) =>
     manageModelCommand.action!(context, args),
 };
+

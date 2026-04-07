@@ -241,3 +241,4 @@ export function getCitations(resp: GenerateContentResponse): string[] {
       return citation.uri!;
     });
 }
+

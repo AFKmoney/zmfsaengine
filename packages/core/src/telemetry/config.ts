@@ -121,3 +121,4 @@ export async function resolveTelemetrySettings(options: {
       settings.useCliAuth,
   };
 }
+

@@ -34,3 +34,4 @@ export const mcpCommand: CommandModule = {
     // thanks to demandCommand(1) in the builder.
   },
 };
+

@@ -17,3 +17,4 @@ export function getMCPServerPrompts(
   }
   return promptRegistry.getPromptsByServer(serverName);
 }
+

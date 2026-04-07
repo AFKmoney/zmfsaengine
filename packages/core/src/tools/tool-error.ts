@@ -106,3 +106,4 @@ export function isFatalToolError(errorType?: string): boolean {
 
   return fatalErrors.has(errorType);
 }
+

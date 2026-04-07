@@ -43,3 +43,4 @@ export function isITerm2(): boolean {
 export function resetITerm2Cache(): void {
   cachedIsITerm2 = undefined;
 }
+

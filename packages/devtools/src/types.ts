@@ -37,3 +37,4 @@ export interface InspectorConsoleLog extends ConsoleLogPayload {
   sessionId?: string;
   timestamp: number;
 }
+

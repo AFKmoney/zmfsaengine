@@ -21,3 +21,4 @@ export const helpCommand: SlashCommand = {
     context.ui.addItem(helpItem);
   },
 };
+

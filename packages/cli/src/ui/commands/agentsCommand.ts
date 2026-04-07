@@ -371,3 +371,4 @@ export const agentsCommand: SlashCommand = {
     // Default to list if no subcommand is provided
     agentsListCommand.action!(context, args),
 };
+

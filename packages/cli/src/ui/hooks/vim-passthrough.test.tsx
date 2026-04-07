@@ -82,3 +82,4 @@ describe('useVim passthrough', () => {
     expect(handled).toBe(false);
   });
 });
+

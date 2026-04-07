@@ -321,3 +321,4 @@ second message
     expect(lastTurn!.parts!.at(0)!.text).toEqual(expectedLastTurn);
   });
 });
+

@@ -139,3 +139,4 @@ describe('<DefaultAppLayout />', () => {
     unmount();
   });
 });
+

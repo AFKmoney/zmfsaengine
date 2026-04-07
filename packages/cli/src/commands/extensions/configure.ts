@@ -13,7 +13,7 @@ import {
   getExtensionManager,
 } from './utils.js';
 import { loadSettings } from '../../config/settings.js';
-import { coreEvents, debugLogger } from '@google/gemini-cli-core';
+import { coreEvents, debugLogger } from '@zmsfa/core';
 import { exitCli } from '../utils.js';
 
 interface ConfigureArgs {
@@ -96,3 +96,4 @@ export const configureCommand: CommandModule<object, ConfigureArgs> = {
     await exitCli();
   },
 };
+

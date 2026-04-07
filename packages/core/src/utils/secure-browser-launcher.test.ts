@@ -240,3 +240,4 @@ describe('secure-browser-launcher', () => {
     });
   });
 });
+

@@ -9,7 +9,7 @@ import { gzipSync, gunzipSync } from 'node:zlib';
 import * as tar from 'tar';
 import * as fse from 'fs-extra';
 import { promises as fsPromises, createReadStream } from 'node:fs';
-import { tmpdir } from '@google/gemini-cli-core';
+import { tmpdir } from '@zmsfa/core';
 import { join } from 'node:path';
 import type { Task as SDKTask } from '@a2a-js/sdk';
 import type { TaskStore } from '@a2a-js/sdk/server';
@@ -317,3 +317,4 @@ export class NoOpTaskStore implements TaskStore {
     return this.realStore.load(taskId);
   }
 }
+

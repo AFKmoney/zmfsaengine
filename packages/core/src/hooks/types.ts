@@ -744,3 +744,4 @@ export interface HookExecutionPlan {
   hookConfigs: HookConfig[];
   sequential: boolean;
 }
+

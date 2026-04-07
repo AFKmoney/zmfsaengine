@@ -104,3 +104,4 @@ describe('colorizeCode', () => {
     expect(result).toHaveLength(3);
   });
 });
+

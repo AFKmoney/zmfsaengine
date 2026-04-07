@@ -120,3 +120,4 @@ export class TrustedHooksManager {
     this.save();
   }
 }
+

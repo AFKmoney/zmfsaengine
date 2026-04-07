@@ -37,3 +37,4 @@ export function useMouse(
     };
   }, [isActive, onMouseEvent, subscribe, unsubscribe]);
 }
+

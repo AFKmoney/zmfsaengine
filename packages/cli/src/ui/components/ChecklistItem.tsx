@@ -7,7 +7,7 @@
 import type React from 'react';
 import { Box, Text } from 'ink';
 import { theme } from '../semantic-colors.js';
-import { checkExhaustive } from '@google/gemini-cli-core';
+import { checkExhaustive } from '@zmsfa/core';
 
 export type ChecklistStatus =
   | 'pending'
@@ -98,3 +98,4 @@ export const ChecklistItem: React.FC<ChecklistItemProps> = ({
     </Box>
   );
 };
+

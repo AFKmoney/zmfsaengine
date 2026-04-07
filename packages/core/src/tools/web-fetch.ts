@@ -981,3 +981,4 @@ export class WebFetchTool extends BaseDeclarativeTool<
     return schema;
   }
 }
+

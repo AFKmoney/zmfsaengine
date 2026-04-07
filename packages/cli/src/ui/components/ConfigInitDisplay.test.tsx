@@ -23,7 +23,7 @@ import {
   MCPServerStatus,
   type McpClient,
   coreEvents,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { Text } from 'ink';
 
 // Mock GeminiSpinner
@@ -148,3 +148,4 @@ describe('ConfigInitDisplay', () => {
     });
   });
 });
+

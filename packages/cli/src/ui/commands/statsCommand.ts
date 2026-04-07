@@ -14,7 +14,7 @@ import { formatDuration } from '../utils/formatters.js';
 import {
   UserAccountManager,
   getG1CreditBalance,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   type CommandContext,
   type SlashCommand,
@@ -143,3 +143,4 @@ export const statsCommand: SlashCommand = {
     },
   ],
 };
+

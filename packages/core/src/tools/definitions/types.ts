@@ -52,3 +52,4 @@ export interface CoreToolSet {
   activate_skill: (skillNames: string[]) => FunctionDeclaration;
   update_topic?: FunctionDeclaration;
 }
+

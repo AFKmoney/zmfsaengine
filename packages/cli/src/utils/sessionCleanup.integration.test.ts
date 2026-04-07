@@ -11,7 +11,7 @@ import {
   SESSION_FILE_PREFIX,
   type Config,
   debugLogger,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 // Create a mock config for integration testing
 function createTestConfig(): Config {
@@ -403,3 +403,4 @@ describe('Session Cleanup Integration', () => {
     }
   });
 });
+

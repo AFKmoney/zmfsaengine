@@ -53,3 +53,4 @@ test('ResultCache best base query', async () => {
   expect(resultFiles).toEqual(['foo.txt', 'foobar.js']);
   expect(isExactMatch).toBe(false);
 });
+

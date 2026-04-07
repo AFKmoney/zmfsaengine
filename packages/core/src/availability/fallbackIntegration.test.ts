@@ -78,3 +78,4 @@ describe('Fallback Integration', () => {
     expect(result.model).toBe(PREVIEW_GEMINI_FLASH_MODEL);
   });
 });
+

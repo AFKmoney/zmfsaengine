@@ -12,7 +12,7 @@ import {
   type Config,
   UserAccountManager,
   AuthType,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { isUltraTier } from '../../utils/tierUtils.js';
 
 interface UserIdentityProps {
@@ -72,3 +72,4 @@ export const UserIdentity: React.FC<UserIdentityProps> = ({ config }) => {
     </Box>
   );
 };
+

@@ -296,3 +296,4 @@ modes = [ "autoEdit", "yolo" ]
     expect(content).toContain('modes = [ "default", "autoEdit", "yolo" ]');
   });
 });
+

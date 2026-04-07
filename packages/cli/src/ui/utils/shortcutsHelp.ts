@@ -13,3 +13,4 @@ export function useIsHelpDismissKey(): (key: Key) => boolean {
   return (key: Key) =>
     Object.values(Command).some((command) => keyMatchers[command](key));
 }
+

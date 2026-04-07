@@ -10,7 +10,7 @@ import {
   useAlternateBuffer,
   isAlternateBufferEnabled,
 } from './useAlternateBuffer.js';
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 
 vi.mock('../contexts/ConfigContext.js', () => ({
   useConfig: vi.fn(),
@@ -83,3 +83,4 @@ describe('isAlternateBufferEnabled', () => {
     expect(isAlternateBufferEnabled(config)).toBe(false);
   });
 });
+

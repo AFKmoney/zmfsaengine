@@ -36,3 +36,4 @@ export const SubagentHistoryMessage: React.FC<SubagentHistoryMessageProps> = ({
     ))}
   </Box>
 );
+

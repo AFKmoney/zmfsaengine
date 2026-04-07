@@ -12,7 +12,7 @@ import type {
   AnyDeclarativeTool,
   AnyToolInvocation,
   UserFeedbackPayload,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   ToolErrorType,
   GeminiEventType,
@@ -21,7 +21,7 @@ import {
   FatalInputError,
   CoreEvent,
   CoreToolCallStatus,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { Part } from '@google/genai';
 import { runNonInteractive } from './nonInteractiveCli.js';
 import {
@@ -55,9 +55,9 @@ const mockCoreEvents = vi.hoisted(() => ({
 
 const mockSchedulerSchedule = vi.hoisted(() => vi.fn());
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const original =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
 
   class MockChatRecordingService {
     initialize = vi.fn();
@@ -1786,7 +1786,7 @@ describe('runNonInteractive', () => {
       .mockReturnValue('model-1');
 
     // Mock debugLogger.error
-    const { debugLogger } = await import('@google/gemini-cli-core');
+    const { debugLogger } = await import('@zmsfa/core');
     const debugLoggerErrorSpy = vi
       .spyOn(debugLogger, 'error')
       .mockImplementation(() => {});
@@ -2234,4 +2234,5 @@ describe('runNonInteractive', () => {
     });
   });
 });
+
 

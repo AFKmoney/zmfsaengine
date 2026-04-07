@@ -47,3 +47,4 @@ export function isHeadlessMode(options?: HeadlessModeOptions): boolean {
   // Fallback: check process.argv for flags that imply headless mode.
   return process.argv.some((arg) => arg === '-p' || arg === '--prompt');
 }
+

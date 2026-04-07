@@ -19,3 +19,4 @@ export function validateTheme(settings: LoadedSettings): string | null {
   }
   return null;
 }
+

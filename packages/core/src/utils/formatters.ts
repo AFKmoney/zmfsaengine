@@ -16,3 +16,4 @@ export const formatBytes = (bytes: number): string => {
   }
   return `${gb.toFixed(2)} GB`;
 };
+

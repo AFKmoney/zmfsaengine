@@ -1073,3 +1073,4 @@ export function isSchemaDepthError(errorMessage: string): boolean {
 export function isInvalidArgumentError(errorMessage: string): boolean {
   return errorMessage.includes('Request contains an invalid argument');
 }
+

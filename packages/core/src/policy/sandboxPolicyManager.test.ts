@@ -70,3 +70,4 @@ describe('SandboxPolicyManager', () => {
     expect(perms.fileSystem?.read).toContain('/node_modules');
   });
 });
+

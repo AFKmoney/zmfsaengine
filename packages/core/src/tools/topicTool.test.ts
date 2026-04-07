@@ -132,3 +132,4 @@ describe('UpdateTopicTool', () => {
     expect(mockConfig.topicState.getTopic()).toBeUndefined();
   });
 });
+

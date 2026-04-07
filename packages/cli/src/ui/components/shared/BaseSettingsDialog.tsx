@@ -626,3 +626,4 @@ export function BaseSettingsDialog({
     </Box>
   );
 }
+

@@ -204,3 +204,4 @@ export function classifyAgentError(
   // Fallback to a generic connection error.
   return new AgentConnectionError(agentName, agentCardUrl, error);
 }
+

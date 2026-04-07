@@ -341,3 +341,4 @@ export const ConfigExtensionDialog: React.FC<ConfigExtensionDialogProps> = ({
     </Box>
   );
 };
+

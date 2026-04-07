@@ -31,3 +31,4 @@ export const CliSpinner = (props: SpinnerProps) => {
 
   return <Spinner {...props} />;
 };
+

@@ -33,3 +33,4 @@ export const ConsoleSummaryDisplay: React.FC<ConsoleSummaryDisplayProps> = ({
     </Box>
   );
 };
+

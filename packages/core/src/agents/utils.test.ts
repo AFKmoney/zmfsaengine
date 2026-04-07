@@ -113,3 +113,4 @@ describe('templateString', () => {
     expect(result).toBe('Static text.');
   });
 });
+

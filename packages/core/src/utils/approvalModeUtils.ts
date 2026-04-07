@@ -38,3 +38,4 @@ export function getPlanModeExitMessage(
     : 'Plan approved.';
   return `${prefix} Switching to ${description}.`;
 }
+

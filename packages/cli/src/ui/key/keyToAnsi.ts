@@ -53,3 +53,4 @@ export function keyToAnsi(key: Key): string | null {
 
   return null;
 }
+

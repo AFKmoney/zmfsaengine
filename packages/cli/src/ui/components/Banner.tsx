@@ -69,3 +69,4 @@ export const Banner = ({ bannerText, isWarning, width }: BannerProps) => {
     </Box>
   );
 };
+

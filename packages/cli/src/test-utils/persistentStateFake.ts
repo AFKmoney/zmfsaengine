@@ -43,3 +43,4 @@ export class FakePersistentState {
     this.data = { ...data };
   }
 }
+

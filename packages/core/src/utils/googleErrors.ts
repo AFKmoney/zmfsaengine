@@ -371,3 +371,4 @@ function fromApiError(errorObj: object): ErrorShape | undefined {
   }
   return outerError;
 }
+

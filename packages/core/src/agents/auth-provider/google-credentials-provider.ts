@@ -159,3 +159,4 @@ export class GoogleCredentialsAuthProvider extends BaseA2AAuthProvider {
     return this.headers();
   }
 }
+

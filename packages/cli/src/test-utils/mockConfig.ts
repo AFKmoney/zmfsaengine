@@ -5,8 +5,8 @@
  */
 
 import { vi } from 'vitest';
-import { NoopSandboxManager } from '@google/gemini-cli-core';
-import type { Config } from '@google/gemini-cli-core';
+import { NoopSandboxManager } from '@zmsfa/core';
+import type { Config } from '@zmsfa/core';
 import {
   createTestMergedSettings,
   type LoadedSettings,
@@ -212,3 +212,4 @@ export function createMockSettings(
     merged,
   } as unknown as LoadedSettings;
 }
+

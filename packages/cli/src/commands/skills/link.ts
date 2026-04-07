@@ -5,7 +5,7 @@
  */
 
 import type { CommandModule } from 'yargs';
-import { debugLogger, getErrorMessage } from '@google/gemini-cli-core';
+import { debugLogger, getErrorMessage } from '@zmsfa/core';
 import chalk from 'chalk';
 
 import { exitCli } from '../utils.js';
@@ -93,3 +93,4 @@ export const linkCommand: CommandModule = {
     await exitCli();
   },
 };
+

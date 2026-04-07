@@ -96,3 +96,4 @@ describe('TextOutput', () => {
     expect(getWrittenOutput()).toMatchSnapshot();
   });
 });
+

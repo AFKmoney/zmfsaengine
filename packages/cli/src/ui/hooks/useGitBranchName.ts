@@ -5,7 +5,7 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
-import { spawnAsync } from '@google/gemini-cli-core';
+import { spawnAsync } from '@zmsfa/core';
 import fs from 'node:fs';
 import fsPromises from 'node:fs/promises';
 import path from 'node:path';
@@ -75,3 +75,4 @@ export function useGitBranchName(cwd: string): string | undefined {
 
   return branchName;
 }
+

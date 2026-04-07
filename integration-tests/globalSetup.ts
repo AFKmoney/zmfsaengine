@@ -13,7 +13,7 @@ import { mkdir, readdir, rm, readFile } from 'node:fs/promises';
 import { join, dirname, extname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { canUseRipgrep } from '../packages/core/src/tools/ripGrep.js';
-import { disableMouseTracking } from '@google/gemini-cli-core';
+import { disableMouseTracking } from '@zmsfa/core';
 import { createServer, type Server } from 'node:http';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -163,3 +163,4 @@ export async function teardown() {
     }
   }
 }
+

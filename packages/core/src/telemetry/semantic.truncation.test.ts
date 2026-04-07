@@ -102,3 +102,4 @@ describe('Semantic Telemetry Truncation', () => {
     expect(cBig.length).toBe(expectedBigLen);
   });
 });
+

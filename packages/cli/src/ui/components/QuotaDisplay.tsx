@@ -67,3 +67,4 @@ export const QuotaDisplay: React.FC<QuotaDisplayProps> = ({
 
   return <Text color={color}>{text}</Text>;
 };
+

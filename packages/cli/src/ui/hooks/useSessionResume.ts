@@ -10,7 +10,7 @@ import {
   type Config,
   type ResumedSessionData,
   convertSessionToClientHistory,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { Part } from '@google/genai';
 import type { HistoryItemWithoutId } from '../types.js';
 import type { UseHistoryManagerReturn } from './useHistoryManager.js';
@@ -127,4 +127,5 @@ export function useSessionResume({
 
   return { loadHistoryForResume, isResuming };
 }
+
 

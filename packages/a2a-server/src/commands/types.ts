@@ -5,7 +5,7 @@
  */
 
 import type { ExecutionEventBus, AgentExecutor } from '@a2a-js/sdk/server';
-import type { Config, GitService } from '@google/gemini-cli-core';
+import type { Config, GitService } from '@zmsfa/core';
 
 export interface CommandContext {
   config: Config;
@@ -39,3 +39,4 @@ export interface CommandExecutionResponse {
   readonly name: string;
   readonly data: unknown;
 }
+

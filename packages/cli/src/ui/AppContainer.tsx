@@ -88,7 +88,7 @@ import {
   ApiKeyUpdatedEvent,
   type InjectionSource,
   startMemoryService,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { validateAuthMethod } from '../config/auth.js';
 import process from 'node:process';
 import { useHistory } from './hooks/useHistoryManager.js';
@@ -2843,4 +2843,5 @@ Logging in with Google... Restarting ZMSFA O–Triadic Torus Engine to continue.
     </UIStateContext.Provider>
   );
 };
+
 

@@ -322,3 +322,4 @@ export class ExtensionIntegrityManager implements IExtensionIntegrity {
     return this.keyManager.getSecretKey();
   }
 }
+

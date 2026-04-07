@@ -46,3 +46,4 @@ export const InfoMessage: React.FC<InfoMessageProps> = ({
     </Box>
   );
 };
+

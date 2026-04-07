@@ -479,3 +479,4 @@ export class Logger {
     this.messageId = 0;
   }
 }
+

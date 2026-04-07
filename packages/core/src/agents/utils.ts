@@ -41,3 +41,4 @@ export function templateString(template: string, inputs: AgentInputs): string {
     String(inputs[key]),
   );
 }
+

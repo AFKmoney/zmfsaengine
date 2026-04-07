@@ -7,7 +7,7 @@
 import { render } from '../../test-utils/render.js';
 import { ApprovalModeIndicator } from './ApprovalModeIndicator.js';
 import { describe, it, expect } from 'vitest';
-import { ApprovalMode } from '@google/gemini-cli-core';
+import { ApprovalMode } from '@zmsfa/core';
 
 describe('ApprovalModeIndicator', () => {
   it('renders correctly for AUTO_EDIT mode', async () => {
@@ -58,3 +58,4 @@ describe('ApprovalModeIndicator', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

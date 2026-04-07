@@ -23,3 +23,4 @@ export async function getArgumentCompletions(
   }
   return provider.getCompletions(tokens, cursorIndex, cwd, signal);
 }
+

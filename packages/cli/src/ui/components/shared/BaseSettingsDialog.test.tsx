@@ -883,3 +883,4 @@ describe('BaseSettingsDialog', () => {
     });
   });
 });
+

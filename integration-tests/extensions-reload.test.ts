@@ -9,7 +9,7 @@ import { TestRig } from './test-helper.js';
 import { TestMcpServer } from './test-mcp-server.js';
 import { writeFileSync } from 'node:fs';
 import { join } from 'node:path';
-import { safeJsonStringify } from '@google/gemini-cli-core/src/utils/safeJsonStringify.js';
+import { safeJsonStringify } from '@zmsfa/core/src/utils/safeJsonStringify.js';
 
 import stripAnsi from 'strip-ansi';
 
@@ -149,3 +149,4 @@ describe('extension reloading', () => {
     await rig.runCommand(['extensions', 'uninstall', 'test-extension']);
   });
 });
+

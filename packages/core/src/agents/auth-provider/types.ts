@@ -106,3 +106,4 @@ export interface AuthValidationResult {
   valid: boolean;
   diff?: AuthConfigDiff;
 }
+

@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { isWithinRoot, type FileSystemService } from '@google/gemini-cli-core';
+import { isWithinRoot, type FileSystemService } from '@zmsfa/core';
 import type * as acp from '@agentclientprotocol/sdk';
 import os from 'node:os';
 import path from 'node:path';
@@ -83,3 +83,4 @@ export class AcpFileSystemService implements FileSystemService {
     }
   }
 }
+

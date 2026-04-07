@@ -67,3 +67,4 @@ export function useRepeatedKeyPress(options: UseRepeatedKeyPressOptions) {
 
   return { pressCount, handlePress, resetCount };
 }
+

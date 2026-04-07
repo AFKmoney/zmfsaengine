@@ -23,7 +23,7 @@ import { runExitCleanup } from '../../utils/cleanup.js';
 import {
   ExitCodes,
   type FolderDiscoveryResults,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { useUIState } from '../contexts/UIStateContext.js';
 import { useAlternateBuffer } from '../hooks/useAlternateBuffer.js';
 import { OverflowProvider } from '../contexts/OverflowContext.js';
@@ -316,4 +316,5 @@ export const FolderTrustDialog: React.FC<FolderTrustDialogProps> = ({
 
   return <OverflowProvider>{content}</OverflowProvider>;
 };
+
 

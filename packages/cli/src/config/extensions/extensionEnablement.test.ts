@@ -18,7 +18,7 @@ import {
   coreEvents,
   GEMINI_DIR,
   type GeminiCLIExtension,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 vi.mock('node:os', () => ({
   homedir: vi.fn().mockReturnValue('/virtual-home'),
@@ -532,3 +532,4 @@ describe('Override', () => {
     expect(override.output()).toBe(`!/path/to/dir/`);
   });
 });
+

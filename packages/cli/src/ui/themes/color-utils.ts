@@ -143,3 +143,4 @@ export function parseColor(rHex: string, gHex: string, bHex: string): string {
   const toHex = (c: number) => Math.round(c).toString(16).padStart(2, '0');
   return `#${toHex(r)}${toHex(g)}${toHex(b)}`;
 }
+

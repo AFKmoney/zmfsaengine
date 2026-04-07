@@ -80,7 +80,7 @@ function generateTestCommand(failedFilesMap) {
     let workspace = '@google/gemini-cli';
     let relPath = file;
     if (file.startsWith('packages/core/')) {
-      workspace = '@google/gemini-cli-core';
+      workspace = '@zmsfa/core';
       relPath = file.replace('packages/core/', '');
     } else if (file.startsWith('packages/cli/')) {
       workspace = '@google/gemini-cli';
@@ -279,3 +279,4 @@ monitor().catch((err) => {
   console.error('\nMonitor error:', err.message);
   process.exit(1);
 });
+

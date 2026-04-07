@@ -905,3 +905,4 @@ export class BrowserManager {
     return false;
   }
 }
+

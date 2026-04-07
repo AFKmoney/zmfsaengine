@@ -28,3 +28,4 @@ export function getVersion(): Promise<string> {
 export function resetVersionCache(): void {
   versionPromise = undefined;
 }
+

@@ -521,3 +521,4 @@ export class HookEventHandler {
     return result.hookConfig.type;
   }
 }
+

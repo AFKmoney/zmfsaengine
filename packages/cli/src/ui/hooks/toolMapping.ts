@@ -11,7 +11,7 @@ import {
   debugLogger,
   CoreToolCallStatus,
   type SubagentActivityItem,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   type HistoryItemToolGroup,
   type IndividualToolCallDisplay,
@@ -137,3 +137,4 @@ export function mapToDisplay(
     borderDimColor,
   };
 }
+

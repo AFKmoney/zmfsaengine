@@ -165,3 +165,4 @@ export function detectEncodingFromBuffer(buffer: Buffer): string | null {
 
   return null;
 }
+

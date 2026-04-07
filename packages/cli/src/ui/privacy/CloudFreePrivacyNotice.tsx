@@ -8,7 +8,7 @@ import { Box, Newline, Text } from 'ink';
 import { RadioButtonSelect } from '../components/shared/RadioButtonSelect.js';
 import { usePrivacySettings } from '../hooks/usePrivacySettings.js';
 
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 import { theme } from '../semantic-colors.js';
 import { useKeypress } from '../hooks/useKeypress.js';
 
@@ -135,4 +135,5 @@ export const CloudFreePrivacyNotice = ({
     </Box>
   );
 };
+
 

@@ -34,3 +34,4 @@ export function makeFakeConfig(
     ...config,
   });
 }
+

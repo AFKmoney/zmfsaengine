@@ -54,3 +54,4 @@ export const ConsentPrompt = (props: ConsentPromptProps) => {
     </Box>
   );
 };
+

@@ -301,3 +301,4 @@ export interface CustomEvent {
   kind: string;
   data?: Record<string, unknown>;
 }
+

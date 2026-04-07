@@ -5,7 +5,7 @@
  */
 
 import * as path from 'node:path';
-import { homedir } from '@google/gemini-cli-core';
+import { homedir } from '@zmsfa/core';
 
 export function resolvePath(p: string): string {
   if (!p) {
@@ -19,3 +19,4 @@ export function resolvePath(p: string): string {
   }
   return path.normalize(expandedPath);
 }
+

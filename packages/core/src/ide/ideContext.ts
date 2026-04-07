@@ -122,3 +122,4 @@ export class IdeContextStore {
  * The default, shared instance of the IDE context store for the application.
  */
 export const ideContextStore = new IdeContextStore();
+

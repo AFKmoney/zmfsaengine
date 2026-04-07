@@ -63,3 +63,4 @@ export const useTimer = (isActive: boolean, resetKey: unknown) => {
 
   return elapsedTime;
 };
+

@@ -41,3 +41,4 @@ export class DefaultStrategy implements TerminalStrategy {
     };
   }
 }
+

@@ -26,3 +26,4 @@ export function checkExhaustive(
   assumeExhaustive(value);
   throw new Error(msg);
 }
+

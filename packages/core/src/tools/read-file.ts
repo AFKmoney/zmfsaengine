@@ -288,3 +288,4 @@ export class ReadFileTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(READ_FILE_DEFINITION, modelId);
   }
 }
+

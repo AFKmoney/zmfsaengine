@@ -7,7 +7,7 @@
 import { render } from '../../test-utils/render.js';
 import { Tips } from './Tips.js';
 import { describe, it, expect, vi } from 'vitest';
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 
 describe('Tips', () => {
   it.each([
@@ -23,3 +23,4 @@ describe('Tips', () => {
     unmount();
   });
 });
+

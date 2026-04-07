@@ -21,7 +21,7 @@ import {
   CompletionMode,
 } from './useCommandCompletion.js';
 import type { CommandContext, SlashCommand } from '../commands/types.js';
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 import { useTextBuffer } from '../components/shared/text-buffer.js';
 import type { Suggestion } from '../components/SuggestionsDisplay.js';
 import {
@@ -1032,3 +1032,4 @@ describe('useCommandCompletion', () => {
     });
   });
 });
+

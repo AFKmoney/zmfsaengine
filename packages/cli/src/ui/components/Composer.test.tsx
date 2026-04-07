@@ -21,8 +21,8 @@ import {
   ApprovalMode,
   tokenLimit,
   CoreToolCallStatus,
-} from '@google/gemini-cli-core';
-import type { Config } from '@google/gemini-cli-core';
+} from '@zmsfa/core';
+import type { Config } from '@zmsfa/core';
 import { StreamingState } from '../types.js';
 import { TransientMessageType } from '../../utils/events.js';
 import type { LoadedSettings } from '../../config/settings.js';
@@ -1130,3 +1130,4 @@ describe('Composer', () => {
     });
   });
 });
+

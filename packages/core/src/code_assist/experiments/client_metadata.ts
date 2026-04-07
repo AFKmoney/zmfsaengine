@@ -55,3 +55,4 @@ export async function getClientMetadata(): Promise<ClientMetadata> {
   }
   return clientMetadataPromise;
 }
+

@@ -246,3 +246,4 @@ describe('CoderAgentExecutor', () => {
     expect(wrapper.task.dispose).toHaveBeenCalled();
   });
 });
+

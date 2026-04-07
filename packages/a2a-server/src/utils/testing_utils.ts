@@ -24,8 +24,8 @@ import {
   NoopSandboxManager,
   type ToolRegistry,
   type SandboxManager,
-} from '@google/gemini-cli-core';
-import { createMockMessageBus } from '@google/gemini-cli-core/src/test-utils/mock-message-bus.js';
+} from '@zmsfa/core';
+import { createMockMessageBus } from '@zmsfa/core/src/test-utils/mock-message-bus.js';
 import { expect, vi } from 'vitest';
 
 export function createMockConfig(
@@ -229,3 +229,4 @@ export function assertTaskCreationAndWorkingStatus(
   expect(workingEvent.kind).toBe('status-update');
   expect(workingEvent.status.state).toBe('working');
 }
+

@@ -306,3 +306,4 @@ describe('extractExtensionsFromPatterns', () => {
     expect(result).toEqual(['.json']);
   });
 });
+

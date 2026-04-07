@@ -37,3 +37,4 @@ export interface ContextManagementConfig {
     outputMasking: ToolOutputMaskingConfig;
   };
 }
+

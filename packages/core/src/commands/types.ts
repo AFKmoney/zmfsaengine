@@ -53,3 +53,4 @@ export type CommandActionReturn<HistoryType = unknown> =
   | MessageActionReturn
   | LoadHistoryActionReturn<HistoryType>
   | SubmitPromptActionReturn;
+

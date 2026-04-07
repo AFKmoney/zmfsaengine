@@ -17,8 +17,8 @@ import {
   debugLogger,
   applyAdminAllowlist,
   getAdminBlockedMcpServersMessage,
-} from '@google/gemini-cli-core';
-import type { MCPServerConfig } from '@google/gemini-cli-core';
+} from '@zmsfa/core';
+import type { MCPServerConfig } from '@zmsfa/core';
 import { Client } from '@modelcontextprotocol/sdk/client/index.js';
 import { ExtensionManager } from '../../config/extension-manager.js';
 import {
@@ -262,3 +262,4 @@ export const listCommand: CommandModule<object, ListArgs> = {
     await exitCli();
   },
 };
+

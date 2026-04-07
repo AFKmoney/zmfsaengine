@@ -13,8 +13,8 @@ import {
   debugLogger,
   isAccountSuspendedError,
   ProjectIdRequiredError,
-} from '@google/gemini-cli-core';
-import { getErrorMessage } from '@google/gemini-cli-core';
+} from '@zmsfa/core';
+import { getErrorMessage } from '@zmsfa/core';
 import { AuthState } from '../types.js';
 import { validateAuthMethod } from '../../config/auth.js';
 
@@ -174,3 +174,4 @@ export const useAuthCommand = (
     setAccountSuspensionInfo,
   };
 };
+

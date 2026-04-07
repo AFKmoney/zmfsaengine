@@ -92,3 +92,4 @@ export const computeSessionStats = (
     totalLinesRemoved: files.totalLinesRemoved,
   };
 };
+

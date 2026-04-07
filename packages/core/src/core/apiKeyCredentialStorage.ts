@@ -90,3 +90,4 @@ export async function clearApiKey(): Promise<void> {
     debugLogger.error('Failed to clear API key from storage:', error);
   }
 }
+

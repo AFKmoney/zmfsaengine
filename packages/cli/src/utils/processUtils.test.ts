@@ -36,3 +36,4 @@ describe('processUtils', () => {
     expect(processExit).toHaveBeenCalledWith(RELAUNCH_EXIT_CODE);
   });
 });
+

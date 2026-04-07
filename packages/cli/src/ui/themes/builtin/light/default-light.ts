@@ -104,3 +104,4 @@ export const DefaultLight: Theme = new Theme(
   },
   lightTheme,
 );
+

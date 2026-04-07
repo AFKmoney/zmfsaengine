@@ -350,3 +350,4 @@ export const ShadesOfPurple = new Theme(
   },
   shadesOfPurpleColors,
 );
+

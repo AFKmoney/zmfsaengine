@@ -107,3 +107,4 @@ describe('useShellInactivityStatus', () => {
     expect(result.current.shouldShowFocusHint).toBe(false);
   });
 });
+

@@ -8,7 +8,7 @@ import { useState, useCallback } from 'react';
 import type {
   ConversationRecord,
   MessageRecord,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   calculateTurnStats,
   calculateRewindImpact,
@@ -52,3 +52,4 @@ export function useRewind(conversation: ConversationRecord) {
     clearSelection,
   };
 }
+

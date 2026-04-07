@@ -95,3 +95,4 @@ export class HybridTokenStorage extends BaseTokenStorage {
     return this.storageType!;
   }
 }
+

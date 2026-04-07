@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 import {
   OutputFormat,
   JsonFormatter,
@@ -20,7 +20,7 @@ import {
   coreEvents,
   getErrorType,
   getErrorMessage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { runSyncCleanup } from './cleanup.js';
 
 interface ErrorWithCode extends Error {
@@ -243,3 +243,4 @@ export function handleMaxTurnsExceededError(config: Config): never {
     process.exit(maxTurnsError.exitCode);
   }
 }
+

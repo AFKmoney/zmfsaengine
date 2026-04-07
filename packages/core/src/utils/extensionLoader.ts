@@ -291,3 +291,4 @@ export class SimpleExtensionLoader extends ExtensionLoader {
     await this.maybeStopExtension(extension);
   }
 }
+

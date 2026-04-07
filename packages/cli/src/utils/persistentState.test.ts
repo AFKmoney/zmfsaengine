@@ -7,11 +7,11 @@
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
-import { Storage, debugLogger } from '@google/gemini-cli-core';
+import { Storage, debugLogger } from '@zmsfa/core';
 import { PersistentState } from './persistentState.js';
 
 vi.mock('node:fs');
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   Storage: {
     getGlobalGeminiDir: vi.fn(),
   },
@@ -81,3 +81,4 @@ describe('PersistentState', () => {
     expect(debugLogger.warn).toHaveBeenCalled();
   });
 });
+

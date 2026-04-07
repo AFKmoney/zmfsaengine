@@ -81,3 +81,4 @@ export function getAllToolCalls(
     .filter((item): item is HistoryItemToolGroup => item.type === 'tool_group')
     .flatMap((group) => group.tools);
 }
+

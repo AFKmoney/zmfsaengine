@@ -9,3 +9,4 @@ export const SettingPaths = {
     PreferredEditor: 'general.preferredEditor',
   },
 } as const;
+

@@ -5,7 +5,7 @@
  */
 
 import type { CommandModule } from 'yargs';
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 import {
   McpServerEnablementManager,
   canLoadServer,
@@ -137,3 +137,4 @@ export const disableCommand: CommandModule<object, Args> = {
     await exitCli();
   },
 };
+

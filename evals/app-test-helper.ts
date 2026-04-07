@@ -13,7 +13,7 @@ import {
 } from './test-helper.js';
 import fs from 'node:fs';
 import path from 'node:path';
-import { DEFAULT_GEMINI_MODEL } from '@google/gemini-cli-core';
+import { DEFAULT_GEMINI_MODEL } from '@zmsfa/core';
 
 /**
  * Config overrides for evals, with tool-restriction fields explicitly
@@ -101,3 +101,4 @@ export function appEvalTest(policy: EvalPolicy, evalCase: AppEvalCase) {
 
   runEval(policy, evalCase.name, fn, (evalCase.timeout ?? 60000) + 10000);
 }
+

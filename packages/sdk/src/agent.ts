@@ -10,7 +10,7 @@ import {
   createSessionId,
   type ResumedSessionData,
   type ConversationRecord,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import { GeminiCliSession } from './session.js';
 import type { GeminiCliAgentOptions } from './types.js';
@@ -82,3 +82,4 @@ export class GeminiCliAgent {
     );
   }
 }
+

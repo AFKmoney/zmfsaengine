@@ -62,3 +62,4 @@ export const GeminiPrivacyNotice = ({ onExit }: GeminiPrivacyNoticeProps) => {
     </Box>
   );
 };
+

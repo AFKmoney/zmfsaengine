@@ -12,7 +12,7 @@ import {
   type AuthType,
   type EditorType,
   type AgentDefinition,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { type LoadableSettingScope } from '../../config/settings.js';
 import type { AuthState } from '../types.js';
 import { type PermissionsDialogProps } from '../components/PermissionsModifyTrustDialog.js';
@@ -104,3 +104,4 @@ export const useUIActions = () => {
   }
   return context;
 };
+

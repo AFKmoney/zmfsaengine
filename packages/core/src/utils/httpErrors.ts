@@ -44,3 +44,4 @@ export class ModelNotFoundError extends Error {
     this.code = code ? code : 404;
   }
 }
+

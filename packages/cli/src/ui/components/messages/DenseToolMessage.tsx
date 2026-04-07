@@ -17,7 +17,7 @@ import {
   isGrepResult,
   isListResult,
   isReadManyFilesResult,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   type IndividualToolCallDisplay,
   type ToolResultDisplay,
@@ -561,3 +561,4 @@ export const DenseToolMessage: React.FC<DenseToolMessageProps> = (props) => {
     </Box>
   );
 };
+

@@ -12,7 +12,7 @@ import { type UIState } from '../contexts/UIStateContext.js';
 
 import { type SessionStatsState } from '../contexts/SessionContext.js';
 import { type ThoughtSummary } from '../types.js';
-import { ApprovalMode } from '@google/gemini-cli-core';
+import { ApprovalMode } from '@zmsfa/core';
 
 vi.mock('../hooks/useComposerStatus.js', () => ({
   useComposerStatus: vi.fn(),
@@ -141,3 +141,4 @@ describe('<StatusRow />', () => {
     expect(lastFrame()).toContain('Tip: Test Tip');
   });
 });
+

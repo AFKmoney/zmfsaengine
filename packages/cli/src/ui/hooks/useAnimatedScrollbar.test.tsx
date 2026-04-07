@@ -101,3 +101,4 @@ describe('useAnimatedScrollbar', () => {
     // Reset timers to default full fake for other tests (handled by afterEach/beforeEach usually, but here we overrode it)
   });
 });
+

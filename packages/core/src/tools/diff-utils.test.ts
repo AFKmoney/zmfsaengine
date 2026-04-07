@@ -64,3 +64,4 @@ describe('getDiffContextSnippet', () => {
     expect(snippet).toBe('...\n4\n6\n...');
   });
 });
+

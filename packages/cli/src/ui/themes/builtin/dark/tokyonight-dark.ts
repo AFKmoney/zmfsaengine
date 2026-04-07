@@ -153,3 +153,4 @@ export const TokyoNight: Theme = new Theme(
   },
   tokyoNightColors,
 );
+

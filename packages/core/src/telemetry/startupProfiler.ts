@@ -249,3 +249,4 @@ export class StartupProfiler {
 }
 
 export const startupProfiler = StartupProfiler.getInstance();
+

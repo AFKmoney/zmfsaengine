@@ -17,7 +17,7 @@ import {
   CoreToolCallStatus,
   type SubagentActivityItem,
   type SubagentActivityMessage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { useCallback, useState, useMemo, useEffect, useRef } from 'react';
 
 // Re-exporting types compatible with hook expectations
@@ -353,3 +353,4 @@ function adaptToolCalls(
     } as TrackedToolCall;
   });
 }
+

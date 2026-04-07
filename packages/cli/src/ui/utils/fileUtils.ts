@@ -17,3 +17,4 @@ export function getFileExtension(
   const ext = path.extname(filename);
   return ext ? ext.slice(1) : null;
 }
+

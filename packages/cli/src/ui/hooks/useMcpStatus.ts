@@ -10,7 +10,7 @@ import {
   coreEvents,
   MCPDiscoveryState,
   CoreEvent,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export function useMcpStatus(config: Config) {
   const [discoveryState, setDiscoveryState] = useState<MCPDiscoveryState>(
@@ -49,3 +49,4 @@ export function useMcpStatus(config: Config) {
     isMcpReady,
   };
 }
+

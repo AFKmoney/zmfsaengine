@@ -48,3 +48,4 @@ describe('helpCommand', () => {
     expect(helpCommand.description).toBe('For help on gemini-cli');
   });
 });
+

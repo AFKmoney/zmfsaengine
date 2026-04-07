@@ -18,7 +18,7 @@ const debugLogger = vi.hoisted(() => ({
   debug: vi.fn(),
 }));
 
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   writeToStdout,
   debugLogger,
 }));
@@ -163,3 +163,4 @@ describe('terminal notifications', () => {
     );
   });
 });
+

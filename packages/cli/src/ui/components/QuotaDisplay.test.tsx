@@ -98,3 +98,4 @@ describe('QuotaDisplay', () => {
     unmount();
   });
 });
+

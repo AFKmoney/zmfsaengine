@@ -63,3 +63,4 @@ export const Colors: ColorsTheme = {
     return themeManager.getActiveTheme().colors.GradientColors;
   },
 };
+

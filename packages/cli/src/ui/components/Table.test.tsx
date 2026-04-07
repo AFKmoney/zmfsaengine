@@ -94,3 +94,4 @@ describe('Table', () => {
     await expect(renderResult).toMatchSvgSnapshot();
   });
 });
+

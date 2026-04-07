@@ -37,3 +37,4 @@ export const skillsCommand: CommandModule = {
     // Yargs will show the help menu.
   },
 };
+

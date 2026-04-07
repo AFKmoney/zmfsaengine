@@ -6,7 +6,7 @@
 
 import { renderWithProviders } from '../../test-utils/render.js';
 import { createMockSettings } from '../../test-utils/settings.js';
-import { makeFakeConfig } from '@google/gemini-cli-core';
+import { makeFakeConfig } from '@zmsfa/core';
 import { waitFor } from '../../test-utils/async.js';
 import { act, useState, useMemo } from 'react';
 import {
@@ -24,7 +24,7 @@ import {
   ApprovalMode,
   debugLogger,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import * as path from 'node:path';
 import {
   CommandKind,
@@ -5106,3 +5106,4 @@ function clean(str: string | undefined): string {
   // Remove ANSI escape codes and trim whitespace
   return stripAnsi(str).trim();
 }
+

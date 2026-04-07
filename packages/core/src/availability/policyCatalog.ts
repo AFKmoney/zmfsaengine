@@ -156,3 +156,4 @@ function clonePolicy(policy: ModelPolicy): ModelPolicy {
 function cloneChain(chain: ModelPolicyChain): ModelPolicyChain {
   return chain.map(clonePolicy);
 }
+

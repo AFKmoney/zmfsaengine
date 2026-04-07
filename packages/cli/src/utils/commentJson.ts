@@ -6,7 +6,7 @@
 
 import * as fs from 'node:fs';
 import { parse, stringify } from 'comment-json';
-import { coreEvents } from '@google/gemini-cli-core';
+import { coreEvents } from '@zmsfa/core';
 
 /**
  * Type representing an object that may contain Symbol keys for comments.
@@ -167,3 +167,4 @@ function applyUpdates(
   applyKeyDiff(current, updates);
   return current;
 }
+

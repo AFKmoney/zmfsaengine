@@ -151,3 +151,4 @@ export function sanitizeOutput(output: string): string {
   const escaped = trimmed.replaceAll('</output>', '&lt;/output&gt;');
   return `<output>\n${escaped}\n</output>`;
 }
+

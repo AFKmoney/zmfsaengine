@@ -16,3 +16,4 @@ export interface McpAuthProvider extends OAuthClientProvider {
    */
   getRequestHeaders?(): Promise<Record<string, string>>;
 }
+

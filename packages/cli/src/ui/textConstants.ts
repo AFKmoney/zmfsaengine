@@ -20,3 +20,4 @@ export const getRedirectionWarningTipText = (shiftTabHint: string) =>
   `Toggle auto-edit (${shiftTabHint}) to allow redirection in the future.`;
 
 export const GENERIC_WORKING_LABEL = 'Working...';
+

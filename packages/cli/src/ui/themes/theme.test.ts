@@ -13,7 +13,7 @@ import {
   type Theme,
 } from './theme.js';
 import { themeManager } from './theme-manager.js';
-import type { CustomTheme } from '@google/gemini-cli-core';
+import type { CustomTheme } from '@zmsfa/core';
 
 describe('createCustomTheme', () => {
   const baseTheme: CustomTheme = {
@@ -209,3 +209,4 @@ describe('pickDefaultThemeName', () => {
     ).toBe('Dark Theme');
   });
 });
+

@@ -46,3 +46,4 @@ export class TopicState {
     this.activeIntent = undefined;
   }
 }
+

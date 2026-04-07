@@ -100,13 +100,13 @@ execSync(
   },
 );
 
-console.log('packing @google/gemini-cli-core ...');
+console.log('packing @zmsfa/core ...');
 const corePackageDir = join('packages', 'core');
 rmSync(join(corePackageDir, 'dist', 'google-gemini-cli-core-*.tgz'), {
   force: true,
 });
 execSync(
-  `npm pack -w @google/gemini-cli-core --pack-destination ./packages/core/dist`,
+  `npm pack -w @zmsfa/core --pack-destination ./packages/core/dist`,
   { stdio: 'ignore' },
 );
 
@@ -190,3 +190,4 @@ function buildImage(imageName, dockerfile) {
 buildImage(image, dockerFile);
 
 execSync(`${sandboxCommand} image prune -f`, { stdio: 'ignore' });
+

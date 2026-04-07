@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 import { execSync } from 'node:child_process';
 import { ProxyAgent } from 'undici';
 
@@ -141,3 +141,4 @@ export function getGitHubRepoInfo(): { owner: string; repo: string } {
 
   return { owner: parts[0], repo: parts[1].replace(/\.git$/, '') };
 }
+

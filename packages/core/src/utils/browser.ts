@@ -54,3 +54,4 @@ export function shouldAttemptBrowserLaunch(): boolean {
   // The `open` command's error handling will catch final edge cases.
   return true;
 }
+

@@ -160,3 +160,4 @@ export const useSnowfall = (displayTitle: string): string => {
 
   return grid.map((row) => row.join('')).join('\n');
 };
+

@@ -16,3 +16,4 @@ export const SessionBrowserLoading = (): React.JSX.Element => (
     <Text color={Colors.Gray}>Loading sessions…</Text>
   </Box>
 );
+

@@ -16,7 +16,7 @@ import type {
   CommandActionReturn,
   AgentDefinition,
   AgentLoopContext,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { LoadedSettings } from '../../config/settings.js';
 import type { UseHistoryManagerReturn } from '../hooks/useHistoryManager.js';
 import type { SessionStatsState } from '../contexts/SessionContext.js';
@@ -251,3 +251,4 @@ export interface SlashCommand {
 
   subCommands?: SlashCommand[];
 }
+

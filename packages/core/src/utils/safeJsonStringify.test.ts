@@ -71,3 +71,4 @@ describe('safeJsonStringify', () => {
     expect(safeJsonStringify(true)).toBe('true');
   });
 });
+

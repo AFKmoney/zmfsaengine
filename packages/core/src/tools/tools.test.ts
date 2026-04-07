@@ -325,3 +325,4 @@ describe('toJSON serialization', () => {
     expect(JSON.stringify(invocation)).toBe('{"params":{"foo":"bar"}}');
   });
 });
+

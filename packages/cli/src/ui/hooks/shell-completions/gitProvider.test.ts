@@ -129,3 +129,4 @@ describe('gitProvider', () => {
     expect(result.suggestions).toHaveLength(0);
   });
 });
+

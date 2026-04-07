@@ -20,7 +20,7 @@ import {
   Storage,
   homedir,
   WarningPriority,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import * as fs from 'node:fs/promises';
 import path from 'node:path';
@@ -179,3 +179,4 @@ export const Notifications = () => {
     </>
   );
 };
+

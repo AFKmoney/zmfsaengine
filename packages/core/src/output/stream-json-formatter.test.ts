@@ -597,3 +597,4 @@ describe('StreamJsonFormatter', () => {
     });
   });
 });
+

@@ -227,3 +227,4 @@ describe('Hint Visibility', () => {
     unmount();
   });
 });
+

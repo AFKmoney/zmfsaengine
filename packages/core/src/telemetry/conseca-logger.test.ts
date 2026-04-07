@@ -144,3 +144,4 @@ describe('conseca-logger', () => {
     expect(mockLogger.emit).not.toHaveBeenCalled();
   });
 });
+

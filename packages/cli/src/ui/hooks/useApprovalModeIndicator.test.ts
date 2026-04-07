@@ -21,14 +21,14 @@ import {
   Config,
   ApprovalMode,
   type Config as ActualConfigType,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { useKeypress, type Key } from './useKeypress.js';
 import { MessageType } from '../types.js';
 
 vi.mock('./useKeypress.js');
 
-vi.mock('@google/gemini-cli-core', async () => {
-  const actualServerModule = await vi.importActual('@google/gemini-cli-core');
+vi.mock('@zmsfa/core', async () => {
+  const actualServerModule = await vi.importActual('@zmsfa/core');
   return {
     ...actualServerModule,
     Config: vi.fn(),
@@ -737,3 +737,4 @@ describe('useApprovalModeIndicator', () => {
     );
   });
 });
+

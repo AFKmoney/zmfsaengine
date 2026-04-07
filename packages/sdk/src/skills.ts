@@ -14,3 +14,4 @@ export type SkillReference = { type: 'dir'; path: string };
 export function skillDir(path: string): SkillReference {
   return { type: 'dir', path };
 }
+

@@ -11,13 +11,13 @@ import {
   type SlashCommand,
   type CommandContext,
 } from '../ui/commands/types.js';
-import type { MessageActionReturn, Config } from '@google/gemini-cli-core';
+import type { MessageActionReturn, Config } from '@zmsfa/core';
 import {
   isNightly,
   startupProfiler,
   getAdminErrorMessage,
   AuthType,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { aboutCommand } from '../ui/commands/aboutCommand.js';
 import { agentsCommand } from '../ui/commands/agentsCommand.js';
 import { authCommand } from '../ui/commands/authCommand.js';
@@ -234,4 +234,5 @@ export class BuiltinCommandLoader implements ICommandLoader {
     return allDefinitions.filter((cmd): cmd is SlashCommand => cmd !== null);
   }
 }
+
 

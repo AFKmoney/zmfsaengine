@@ -70,3 +70,4 @@ describe('<Checklist />', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

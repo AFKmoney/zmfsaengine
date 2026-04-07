@@ -11,3 +11,4 @@ import { EventEmitter } from 'node:events';
  * between decoupled parts of the CLI.
  */
 export const updateEventEmitter = new EventEmitter();
+

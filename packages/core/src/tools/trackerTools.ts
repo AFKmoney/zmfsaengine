@@ -675,3 +675,4 @@ export class TrackerVisualizeTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(TRACKER_VISUALIZE_DEFINITION, modelId);
   }
 }
+

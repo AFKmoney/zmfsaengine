@@ -43,3 +43,4 @@ describe('getAcpErrorMessage', () => {
     expect(getAcpErrorMessage(new Error(invalidJson))).toBe(invalidJson);
   });
 });
+

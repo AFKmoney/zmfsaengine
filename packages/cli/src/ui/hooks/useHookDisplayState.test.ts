@@ -12,7 +12,7 @@ import {
   CoreEvent,
   type HookStartPayload,
   type HookEndPayload,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { act } from 'react';
 import { WARNING_PROMPT_DURATION_MS } from '../constants.js';
 
@@ -252,3 +252,4 @@ describe('useHookDisplayState', () => {
     expect(result.current).toHaveLength(0);
   });
 });
+

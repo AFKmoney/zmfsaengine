@@ -7,7 +7,7 @@
 import type React from 'react';
 import { useCallback } from 'react';
 import { useKeypress } from '../hooks/useKeypress.js';
-import { ShellExecutionService } from '@google/gemini-cli-core';
+import { ShellExecutionService } from '@zmsfa/core';
 import { keyToAnsi, type Key } from '../key/keyToAnsi.js';
 import { ACTIVE_SHELL_MAX_LINES } from '../constants.js';
 import { Command } from '../key/keyMatchers.js';
@@ -88,3 +88,4 @@ export const ShellInputPrompt: React.FC<ShellInputPromptProps> = ({
 
   return null;
 };
+

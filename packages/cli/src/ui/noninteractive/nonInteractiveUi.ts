@@ -45,3 +45,4 @@ export function createNonInteractiveUI(): CommandContext['ui'] {
     toggleShortcutsHelp: () => {},
   };
 }
+

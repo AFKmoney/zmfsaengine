@@ -63,3 +63,4 @@ export const GeminiRespondingSpinner: React.FC<
 
   return null;
 };
+

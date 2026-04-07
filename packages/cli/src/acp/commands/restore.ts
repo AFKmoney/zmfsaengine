@@ -9,7 +9,7 @@ import {
   getToolCallDataSchema,
   isNodeError,
   performRestore,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
 import type {
@@ -177,3 +177,4 @@ export class ListCheckpointsCommand implements Command {
     }
   }
 }
+

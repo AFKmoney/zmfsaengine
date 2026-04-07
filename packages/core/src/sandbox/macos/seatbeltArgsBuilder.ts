@@ -231,3 +231,4 @@ function escapeRegex(str: string): string {
     return '\\\\' + c;
   });
 }
+

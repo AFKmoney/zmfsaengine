@@ -131,3 +131,4 @@ export class UpdateTopicTool extends BaseDeclarativeTool<
     );
   }
 }
+

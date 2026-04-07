@@ -245,3 +245,4 @@ export async function getIdeProcessInfo(): Promise<{
 
   return getIdeProcessInfoForUnix();
 }
+

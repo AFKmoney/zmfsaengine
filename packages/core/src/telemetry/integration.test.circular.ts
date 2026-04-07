@@ -65,3 +65,4 @@ describe('Circular Reference Integration Test', () => {
     }).not.toThrow();
   });
 });
+

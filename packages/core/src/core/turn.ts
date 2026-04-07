@@ -445,3 +445,4 @@ export class Turn {
     return this.cachedResponseText;
   }
 }
+

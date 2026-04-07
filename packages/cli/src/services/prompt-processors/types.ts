@@ -52,3 +52,4 @@ export const SHELL_INJECTION_TRIGGER = '!{';
  * The trigger string for at file injection in custom commands.
  */
 export const AT_FILE_INJECTION_TRIGGER = '@{';
+

@@ -67,3 +67,4 @@ describe('<GeminiMessage /> - Raw Markdown Display Snapshots', () => {
     unmount();
   });
 });
+

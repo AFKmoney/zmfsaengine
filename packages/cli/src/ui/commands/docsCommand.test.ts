@@ -97,3 +97,4 @@ describe('docsCommand', () => {
     expect(open).toHaveBeenCalledWith(docsUrl);
   });
 });
+

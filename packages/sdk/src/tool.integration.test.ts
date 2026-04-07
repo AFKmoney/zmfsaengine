@@ -147,3 +147,4 @@ describe('GeminiCliAgent Tool Integration', () => {
     expect(responseText.toLowerCase()).toContain('error');
   });
 });
+

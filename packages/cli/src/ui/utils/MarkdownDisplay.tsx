@@ -454,3 +454,4 @@ const RenderTableInternal: React.FC<RenderTableProps> = ({
 const RenderTable = React.memo(RenderTableInternal);
 
 export const MarkdownDisplay = React.memo(MarkdownDisplayInternal);
+

@@ -79,3 +79,4 @@ export async function exportHistoryToFile(
   await fsPromises.mkdir(dir, { recursive: true });
   await fsPromises.writeFile(filePath, content, 'utf-8');
 }
+

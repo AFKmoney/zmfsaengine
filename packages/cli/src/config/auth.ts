@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { AuthType } from '@google/gemini-cli-core';
+import { AuthType } from '@zmsfa/core';
 import { loadEnvironment, loadSettings } from './settings.js';
 
 export function validateAuthMethod(authMethod: string): string | null {
@@ -44,3 +44,4 @@ export function validateAuthMethod(authMethod: string): string | null {
 
   return 'Invalid auth method selected.';
 }
+

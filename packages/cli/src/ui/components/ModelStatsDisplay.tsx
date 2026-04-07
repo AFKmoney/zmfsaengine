@@ -23,7 +23,7 @@ import {
   getDisplayString,
   isAutoModel,
   LlmRole,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { QuotaStats } from '../types.js';
 import { QuotaStatsInfo } from './QuotaStatsInfo.js';
 
@@ -370,3 +370,4 @@ export const ModelStatsDisplay: React.FC<ModelStatsDisplayProps> = ({
     </Box>
   );
 };
+

@@ -56,3 +56,4 @@ export function getMouseSequenceLength(buffer: string): number {
 
   return 0;
 }
+

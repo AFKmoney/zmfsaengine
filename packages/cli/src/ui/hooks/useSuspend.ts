@@ -13,7 +13,7 @@ import {
   exitAlternateScreen,
   enableLineWrapping,
   disableLineWrapping,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import process from 'node:process';
 import {
   cleanupTerminalOnExit,
@@ -157,3 +157,4 @@ export function useSuspend({
 
   return { handleSuspend };
 }
+

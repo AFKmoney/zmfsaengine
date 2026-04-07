@@ -89,3 +89,4 @@ describe('parseWindowsSandboxDenials', () => {
     expect(parsed).toBeUndefined();
   });
 });
+

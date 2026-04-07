@@ -140,3 +140,4 @@ export function buildDirPathArgsPattern(dirPath: string): string {
 export function buildPatternArgsPattern(pattern: string): string {
   return buildParamArgsPattern('pattern', pattern);
 }
+

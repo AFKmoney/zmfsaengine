@@ -10,7 +10,7 @@ import {
   debugLogger,
   getErrorMessage,
   type ExtensionInstallMetadata,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import {
   INSTALL_WARNING_MESSAGE,
@@ -87,3 +87,4 @@ export const linkCommand: CommandModule = {
     await exitCli();
   },
 };
+

@@ -12,7 +12,7 @@ import {
   type AnyDeclarativeTool,
   type Config,
   type ToolRegistry,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import {
   AddMemoryCommand,
@@ -24,9 +24,9 @@ import {
 import type { CommandContext } from './types.js';
 
 // Mock the core functions
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     showMemory: vi.fn(),
@@ -209,3 +209,4 @@ describe('a2a-server memory commands', () => {
     });
   });
 });
+

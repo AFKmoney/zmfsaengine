@@ -17,3 +17,4 @@ export enum LlmRole {
   UTILITY_AUTOCOMPLETE = 'utility_autocomplete',
   UTILITY_FAST_ACK_HELPER = 'utility_fast_ack_helper',
 }
+

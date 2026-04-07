@@ -457,3 +457,4 @@ describe('readPathFromWorkspace', () => {
     expect(textResult).toBe('File size exceeds the 20MB limit.');
   });
 });
+

@@ -211,3 +211,4 @@ export const generateSvgForTerminal = (terminal: Terminal): string => {
   svg += `  </g>\n</svg>`;
   return svg;
 };
+

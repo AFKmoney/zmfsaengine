@@ -246,3 +246,4 @@ describe('parseInputForHighlighting with Transformations', () => {
     expect(result[1]).toEqual({ text: '@test.png', type: 'file' });
   });
 });
+

@@ -13,7 +13,7 @@ import {
   type Config,
   CoreEvent,
   coreEvents,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 describe('useMcpStatus', () => {
   let mockConfig: Config;
@@ -95,3 +95,4 @@ describe('useMcpStatus', () => {
     expect(result.current.isMcpReady).toBe(true);
   });
 });
+

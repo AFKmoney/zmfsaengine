@@ -1113,3 +1113,4 @@ describe('MCP Tool Naming Regression Fixes', () => {
     });
   });
 });
+

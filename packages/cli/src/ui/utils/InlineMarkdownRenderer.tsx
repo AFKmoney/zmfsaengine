@@ -25,3 +25,4 @@ const RenderInlineInternal: React.FC<RenderInlineProps> = ({
 };
 
 export const RenderInline = React.memo(RenderInlineInternal);
+

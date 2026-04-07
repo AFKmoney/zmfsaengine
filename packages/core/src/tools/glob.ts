@@ -358,3 +358,4 @@ export class GlobTool extends BaseDeclarativeTool<GlobToolParams, ToolResult> {
     return resolveToolDeclaration(GLOB_DEFINITION, modelId);
   }
 }
+

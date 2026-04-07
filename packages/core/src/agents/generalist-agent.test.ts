@@ -54,3 +54,4 @@ describe('GeneralistAgent', () => {
     expect(agent.promptConfig.systemPrompt).toContain('non-interactive');
   });
 });
+

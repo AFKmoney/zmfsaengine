@@ -15,10 +15,10 @@ import {
 } from 'vitest';
 import { ideCommand } from './ideCommand.js';
 import { type CommandContext } from './types.js';
-import { IDE_DEFINITIONS } from '@google/gemini-cli-core';
-import * as core from '@google/gemini-cli-core';
+import { IDE_DEFINITIONS } from '@zmsfa/core';
+import * as core from '@zmsfa/core';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const original = await importOriginal<typeof core>();
   return {
     ...original,
@@ -272,3 +272,4 @@ describe('ideCommand', () => {
     });
   });
 });
+

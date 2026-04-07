@@ -8,7 +8,7 @@ import {
   getErrorMessage,
   getMCPServerPrompts,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   CommandKind,
   type CommandContext,
@@ -305,3 +305,4 @@ export class McpPromptLoader implements ICommandLoader {
     return promptInputs;
   }
 }
+

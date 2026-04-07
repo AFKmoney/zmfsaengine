@@ -79,3 +79,4 @@ export const commandsCommand: SlashCommand = {
   ],
   action: listAction,
 };
+

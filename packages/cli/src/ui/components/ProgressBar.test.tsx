@@ -37,3 +37,4 @@ describe('<ProgressBar />', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

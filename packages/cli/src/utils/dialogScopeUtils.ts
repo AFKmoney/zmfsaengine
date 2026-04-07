@@ -72,3 +72,4 @@ export function getScopeMessageForSetting(
     ? `(Also modified in ${modifiedScopesStr})`
     : `(Modified in ${modifiedScopesStr})`;
 }
+

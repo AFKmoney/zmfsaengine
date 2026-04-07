@@ -169,3 +169,4 @@ export const MaxSizedBox: React.FC<MaxSizedBoxProps> = ({
     </Box>
   );
 };
+

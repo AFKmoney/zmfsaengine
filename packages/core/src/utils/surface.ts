@@ -53,3 +53,4 @@ export function determineSurface(): string {
   // Priority 5: Fallback for all other cases (e.g., a generic terminal).
   return SURFACE_NOT_SET;
 }
+

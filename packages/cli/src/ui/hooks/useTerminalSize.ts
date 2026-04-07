@@ -28,3 +28,4 @@ export function useTerminalSize(): { columns: number; rows: number } {
 
   return size;
 }
+

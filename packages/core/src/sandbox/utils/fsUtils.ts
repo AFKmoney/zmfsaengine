@@ -90,3 +90,4 @@ export function resolveGitWorktreePaths(workspacePath: string): {
   }
   return {};
 }
+

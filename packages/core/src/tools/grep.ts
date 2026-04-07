@@ -749,3 +749,4 @@ export class GrepTool extends BaseDeclarativeTool<GrepToolParams, ToolResult> {
     return resolveToolDeclaration(GREP_DEFINITION, modelId);
   }
 }
+

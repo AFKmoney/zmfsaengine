@@ -15,13 +15,13 @@ import {
   IdeClient,
   CoreToolCallStatus,
   type SerializableConfirmationDetails,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { type IndividualToolCallDisplay } from '../types.js';
 
 // Mock IdeClient
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     IdeClient: {
@@ -345,3 +345,4 @@ describe('ToolActionsContext', () => {
     });
   });
 });
+

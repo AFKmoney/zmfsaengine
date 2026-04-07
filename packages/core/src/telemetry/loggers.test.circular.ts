@@ -131,3 +131,4 @@ describe('Circular Reference Handling', () => {
     }).not.toThrow();
   });
 });
+

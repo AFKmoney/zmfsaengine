@@ -310,3 +310,4 @@ describe('computeSessionStats', () => {
     expect(result.totalLinesRemoved).toBe(18);
   });
 });
+

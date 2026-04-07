@@ -24,3 +24,4 @@ export function useTips(): UseTipsResult {
 
   return { showTips };
 }
+

@@ -247,3 +247,4 @@ describe('runInDevTraceSpan', () => {
     expect(mockSpan.end).toHaveBeenCalled();
   });
 });
+

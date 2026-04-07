@@ -20,7 +20,7 @@ import {
   getVersion,
   INITIAL_HISTORY_LENGTH,
   debugLogger,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { terminalCapabilityManager } from '../utils/terminalCapabilityManager.js';
 import { exportHistoryToFile } from '../utils/historyExportUtils.js';
 import path from 'node:path';
@@ -140,3 +140,4 @@ async function getIdeClientName(context: CommandContext) {
   const ideClient = await IdeClient.getInstance();
   return ideClient.getDetectedIdeDisplayName() ?? '';
 }
+

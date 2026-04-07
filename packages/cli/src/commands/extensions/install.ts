@@ -12,7 +12,7 @@ import {
   FolderTrustDiscoveryService,
   getRealPath,
   getErrorMessage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   INSTALL_WARNING_MESSAGE,
   promptForConsentNonInteractive,
@@ -226,4 +226,5 @@ export const installCommand: CommandModule = {
     await exitCli();
   },
 };
+
 

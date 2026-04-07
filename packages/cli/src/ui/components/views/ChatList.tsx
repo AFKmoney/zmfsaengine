@@ -44,3 +44,4 @@ export const ChatList: React.FC<ChatListProps> = ({ chats }) => {
     </Box>
   );
 };
+

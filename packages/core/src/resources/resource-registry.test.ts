@@ -74,3 +74,4 @@ describe('ResourceRegistry', () => {
     ).toHaveLength(0);
   });
 });
+

@@ -14,7 +14,7 @@ import {
   getTruncatedCheckpointNames,
   performRestore,
   type ToolCallData,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   type CommandContext,
   type SlashCommand,
@@ -171,3 +171,4 @@ export const restoreCommand = (config: Config | null): SlashCommand | null => {
     completion,
   };
 };
+

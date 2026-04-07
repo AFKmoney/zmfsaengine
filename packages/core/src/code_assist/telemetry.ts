@@ -273,3 +273,4 @@ function hasError(response: GenerateContentResponse): boolean {
   }
   return false;
 }
+

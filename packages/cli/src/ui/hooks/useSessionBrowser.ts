@@ -15,7 +15,7 @@ import {
   type Config,
   type ConversationRecord,
   type ResumedSessionData,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   convertSessionToHistoryFormats,
   type SessionInfo,
@@ -119,3 +119,4 @@ export const useSessionBrowser = (
     ),
   };
 };
+

@@ -94,3 +94,4 @@ export const ShortcutsHelp: React.FC = () => {
     </Box>
   );
 };
+

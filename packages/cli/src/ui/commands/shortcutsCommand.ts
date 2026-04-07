@@ -16,3 +16,4 @@ export const shortcutsCommand: SlashCommand = {
     context.ui.toggleShortcutsHelp();
   },
 };
+

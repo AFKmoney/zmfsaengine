@@ -281,3 +281,4 @@ class TestingSimpleExtensionLoader extends SimpleExtensionLoader {
     await super.stopExtension(extension);
   }
 }
+

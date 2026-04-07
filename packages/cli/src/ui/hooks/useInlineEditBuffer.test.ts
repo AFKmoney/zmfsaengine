@@ -169,3 +169,4 @@ describe('useEditBuffer', () => {
     expect(result.current.editState.buffer).toBe('12.'); // Unchanged
   });
 });
+

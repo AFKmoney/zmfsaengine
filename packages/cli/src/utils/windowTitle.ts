@@ -114,3 +114,4 @@ export function computeTerminalTitle({
   return safeTitle.padEnd(MAX_LEN, ' ').substring(0, MAX_LEN);
 }
 
+

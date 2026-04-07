@@ -40,3 +40,4 @@ export function useTimedMessage<T>(durationMs: number) {
 
   return [message, showMessage] as const;
 }
+

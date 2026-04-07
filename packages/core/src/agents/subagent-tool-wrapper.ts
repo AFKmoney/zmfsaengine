@@ -104,3 +104,4 @@ export class SubagentToolWrapper extends BaseDeclarativeTool<
     );
   }
 }
+

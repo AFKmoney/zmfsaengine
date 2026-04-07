@@ -493,3 +493,4 @@ describe('WorkspaceContext with optional directories', () => {
     expect(debugLogger.warn).not.toHaveBeenCalled();
   });
 });
+

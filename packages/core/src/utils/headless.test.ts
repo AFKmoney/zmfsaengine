@@ -180,3 +180,4 @@ describe('isHeadlessMode', () => {
     expect(isHeadlessMode({ prompt: true })).toBe(true);
   });
 });
+

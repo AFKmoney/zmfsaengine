@@ -74,3 +74,4 @@ export const StickyHeader: React.FC<StickyHeaderProps> = ({
     </Box>
   </Box>
 );
+

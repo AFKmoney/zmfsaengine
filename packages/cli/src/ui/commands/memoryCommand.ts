@@ -9,7 +9,7 @@ import {
   listMemoryFiles,
   refreshMemory,
   showMemory,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { MessageType } from '../types.js';
 import {
   CommandKind,
@@ -126,3 +126,4 @@ export const memoryCommand: SlashCommand = {
     },
   ],
 };
+

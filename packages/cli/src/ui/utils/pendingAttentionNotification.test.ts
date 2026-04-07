@@ -5,7 +5,7 @@
  */
 
 import { describe, expect, it } from 'vitest';
-import { CoreToolCallStatus } from '@google/gemini-cli-core';
+import { CoreToolCallStatus } from '@zmsfa/core';
 import { getPendingAttentionNotification } from './pendingAttentionNotification.js';
 
 describe('getPendingAttentionNotification', () => {
@@ -112,3 +112,4 @@ describe('getPendingAttentionNotification', () => {
     expect(authNotification?.key).toContain('Authorize sign-in?');
   });
 });
+

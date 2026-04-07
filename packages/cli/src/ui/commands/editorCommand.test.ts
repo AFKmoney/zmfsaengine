@@ -28,3 +28,4 @@ describe('editorCommand', () => {
     expect(editorCommand.description).toBe('Set external editor preference');
   });
 });
+

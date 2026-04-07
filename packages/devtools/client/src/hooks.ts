@@ -92,3 +92,4 @@ export function useDevToolsData() {
 
   return { networkLogs, consoleLogs, isConnected, connectedSessions };
 }
+

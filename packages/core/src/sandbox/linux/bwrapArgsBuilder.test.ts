@@ -295,3 +295,4 @@ describe.skipIf(os.platform() === 'win32')('buildBwrapArgs', () => {
     expect(args[envIndex - 1]).toBe('/tmp/mask');
   });
 });
+

@@ -10,7 +10,7 @@ import {
   getResponseText,
   LlmRole,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { Content } from '@google/genai';
 import type { TextBuffer } from '../components/shared/text-buffer.js';
 import { isSlashCommand } from '../utils/commandUtils.js';
@@ -243,3 +243,4 @@ export function usePromptCompletion({
     markSelected: markSuggestionSelected,
   };
 }
+

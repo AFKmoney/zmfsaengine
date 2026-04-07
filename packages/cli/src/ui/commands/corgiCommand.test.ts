@@ -32,3 +32,4 @@ describe('corgiCommand', () => {
     expect(corgiCommand.description).toBe('Toggles corgi mode');
   });
 });
+

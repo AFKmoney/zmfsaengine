@@ -54,3 +54,4 @@ describe('SessionBrowser Search and Navigation Components', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

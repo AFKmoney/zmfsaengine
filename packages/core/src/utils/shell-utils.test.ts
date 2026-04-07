@@ -621,3 +621,4 @@ describe('resolveExecutable', () => {
     expect(await resolveExecutable('unknown')).toBeUndefined();
   });
 });
+

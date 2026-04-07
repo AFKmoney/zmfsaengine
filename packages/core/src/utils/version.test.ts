@@ -62,3 +62,4 @@ describe('version', () => {
     expect(getPackageJson).toHaveBeenCalledTimes(1); // Should not have been called again
   });
 });
+

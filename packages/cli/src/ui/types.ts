@@ -20,7 +20,7 @@ import {
   CoreToolCallStatus,
   checkExhaustive,
   type SubagentActivityItem,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { PartListUnion } from '@google/genai';
 import { type ReactNode } from 'react';
 
@@ -535,3 +535,4 @@ export interface ActiveHook {
   index?: number;
   total?: number;
 }
+

@@ -6,7 +6,7 @@
 
 import { useState, useEffect, useRef, useMemo } from 'react';
 import { StreamingState } from '../types.js';
-import { hasRedirection } from '@google/gemini-cli-core';
+import { hasRedirection } from '@zmsfa/core';
 import { type TrackedToolCall } from './useToolScheduler.js';
 
 export interface TurnActivityStatus {
@@ -67,3 +67,4 @@ export const useTurnActivityMonitor = (
     isRedirectionActive,
   };
 };
+

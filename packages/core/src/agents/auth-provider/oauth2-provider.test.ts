@@ -649,3 +649,4 @@ describe('OAuth2AuthProvider', () => {
     });
   });
 });
+

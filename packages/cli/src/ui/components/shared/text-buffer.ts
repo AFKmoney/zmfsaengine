@@ -15,7 +15,7 @@ import {
   debugLogger,
   unescapePath,
   type EditorType,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   toCodePoints,
   cpLen,
@@ -4266,3 +4266,4 @@ export interface TextBuffer {
   /** Paste the unnamed register before cursor (vim 'P') */
   vimPasteBefore: (count: number) => void;
 }
+

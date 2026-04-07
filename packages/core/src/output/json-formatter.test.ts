@@ -332,3 +332,4 @@ describe('JsonFormatter', () => {
     expect(() => JSON.parse(formatted)).not.toThrow();
   });
 });
+

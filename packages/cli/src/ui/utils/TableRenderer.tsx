@@ -330,3 +330,4 @@ export const TableRenderer: React.FC<TableRendererProps> = ({
     </Box>
   );
 };
+

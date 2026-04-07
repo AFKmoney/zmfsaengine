@@ -79,3 +79,4 @@ export const npmProvider: ShellCompletionProvider = {
     return { suggestions: [], exclusive: false };
   },
 };
+

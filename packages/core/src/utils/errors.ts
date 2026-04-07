@@ -306,3 +306,4 @@ export function isAuthenticationError(error: unknown): boolean {
 
   return false;
 }
+

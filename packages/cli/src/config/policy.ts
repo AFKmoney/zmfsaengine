@@ -18,7 +18,7 @@ import {
   type PolicyUpdateConfirmationRequest,
   writeToStderr,
   debugLogger,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { type Settings } from './settings.js';
 
 /**
@@ -161,3 +161,4 @@ export async function resolveWorkspacePolicyState(options: {
 
   return { workspacePoliciesDir, policyUpdateConfirmationRequest };
 }
+

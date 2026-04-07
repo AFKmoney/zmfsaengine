@@ -115,3 +115,4 @@ export function TerminalProvider({ children }: { children: React.ReactNode }) {
     </TerminalContext.Provider>
   );
 }
+

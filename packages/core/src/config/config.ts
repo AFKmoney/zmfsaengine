@@ -3774,3 +3774,4 @@ export class Config implements McpContext, AgentLoopContext {
 }
 // Export model constants for use in CLI
 export { DEFAULT_GEMINI_FLASH_MODEL };
+

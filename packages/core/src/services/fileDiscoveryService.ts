@@ -281,3 +281,4 @@ export class FileDiscoveryService {
     return paths.concat(this.getIgnoreFilePaths());
   }
 }
+

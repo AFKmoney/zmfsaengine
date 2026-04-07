@@ -26,7 +26,7 @@ import {
   loadAgentsFromDirectory,
   loadSkillsFromDir,
   getRealPath,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   loadSettings,
   createTestMergedSettings,
@@ -107,9 +107,9 @@ const mockIntegrityManager = vi.hoisted(() => ({
   verify: vi.fn().mockResolvedValue('verified'),
   store: vi.fn().mockResolvedValue(undefined),
 }));
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     logExtensionEnable: mockLogExtensionEnable,
@@ -2354,3 +2354,4 @@ function isEnabled(options: { name: string; enabledForPath: string }) {
   const manager = new ExtensionEnablementManager();
   return manager.isEnabled(options.name, options.enabledForPath);
 }
+

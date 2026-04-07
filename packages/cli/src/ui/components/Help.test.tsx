@@ -77,3 +77,4 @@ describe('Help Component', () => {
     unmount();
   });
 });
+

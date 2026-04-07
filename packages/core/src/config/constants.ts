@@ -38,3 +38,4 @@ export const INTEGRITY_FILENAME = 'extension_integrity.json';
 export const INTEGRITY_KEY_FILENAME = 'integrity.key';
 export const KEYCHAIN_SERVICE_NAME = 'gemini-cli-extension-integrity';
 export const SECRET_KEY_ACCOUNT = 'secret-key';
+

@@ -92,3 +92,4 @@ describe('extensions new command', () => {
     expect(mockedFs.cp).not.toHaveBeenCalled();
   });
 });
+

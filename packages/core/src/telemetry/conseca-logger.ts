@@ -115,3 +115,4 @@ export function logConsecaVerdict(
   };
   logger.emit(logRecord);
 }
+

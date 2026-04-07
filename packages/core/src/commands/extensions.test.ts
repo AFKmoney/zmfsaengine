@@ -21,3 +21,4 @@ describe('listExtensions', () => {
     expect(result).toEqual(mockExtensions);
   });
 });
+

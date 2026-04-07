@@ -14,7 +14,7 @@ import {
   enableBracketedPasteMode,
   disableBracketedPasteMode,
   disableMouseEvents,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { parseColor } from '../themes/color-utils.js';
 
 export type TerminalBackgroundColor = string | undefined;
@@ -313,3 +313,4 @@ export class TerminalCapabilityManager {
 
 export const terminalCapabilityManager =
   TerminalCapabilityManager.getInstance();
+

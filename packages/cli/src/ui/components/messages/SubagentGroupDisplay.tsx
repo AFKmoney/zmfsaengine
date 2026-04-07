@@ -13,7 +13,7 @@ import {
   isSubagentProgress,
   checkExhaustive,
   type SubagentActivityItem,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   SubagentProgressDisplay,
   formatToolArgs,
@@ -269,3 +269,4 @@ export const SubagentGroupDisplay: React.FC<SubagentGroupDisplayProps> = ({
     </Box>
   );
 };
+

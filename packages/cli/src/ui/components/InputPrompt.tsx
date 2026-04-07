@@ -48,7 +48,7 @@ import {
   coreEvents,
   debugLogger,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   parseInputForHighlighting,
   parseSegmentsFromTokens,
@@ -1860,3 +1860,4 @@ export const InputPrompt: React.FC<InputPromptProps> = ({
     </>
   );
 };
+

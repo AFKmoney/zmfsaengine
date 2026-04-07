@@ -60,9 +60,10 @@ updatePackageJson('packages/a2a-server/package.json', (pkg) => {
   pkg.name = '@google-gemini/gemini-cli-a2a-server';
 });
 
-// Update @google/gemini-cli-core
+// Update @zmsfa/core
 updatePackageJson('packages/core/package.json', (pkg) => {
   pkg.name = '@google-gemini/gemini-cli-core';
 });
 
 console.log('Successfully prepared packages for GitHub release.');
+

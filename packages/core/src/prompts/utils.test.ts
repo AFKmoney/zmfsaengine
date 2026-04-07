@@ -312,3 +312,4 @@ describe('applySubstitutions', () => {
     expect(result).toBe('A plain prompt with no variables.');
   });
 });
+

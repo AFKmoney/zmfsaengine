@@ -9,7 +9,7 @@ import { requestConsentNonInteractive } from '../../config/extensions/consent.js
 import {
   debugLogger,
   type ResolvedExtensionSetting,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { ExtensionConfig } from '../../config/extension.js';
 import prompts from 'prompts';
 import {
@@ -262,3 +262,4 @@ export function getFormattedSettingValue(
   }
   return setting.value;
 }
+

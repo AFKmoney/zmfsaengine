@@ -10,7 +10,7 @@ import {
   ShellExecutionService,
   flatMapTextParts,
   PolicyDecision,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import type { CommandContext } from '../../ui/commands/types.js';
 import type { IPromptProcessor, PromptPipelineContent } from './types.js';
@@ -215,3 +215,4 @@ export class ShellProcessor implements IPromptProcessor {
     return [{ text: processedPrompt }];
   }
 }
+

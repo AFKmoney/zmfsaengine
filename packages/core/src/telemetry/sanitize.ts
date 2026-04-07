@@ -50,3 +50,4 @@ export function sanitizeHookName(hookName: string): string {
 
   return command;
 }
+

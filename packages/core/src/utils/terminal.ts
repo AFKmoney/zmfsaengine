@@ -79,3 +79,4 @@ export function shouldEnterAlternateScreen(
 ): boolean {
   return useAlternateBuffer && !isScreenReader;
 }
+

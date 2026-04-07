@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { AnsiOutput, CompletionBehavior } from '@google/gemini-cli-core';
+import type { AnsiOutput, CompletionBehavior } from '@zmsfa/core';
 import {
   MAX_SHELL_OUTPUT_SIZE,
   SHELL_OUTPUT_TRUNCATION_BUFFER,
@@ -169,3 +169,4 @@ export function shellReducer(
       return state;
   }
 }
+

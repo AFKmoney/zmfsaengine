@@ -172,3 +172,4 @@ export class ConsecaSafetyChecker implements InProcessChecker {
     return this.activeUserPrompt;
   }
 }
+

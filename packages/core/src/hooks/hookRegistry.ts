@@ -354,3 +354,4 @@ please review the project settings (.gemini/settings.json) and remove them.`;
     }
   }
 }
+

@@ -36,3 +36,4 @@ describe('privacyCommand', () => {
     expect(privacyCommand.description).toBe('Display the privacy notice');
   });
 });
+

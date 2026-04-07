@@ -16,3 +16,4 @@ export const corgiCommand: SlashCommand = {
     context.ui.toggleCorgiMode();
   },
 };
+

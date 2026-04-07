@@ -77,3 +77,4 @@ export function parseWindowsSandboxDenials(
     filePaths: filePaths.size > 0 ? Array.from(filePaths) : undefined,
   };
 }
+

@@ -12,7 +12,7 @@ import {
   HookEventName,
   ConfigSource,
   type HookRegistryEntry,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { CommandContext } from './types.js';
 import { SettingScope } from '../../config/settings.js';
 
@@ -833,3 +833,4 @@ function createMockHook(
     enabled,
   };
 }
+

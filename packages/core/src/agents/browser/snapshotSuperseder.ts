@@ -147,3 +147,4 @@ function getResponseOutput(response: object | undefined): string {
   }
   return '';
 }
+

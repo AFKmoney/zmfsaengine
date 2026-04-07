@@ -2597,3 +2597,4 @@ describe('useVim hook', async () => {
     });
   });
 });
+

@@ -26,3 +26,4 @@ export const resumeCommand: SlashCommand = {
   }),
   subCommands: chatResumeSubCommands,
 };
+

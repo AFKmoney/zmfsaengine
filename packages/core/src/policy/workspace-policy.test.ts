@@ -291,3 +291,4 @@ priority=500`,
     expect(rule?.priority).toBe(3.5);
   });
 });
+

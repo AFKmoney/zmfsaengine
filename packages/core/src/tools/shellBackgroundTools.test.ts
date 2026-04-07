@@ -312,3 +312,4 @@ describe('Background Tools', () => {
     fs.unlinkSync(logPath);
   });
 });
+

@@ -356,3 +356,4 @@ export async function getFolderStructure(
     return `Error processing directory "${resolvedPath}": ${getErrorMessage(error)}`;
   }
 }
+

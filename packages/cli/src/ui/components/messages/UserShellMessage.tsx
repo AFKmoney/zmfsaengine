@@ -43,3 +43,4 @@ export const UserShellMessage: React.FC<UserShellMessageProps> = ({
     </HalfLinePaddedBox>
   );
 };
+

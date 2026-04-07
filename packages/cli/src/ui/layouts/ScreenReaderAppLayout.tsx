@@ -45,3 +45,4 @@ export const ScreenReaderAppLayout: React.FC = () => {
     </Box>
   );
 };
+

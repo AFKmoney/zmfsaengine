@@ -274,3 +274,4 @@ export const BINARY_EXTENSIONS: string[] = [
   '.lib',
   '.wasm',
 ].sort();
+

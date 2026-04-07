@@ -119,3 +119,4 @@ describe('DetailedMessagesDisplay', () => {
     unmount();
   });
 });
+

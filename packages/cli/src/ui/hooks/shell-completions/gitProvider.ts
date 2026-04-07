@@ -91,3 +91,4 @@ export const gitProvider: ShellCompletionProvider = {
     return { suggestions: [], exclusive: false };
   },
 };
+

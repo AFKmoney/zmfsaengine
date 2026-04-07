@@ -513,3 +513,4 @@ export function isDangerousCommand(args: string[]): boolean {
 
   return false;
 }
+

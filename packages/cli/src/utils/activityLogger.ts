@@ -16,7 +16,7 @@ import {
   debugLogger,
   type ConsoleLogPayload,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import WebSocket from 'ws';
 
 const ACTIVITY_ID_HEADER = 'x-activity-request-id';
@@ -1017,3 +1017,4 @@ export function addNetworkTransport(
   const capture = ActivityLogger.getInstance();
   setupNetworkLogging(capture, host, port, config, onReconnectFailed);
 }
+

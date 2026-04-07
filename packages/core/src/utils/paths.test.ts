@@ -703,3 +703,4 @@ describe('normalizePath', () => {
     });
   });
 });
+

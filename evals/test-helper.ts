@@ -16,7 +16,7 @@ import {
   Storage,
   getProjectHash,
   SESSION_FILE_PREFIX,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export * from '@google/gemini-cli-test-utils';
 
@@ -383,3 +383,4 @@ export interface EvalCase {
   approvalMode?: 'default' | 'auto_edit' | 'yolo' | 'plan';
   assert: (rig: TestRig, result: string) => Promise<void>;
 }
+

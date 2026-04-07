@@ -84,3 +84,4 @@ describe('<ModelQuotaDisplay />', () => {
     expect(output).not.toContain('Flash');
   });
 });
+

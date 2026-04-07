@@ -94,3 +94,4 @@ describe('StorageMigration', () => {
     expect(fs.existsSync(oldPath)).toBe(true); // Should still exist
   });
 });
+

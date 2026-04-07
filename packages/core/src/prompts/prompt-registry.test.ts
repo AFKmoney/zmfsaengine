@@ -112,3 +112,4 @@ describe('PromptRegistry', () => {
     expect(registry.getPrompt('server2_prompt1')).toEqual(renamedPrompt);
   });
 });
+

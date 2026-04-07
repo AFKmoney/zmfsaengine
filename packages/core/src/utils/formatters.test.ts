@@ -29,3 +29,4 @@ describe('formatBytes', () => {
     expect(formatBytes(2 * 1024 * 1024 * 1024)).toBe('2.00 GB');
   });
 });
+

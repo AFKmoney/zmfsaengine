@@ -422,3 +422,4 @@ describe('SubagentTool Read-Only logic', () => {
     expect(tool.isReadOnly).toBe(true);
   });
 });
+

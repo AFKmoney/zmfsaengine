@@ -10,7 +10,7 @@ import type {
   ShellExecutionResult,
   ShellOutputEvent,
   ShellExecutionConfig,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export interface MockShellCommand {
   command: string | RegExp;
@@ -138,3 +138,4 @@ export class MockShellExecutionService {
   static resizePty = vi.fn();
   static scrollPty = vi.fn();
 }
+

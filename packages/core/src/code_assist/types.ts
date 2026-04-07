@@ -427,3 +427,4 @@ export const FetchAdminControlsResponseSchema = z.object({
   cliFeatureSetting: CliFeatureSettingSchema.optional(),
   adminControlsApplicable: z.boolean().optional(),
 });
+

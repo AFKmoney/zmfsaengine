@@ -10,7 +10,7 @@ import {
   writeToStderr,
   writeToStdout,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   formatRelativeTime,
   SessionSelector,
@@ -109,3 +109,4 @@ export async function deleteSession(
     );
   }
 }
+

@@ -90,3 +90,4 @@ describe('GeminiCliAgent Skills Integration', () => {
     expect(responseText.toLowerCase()).toContain('arrr');
   }, 60000);
 });
+

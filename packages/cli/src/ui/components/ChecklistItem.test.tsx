@@ -49,3 +49,4 @@ describe('<ChecklistItem />', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

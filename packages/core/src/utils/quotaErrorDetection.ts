@@ -36,3 +36,4 @@ export function isStructuredError(error: unknown): error is StructuredError {
     typeof (error as StructuredError).message === 'string'
   );
 }
+

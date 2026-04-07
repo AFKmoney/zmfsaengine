@@ -8,7 +8,7 @@ import {
   IdeClient,
   UserAccountManager,
   getVersion,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type {
   Command,
   CommandContext,
@@ -72,4 +72,5 @@ async function getIdeClientName(context: CommandContext) {
   const ideClient = await IdeClient.getInstance();
   return ideClient?.getDetectedIdeDisplayName() ?? '';
 }
+
 

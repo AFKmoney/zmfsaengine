@@ -6,7 +6,7 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { appEvents, AppEvent } from '../../utils/events.js';
-import { coreEvents } from '@google/gemini-cli-core';
+import { coreEvents } from '@zmsfa/core';
 import {
   profiler,
   DebugProfiler,
@@ -303,3 +303,4 @@ describe('DebugProfiler Component', () => {
     unmount();
   });
 });
+

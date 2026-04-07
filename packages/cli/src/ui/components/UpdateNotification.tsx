@@ -21,3 +21,4 @@ export const UpdateNotification = ({ message }: UpdateNotificationProps) => (
     <Text color={theme.status.warning}>{message}</Text>
   </Box>
 );
+

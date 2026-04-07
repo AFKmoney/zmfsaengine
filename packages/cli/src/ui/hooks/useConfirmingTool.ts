@@ -27,3 +27,4 @@ export function useConfirmingTool(): ConfirmingToolState | null {
     [pendingHistoryItems],
   );
 }
+

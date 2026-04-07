@@ -13,3 +13,4 @@
 export function isUltraTier(tierName?: string): boolean {
   return !!tierName?.toLowerCase().includes('ultra');
 }
+

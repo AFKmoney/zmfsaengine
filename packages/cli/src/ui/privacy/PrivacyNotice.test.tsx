@@ -11,7 +11,7 @@ import type {
   AuthType,
   Config,
   ContentGeneratorConfig,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 // Mock child components
 vi.mock('./GeminiPrivacyNotice.js', async () => {
@@ -78,3 +78,4 @@ describe('PrivacyNotice', () => {
     },
   );
 });
+

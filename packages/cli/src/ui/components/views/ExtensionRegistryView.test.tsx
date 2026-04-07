@@ -7,7 +7,7 @@
 import React from 'react';
 import { renderWithProviders } from '../../../test-utils/render.js';
 import { waitFor } from '../../../test-utils/async.js';
-import { makeFakeConfig } from '@google/gemini-cli-core';
+import { makeFakeConfig } from '@zmsfa/core';
 import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { ExtensionRegistryView } from './ExtensionRegistryView.js';
 import { type ExtensionManager } from '../../../config/extension-manager.js';
@@ -271,3 +271,4 @@ describe('ExtensionRegistryView', () => {
     });
   });
 });
+

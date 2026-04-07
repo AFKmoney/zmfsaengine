@@ -46,3 +46,4 @@ export function getVisualAgentModel(config: Config): string {
   debugLogger.log(`Visual agent model: ${model}`);
   return model;
 }
+

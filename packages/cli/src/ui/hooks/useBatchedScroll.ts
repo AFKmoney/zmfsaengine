@@ -33,3 +33,4 @@ export function useBatchedScroll(currentScrollTop: number) {
 
   return { getScrollTop, setPendingScrollTop };
 }
+

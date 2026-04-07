@@ -51,3 +51,4 @@ export class JsonFormatter {
     return this.format(sessionId, undefined, undefined, jsonError);
   }
 }
+

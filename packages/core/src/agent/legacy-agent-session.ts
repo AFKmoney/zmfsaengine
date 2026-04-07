@@ -472,3 +472,4 @@ export class LegacyAgentSession extends AgentSession {
     super(new LegacyAgentProtocol(deps));
   }
 }
+

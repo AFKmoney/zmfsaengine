@@ -63,3 +63,4 @@ describe('QuittingDisplay', () => {
     unmount();
   });
 });
+

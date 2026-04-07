@@ -83,3 +83,4 @@ export const permissionsCommand: SlashCommand = {
     };
   },
 };
+

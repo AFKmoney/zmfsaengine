@@ -734,3 +734,4 @@ The agent did not use the todo list because this task could be completed by a ti
   activate_skill: (skillNames) => getActivateSkillDeclaration(skillNames),
   update_topic: getUpdateTopicDeclaration(),
 };
+

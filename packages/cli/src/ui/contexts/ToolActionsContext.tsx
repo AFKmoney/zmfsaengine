@@ -20,7 +20,7 @@ import {
   type ToolConfirmationPayload,
   type SerializableConfirmationDetails,
   debugLogger,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { IndividualToolCallDisplay } from '../types.js';
 
 type LegacyConfirmationDetails = SerializableConfirmationDetails & {
@@ -193,3 +193,4 @@ export const ToolActionsProvider: React.FC<ToolActionsProviderProps> = (
     </ToolActionsContext.Provider>
   );
 };
+

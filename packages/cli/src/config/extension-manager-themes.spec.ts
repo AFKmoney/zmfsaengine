@@ -25,7 +25,7 @@ import {
   type Config,
   tmpdir,
   NoopSandboxManager,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { createTestMergedSettings, SettingScope } from './settings.js';
 
 describe('ExtensionManager theme loading', () => {
@@ -235,3 +235,4 @@ describe('ExtensionManager theme loading', () => {
     expect(themeManager.getActiveTheme().name).toBe(DEFAULT_THEME.name);
   });
 });
+

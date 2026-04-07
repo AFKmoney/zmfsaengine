@@ -123,3 +123,4 @@ export class RecordingContentGenerator implements ContentGenerator {
     return response;
   }
 }
+

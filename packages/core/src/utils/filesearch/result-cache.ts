@@ -65,3 +65,4 @@ export class ResultCache {
     this.cache.set(query, results);
   }
 }
+

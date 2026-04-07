@@ -74,3 +74,4 @@ export function correctPath(
 
   return { success: true, correctedPath: foundFiles[0] };
 }
+

@@ -135,3 +135,4 @@ export class GcpLogExporter implements LogRecordExporter {
     return 'DEFAULT';
   }
 }
+

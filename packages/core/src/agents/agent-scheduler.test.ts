@@ -148,3 +148,4 @@ describe('agent-scheduler', () => {
     expect(schedulerContext.toolRegistry).toBe(mockToolRegistry);
   });
 });
+

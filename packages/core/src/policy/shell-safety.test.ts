@@ -513,3 +513,4 @@ describe('Shell Safety Policy', () => {
     expect(result.rule?.name).toBe('ask_rule_1');
   });
 });
+

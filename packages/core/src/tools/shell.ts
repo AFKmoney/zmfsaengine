@@ -1009,3 +1009,4 @@ export class ShellTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(definition, modelId);
   }
 }
+

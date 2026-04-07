@@ -6,7 +6,7 @@
 
 import { vi, beforeEach, afterEach } from 'vitest';
 import { format } from 'node:util';
-import { coreEvents, debugLogger } from '@google/gemini-cli-core';
+import { coreEvents, debugLogger } from '@zmsfa/core';
 import { themeManager } from './src/ui/themes/theme-manager.js';
 import { mockInkSpinner } from './src/test-utils/mockSpinner.js';
 
@@ -117,3 +117,4 @@ afterEach(() => {
     throw new Error(`Failing test due to "act(...)" warnings:\n${messages}`);
   }
 });
+

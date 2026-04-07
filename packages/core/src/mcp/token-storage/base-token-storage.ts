@@ -47,3 +47,4 @@ export abstract class BaseTokenStorage implements TokenStorage {
     return serverName.replace(/[^a-zA-Z0-9-_.]/g, '_');
   }
 }
+

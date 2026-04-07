@@ -10,7 +10,7 @@ import {
   CoreEvent,
   type HookStartPayload,
   type HookEndPayload,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { type ActiveHook } from '../types.js';
 import { WARNING_PROMPT_DURATION_MS } from '../constants.js';
 
@@ -103,3 +103,4 @@ export const useHookDisplayState = () => {
 
   return activeHooks;
 };
+

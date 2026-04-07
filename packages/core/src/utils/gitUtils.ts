@@ -71,3 +71,4 @@ export function findGitRoot(directory: string): string | null {
     return null;
   }
 }
+

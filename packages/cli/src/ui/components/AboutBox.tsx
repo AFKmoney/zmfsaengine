@@ -9,7 +9,7 @@ import { Box, Text } from 'ink';
 import { theme } from '../semantic-colors.js';
 import { GIT_COMMIT_INFO } from '../../generated/git-commit.js';
 import { useSettings } from '../contexts/SettingsContext.js';
-import { getDisplayString } from '@google/gemini-cli-core';
+import { getDisplayString } from '@zmsfa/core';
 
 interface AboutBoxProps {
   cliVersion: string;
@@ -162,4 +162,5 @@ export const AboutBox: React.FC<AboutBoxProps> = ({
     </Box>
   );
 };
+
 

@@ -8,7 +8,7 @@ import {
   listExtensions,
   type Config,
   getErrorMessage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { SettingScope } from '../../config/settings.js';
 import {
   ExtensionManager,
@@ -446,3 +446,4 @@ export class UpdateExtensionCommand implements Command {
     };
   }
 }
+

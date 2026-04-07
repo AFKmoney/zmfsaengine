@@ -98,3 +98,4 @@ export const SkillsList: React.FC<SkillsListProps> = ({
     </Box>
   );
 };
+

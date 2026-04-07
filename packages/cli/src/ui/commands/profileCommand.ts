@@ -23,3 +23,4 @@ export const profileCommand: SlashCommand | null = isDevelopment
       },
     }
   : null;
+

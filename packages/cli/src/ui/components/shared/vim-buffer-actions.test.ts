@@ -2667,3 +2667,4 @@ describe('vim-buffer-actions', () => {
     });
   });
 });
+

@@ -21,8 +21,8 @@ import {
   debugLogger,
   ExitCodes,
   coreEvents,
-} from '@google/gemini-cli-core';
-import type { Config } from '@google/gemini-cli-core';
+} from '@zmsfa/core';
+import type { Config } from '@zmsfa/core';
 import * as auth from './config/auth.js';
 import { type LoadedSettings } from './config/settings.js';
 
@@ -468,3 +468,4 @@ describe('validateNonInterActiveAuth', () => {
     });
   });
 });
+

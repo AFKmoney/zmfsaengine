@@ -22,3 +22,4 @@ export const SessionBrowserError = ({
     <Text color={Colors.Gray}>Press q to exit</Text>
   </Box>
 );
+

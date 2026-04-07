@@ -586,3 +586,4 @@ describe('WindowsSandboxManager', () => {
     expect(fs.existsSync(path.dirname(manifestPath))).toBe(false);
   });
 });
+

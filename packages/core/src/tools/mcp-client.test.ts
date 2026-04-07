@@ -2784,3 +2784,4 @@ describe('connectToMcpServer - OAuth with transport fallback', () => {
     expect(mockAuthProvider.authenticate).toHaveBeenCalledOnce();
   });
 });
+

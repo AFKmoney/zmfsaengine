@@ -16,3 +16,4 @@ describe('ShellModeIndicator', () => {
     unmount();
   });
 });
+

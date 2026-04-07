@@ -31,3 +31,4 @@ describe('CommandHandler', () => {
     expect(about.commandToExecute?.name).toBe('about');
   });
 });
+

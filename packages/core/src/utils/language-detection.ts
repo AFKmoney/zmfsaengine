@@ -110,3 +110,4 @@ export function getLanguageFromFilePath(filePath: string): string | undefined {
 
   return match ? extensionToLanguageMap[match] : undefined;
 }
+

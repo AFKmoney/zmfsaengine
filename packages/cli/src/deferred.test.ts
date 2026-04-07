@@ -18,7 +18,7 @@ import {
   setDeferredCommand,
   type DeferredCommand,
 } from './deferred.js';
-import { ExitCodes } from '@google/gemini-cli-core';
+import { ExitCodes } from '@zmsfa/core';
 import type { ArgumentsCamelCase, CommandModule } from 'yargs';
 import { createMockSettings } from './test-utils/settings.js';
 
@@ -29,8 +29,8 @@ const { mockRunExitCleanup, mockCoreEvents } = vi.hoisted(() => ({
   },
 }));
 
-vi.mock('@google/gemini-cli-core', async () => {
-  const actual = await vi.importActual('@google/gemini-cli-core');
+vi.mock('@zmsfa/core', async () => {
+  const actual = await vi.importActual('@zmsfa/core');
   return {
     ...actual,
     coreEvents: mockCoreEvents,
@@ -240,3 +240,4 @@ describe('deferred', () => {
     });
   });
 });
+

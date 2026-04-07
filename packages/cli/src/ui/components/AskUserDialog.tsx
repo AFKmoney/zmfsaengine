@@ -15,7 +15,7 @@ import {
 } from 'react';
 import { Box, Text } from 'ink';
 import { theme } from '../semantic-colors.js';
-import { checkExhaustive, type Question } from '@google/gemini-cli-core';
+import { checkExhaustive, type Question } from '@zmsfa/core';
 import { BaseSelectionList } from './shared/BaseSelectionList.js';
 import type { SelectionListItem } from '../hooks/useSelectionList.js';
 import { TabHeader, type Tab } from './shared/TabHeader.js';
@@ -1271,3 +1271,4 @@ export const AskUserDialog: React.FC<AskUserDialogProps> = ({
     </Box>
   );
 };
+

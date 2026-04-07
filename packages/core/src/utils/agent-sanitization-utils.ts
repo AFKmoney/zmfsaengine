@@ -152,3 +152,4 @@ export function sanitizeErrorMessage(message: string): string {
 export function sanitizeThoughtContent(text: string): string {
   return sanitizeErrorMessage(text);
 }
+

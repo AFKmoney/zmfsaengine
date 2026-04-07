@@ -363,3 +363,4 @@ export class HookTranslatorGenAIv1 extends HookTranslator {
  * Default translator instance for current GenAI SDK version
  */
 export const defaultHookTranslator = new HookTranslatorGenAIv1();
+

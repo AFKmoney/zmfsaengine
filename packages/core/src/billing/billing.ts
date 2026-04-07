@@ -186,3 +186,4 @@ export function shouldShowEmptyWalletMenu(
     creditBalance < MIN_CREDIT_BALANCE
   );
 }
+

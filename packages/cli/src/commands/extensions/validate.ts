@@ -5,7 +5,7 @@
  */
 
 import type { CommandModule } from 'yargs';
-import { debugLogger, getErrorMessage } from '@google/gemini-cli-core';
+import { debugLogger, getErrorMessage } from '@zmsfa/core';
 import * as fs from 'node:fs';
 import * as path from 'node:path';
 import semver from 'semver';
@@ -105,3 +105,4 @@ export const validateCommand: CommandModule = {
     await exitCli();
   },
 };
+

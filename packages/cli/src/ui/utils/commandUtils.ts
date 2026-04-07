@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 import clipboardy from 'clipboardy';
 import type { SlashCommand } from '../commands/types.js';
 import fs from 'node:fs';
@@ -327,3 +327,4 @@ export function isAutoExecutableCommand(
   // Simply return the autoExecute flag value, defaulting to false if undefined
   return command.autoExecute ?? false;
 }
+

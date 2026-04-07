@@ -315,3 +315,4 @@ describe('copyCommand', () => {
     expect(mockCopyToClipboard).not.toHaveBeenCalled();
   });
 });
+

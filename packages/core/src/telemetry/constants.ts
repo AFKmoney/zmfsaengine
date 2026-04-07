@@ -36,3 +36,4 @@ export enum GeminiCliOperation {
   AgentCall = 'agent_call',
   ScheduleToolCalls = 'schedule_tool_calls',
 }
+

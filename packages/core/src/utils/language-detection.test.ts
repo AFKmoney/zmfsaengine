@@ -42,3 +42,4 @@ describe('language-detection', () => {
     expect(getLanguageFromFilePath('just_a_file')).toBeUndefined();
   });
 });
+

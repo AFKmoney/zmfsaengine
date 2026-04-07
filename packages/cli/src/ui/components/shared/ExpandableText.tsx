@@ -130,3 +130,4 @@ const _ExpandableText: React.FC<ExpandableTextProps> = ({
 };
 
 export const ExpandableText = React.memo(_ExpandableText);
+

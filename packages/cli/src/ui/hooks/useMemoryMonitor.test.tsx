@@ -74,3 +74,4 @@ describe('useMemoryMonitor', () => {
     expect(addItem).toHaveBeenCalledTimes(1);
   });
 });
+

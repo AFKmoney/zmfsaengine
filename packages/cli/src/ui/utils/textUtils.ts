@@ -267,3 +267,4 @@ export function escapeAnsiCtrlCodes<T>(obj: T): T {
 
   return newObj !== null ? newObj : obj;
 }
+

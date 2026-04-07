@@ -6,7 +6,7 @@
 
 import { describe, it, expect, beforeEach } from 'vitest';
 import { ActivityLogger, type NetworkLog } from './activityLogger.js';
-import type { ConsoleLogPayload } from '@google/gemini-cli-core';
+import type { ConsoleLogPayload } from '@zmsfa/core';
 
 describe('ActivityLogger', () => {
   let logger: ActivityLogger;
@@ -133,3 +133,4 @@ describe('ActivityLogger', () => {
     expect(after.network.length).toBe(0);
   });
 });
+

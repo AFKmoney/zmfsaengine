@@ -199,3 +199,4 @@ export const Help: React.FC<Help> = ({ commands }) => (
     </Text>
   </Box>
 );
+

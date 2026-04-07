@@ -47,3 +47,4 @@ export function runWithToolCallContext<T>(
 export function getToolCallContext(): ToolCallContext | undefined {
   return toolCallContext.getStore();
 }
+

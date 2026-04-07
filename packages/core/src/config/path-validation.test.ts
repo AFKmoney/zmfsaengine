@@ -66,3 +66,4 @@ describe('Config Path Validation', () => {
     expect(config.validatePathAccess(workspacePath, 'read')).toBeNull();
   });
 });
+

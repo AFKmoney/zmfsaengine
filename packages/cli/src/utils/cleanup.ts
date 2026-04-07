@@ -12,8 +12,8 @@ import {
   isTelemetrySdkInitialized,
   ExitCodes,
   resetBrowserSession,
-} from '@google/gemini-cli-core';
-import type { Config } from '@google/gemini-cli-core';
+} from '@zmsfa/core';
+import type { Config } from '@zmsfa/core';
 
 const cleanupFunctions: Array<(() => void) | (() => Promise<void>)> = [];
 const syncCleanupFunctions: Array<() => void> = [];
@@ -181,3 +181,4 @@ export async function cleanupCheckpoints() {
     // Ignore errors if the directory doesn't exist or fails to delete.
   }
 }
+

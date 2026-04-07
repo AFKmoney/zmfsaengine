@@ -91,3 +91,4 @@ describe('ShowMoreLines layout and padding', () => {
     unmount();
   });
 });
+

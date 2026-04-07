@@ -7,7 +7,7 @@
 import type React from 'react';
 import { Box, Text } from 'ink';
 import { theme } from '../semantic-colors.js';
-import { type Config } from '@google/gemini-cli-core';
+import { type Config } from '@zmsfa/core';
 
 interface TipsProps {
   config: Config;
@@ -39,3 +39,4 @@ export const Tips: React.FC<TipsProps> = ({ config }) => {
     </Box>
   );
 };
+

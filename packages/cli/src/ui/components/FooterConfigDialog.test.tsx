@@ -262,3 +262,4 @@ describe('<FooterConfigDialog />', () => {
     await expect(renderResult).toMatchSvgSnapshot();
   });
 });
+

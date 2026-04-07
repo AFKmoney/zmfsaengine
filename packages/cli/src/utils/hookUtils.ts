@@ -65,3 +65,4 @@ export function renderHookActionFeedback(
   const s = formatScopeItem(totalAffectedScopes[0]);
   return `Hook "${hookName}" ${actionVerb} ${preposition} ${s} settings.`;
 }
+

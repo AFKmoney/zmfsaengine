@@ -191,3 +191,4 @@ describe('FileMetricExporter', () => {
     await expect(exporter.forceFlush()).resolves.toBeUndefined();
   });
 });
+

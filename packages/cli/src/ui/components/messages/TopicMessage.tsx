@@ -12,7 +12,7 @@ import {
   TOPIC_PARAM_TITLE,
   TOPIC_PARAM_SUMMARY,
   TOPIC_PARAM_STRATEGIC_INTENT,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { IndividualToolCallDisplay } from '../../types.js';
 import { theme } from '../../semantic-colors.js';
 
@@ -45,3 +45,4 @@ export const TopicMessage: React.FC<TopicMessageProps> = ({ args }) => {
     </Box>
   );
 };
+

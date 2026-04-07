@@ -476,3 +476,4 @@ describe('<LoadingIndicator />', () => {
     unmount();
   });
 });
+

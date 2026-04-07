@@ -625,3 +625,4 @@ describe('buildBrowserSystemPrompt', () => {
     expect(prompt).not.toContain('SECURITY DOMAIN RESTRICTION - CRITICAL:');
   });
 });
+

@@ -68,3 +68,4 @@ describe('useMouse', () => {
     expect(unsubscribe).toHaveBeenCalledWith(mockOnMouseEvent);
   });
 });
+

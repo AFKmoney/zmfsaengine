@@ -35,3 +35,4 @@ export const ThemedGradient: React.FC<TextProps> = ({ children, ...props }) => {
     </Text>
   );
 };
+

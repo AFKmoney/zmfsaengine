@@ -13,7 +13,7 @@ import {
   type ToolInvocation,
   Kind,
   type MessageBus,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { SessionContext } from './types.js';
 
 export { z };
@@ -152,3 +152,4 @@ export function tool<T extends z.ZodTypeAny>(
     action,
   };
 }
+

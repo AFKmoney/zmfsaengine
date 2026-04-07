@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { AgentLoopContext, GitService } from '@google/gemini-cli-core';
+import type { AgentLoopContext, GitService } from '@zmsfa/core';
 import type { LoadedSettings } from '../../config/settings.js';
 
 export interface CommandContext {
@@ -38,3 +38,4 @@ export interface CommandExecutionResponse {
   readonly name: string;
   readonly data: unknown;
 }
+

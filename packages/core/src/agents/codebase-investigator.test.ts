@@ -78,3 +78,4 @@ describe('CodebaseInvestigatorAgent', () => {
     expect(agent.promptConfig.systemPrompt).toContain('`ls -R`');
   });
 });
+

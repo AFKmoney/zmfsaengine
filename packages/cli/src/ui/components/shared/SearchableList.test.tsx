@@ -220,3 +220,4 @@ describe('SearchableList', () => {
     expect(lastFrame()).toMatchSnapshot();
   });
 });
+

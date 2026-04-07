@@ -246,3 +246,4 @@ describe('getLatestRelease', async () => {
     await expect(getLatestGitHubRelease()).resolves.toBe('v1.2.3');
   });
 });
+

@@ -16,3 +16,4 @@ export interface ToolPolicy {
  * A map of tool names to their specific security policies.
  */
 export type SecurityPolicy = Record<string, ToolPolicy>;
+

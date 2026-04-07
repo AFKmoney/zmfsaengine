@@ -32,3 +32,4 @@ describe('renderOperationalGuidelines - memoryManagerEnabled', () => {
     expect(result).not.toContain('persistent user-related information');
   });
 });
+

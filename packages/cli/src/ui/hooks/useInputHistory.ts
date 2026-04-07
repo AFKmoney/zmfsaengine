@@ -132,3 +132,4 @@ export function useInputHistory({
     navigateDown,
   };
 }
+

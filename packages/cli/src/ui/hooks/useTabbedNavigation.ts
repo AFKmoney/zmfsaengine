@@ -248,3 +248,4 @@ export function useTabbedNavigation({
     isLastTab: state.currentIndex === tabCount - 1,
   };
 }
+

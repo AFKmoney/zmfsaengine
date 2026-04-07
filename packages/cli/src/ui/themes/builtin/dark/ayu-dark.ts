@@ -111,3 +111,4 @@ export const AyuDark: Theme = new Theme(
   },
   ayuDarkColors,
 );
+

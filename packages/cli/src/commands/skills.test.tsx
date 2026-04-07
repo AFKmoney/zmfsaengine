@@ -60,3 +60,4 @@ describe('skillsCommand', () => {
     expect(skillsCommand.handler()).toBeUndefined();
   });
 });
+

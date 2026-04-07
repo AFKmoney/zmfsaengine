@@ -45,3 +45,4 @@ describe('useTips()', () => {
     expect(persistentStateMock.get('tipsShown')).toBe(10);
   });
 });
+

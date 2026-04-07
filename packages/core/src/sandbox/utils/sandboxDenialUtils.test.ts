@@ -117,3 +117,4 @@ EACCES: permission denied, mkdir '/Users/galzahavi/.pnpm-store/v3'
     expect(parsed?.filePaths).toContain('/Users/galzahavi/.pnpm-store/v3');
   });
 });
+

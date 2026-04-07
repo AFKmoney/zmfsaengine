@@ -65,3 +65,4 @@ describe('McpProgressIndicator', () => {
     expect(output).not.toContain('150%');
   });
 });
+

@@ -9,7 +9,7 @@ import { act } from 'react';
 import path from 'node:path';
 import fs from 'node:fs';
 import { appEvalTest } from './app-test-helper.js';
-import { PolicyDecision } from '@google/gemini-cli-core';
+import { PolicyDecision } from '@zmsfa/core';
 
 describe('Model Steering Behavioral Evals', () => {
   appEvalTest('USUALLY_PASSES', {
@@ -85,3 +85,4 @@ describe('Model Steering Behavioral Evals', () => {
     },
   });
 });
+

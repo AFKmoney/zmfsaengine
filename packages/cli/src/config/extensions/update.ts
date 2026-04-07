@@ -16,7 +16,7 @@ import {
   getErrorMessage,
   type GeminiCLIExtension,
   IntegrityDataStatus,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import * as fs from 'node:fs';
 import { copyExtension, type ExtensionManager } from '../extension-manager.js';
 import { ExtensionStorage } from './storage.js';
@@ -222,3 +222,4 @@ export async function checkForAllExtensionUpdates(
     dispatch({ type: 'BATCH_CHECK_END' });
   }
 }
+

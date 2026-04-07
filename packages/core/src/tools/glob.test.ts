@@ -513,3 +513,4 @@ describe('sortFileEntries', () => {
     expect(sorted.map((e) => e.fullpath())).toEqual(['new.txt', 'old.txt']);
   });
 });
+

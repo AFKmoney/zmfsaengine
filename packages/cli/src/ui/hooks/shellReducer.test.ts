@@ -385,3 +385,4 @@ describe('shellReducer', () => {
     expect(output.endsWith('z')).toBe(true);
   });
 });
+

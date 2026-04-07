@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { tokenLimit } from '@google/gemini-cli-core';
+import { tokenLimit } from '@zmsfa/core';
 
 export function getContextUsagePercentage(
   promptTokenCount: number,
@@ -27,3 +27,4 @@ export function isContextUsageHigh(
 ): boolean {
   return getContextUsagePercentage(promptTokenCount, model) > threshold;
 }
+

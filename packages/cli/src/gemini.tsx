@@ -33,7 +33,7 @@ import {
   type AdminControlsSettings,
   debugLogger,
   isHeadlessMode,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import { loadCliConfig, parseArguments } from './config/config.js';
 import * as cliConfig from './config/config.js';
@@ -797,4 +797,5 @@ function setupAdminControlsListener() {
     },
   };
 }
+
 

@@ -22,3 +22,4 @@ export interface ShellCompletionProvider {
     signal?: AbortSignal,
   ): Promise<CompletionResult>;
 }
+

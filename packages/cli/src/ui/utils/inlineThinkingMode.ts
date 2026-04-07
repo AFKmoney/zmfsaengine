@@ -13,3 +13,4 @@ export function getInlineThinkingMode(
 ): InlineThinkingMode {
   return settings.merged.ui?.inlineThinkingMode ?? 'off';
 }
+

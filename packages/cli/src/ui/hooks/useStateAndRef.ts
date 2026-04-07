@@ -35,3 +35,4 @@ export const useStateAndRef = <
 
   return [state, ref, setStateInternal] as const;
 };
+

@@ -21,7 +21,7 @@ import {
   useFocusHint,
   FocusHint,
 } from './ToolShared.js';
-import { type Config, CoreToolCallStatus, Kind } from '@google/gemini-cli-core';
+import { type Config, CoreToolCallStatus, Kind } from '@zmsfa/core';
 import { ShellInputPrompt } from '../ShellInputPrompt.js';
 import { SUBAGENT_MAX_LINES } from '../../constants.js';
 
@@ -154,3 +154,4 @@ export const ToolMessage: React.FC<ToolMessageProps> = ({
     </>
   );
 };
+

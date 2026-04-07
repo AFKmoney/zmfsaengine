@@ -18,3 +18,4 @@ export enum ActivityType {
   HISTORY_UPDATED = 'history_updated',
   MANUAL_TRIGGER = 'manual_trigger',
 }
+

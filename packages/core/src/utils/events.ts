@@ -433,3 +433,4 @@ export class CoreEventEmitter extends EventEmitter<CoreEvents> {
 }
 
 export const coreEvents = new CoreEventEmitter();
+

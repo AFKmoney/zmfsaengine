@@ -32,3 +32,4 @@ describe('Banner', () => {
     renderResult.unmount();
   });
 });
+

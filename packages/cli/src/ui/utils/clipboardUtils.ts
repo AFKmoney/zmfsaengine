@@ -13,7 +13,7 @@ import {
   spawnAsync,
   escapePath,
   Storage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 /**
  * Supported image file extensions based on Gemini API.
@@ -527,3 +527,4 @@ export function parsePastedPaths(text: string): string | null {
   }
   return validPaths.join(' ') + ' ';
 }
+

@@ -19,7 +19,7 @@ const { debugLogger, emitConsoleLog } = await vi.hoisted(async () => {
   return createMockDebugLogger({ stripAnsi: true });
 });
 
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   debugLogger,
   getErrorMessage: vi.fn((e: unknown) =>
     e instanceof Error ? e.message : String(e),
@@ -97,3 +97,4 @@ describe('skill uninstall command', () => {
     expect(process.exit).toHaveBeenCalledWith(1);
   });
 });
+

@@ -10,7 +10,7 @@ import {
   coreEvents,
   CoreEvent,
   type ConsoleLogPayload,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export interface UseErrorCountReturn {
   errorCount: number;
@@ -180,3 +180,4 @@ export function useErrorCount(): UseErrorCountReturn {
 
   return { errorCount, clearErrorCount };
 }
+

@@ -21,7 +21,7 @@ import {
   type LoadedTrustedFolders,
 } from '../../config/trustedFolders.js';
 import type { LoadedSettings } from '../../config/settings.js';
-import { coreEvents } from '@google/gemini-cli-core';
+import { coreEvents } from '@zmsfa/core';
 
 // Hoist mocks
 const mockedCwd = vi.hoisted(() => vi.fn().mockReturnValue('/mock/cwd'));
@@ -416,3 +416,4 @@ describe('usePermissionsModifyTrust', () => {
     expect(result.current.needsRestart).toBe(false);
   });
 });
+

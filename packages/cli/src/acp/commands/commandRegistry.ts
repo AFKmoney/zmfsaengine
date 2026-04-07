@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 import type { Command } from './types.js';
 
 export class CommandRegistry {
@@ -31,3 +31,4 @@ export class CommandRegistry {
     return [...this.commands.values()];
   }
 }
+

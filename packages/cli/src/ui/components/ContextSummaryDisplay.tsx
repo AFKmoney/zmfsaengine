@@ -7,7 +7,7 @@
 import type React from 'react';
 import { Box, Text } from 'ink';
 import { theme } from '../semantic-colors.js';
-import { type IdeContext, type MCPServerConfig } from '@google/gemini-cli-core';
+import { type IdeContext, type MCPServerConfig } from '@zmsfa/core';
 
 interface ContextSummaryDisplayProps {
   geminiMdFileCount: number;
@@ -120,3 +120,4 @@ export const ContextSummaryDisplay: React.FC<ContextSummaryDisplayProps> = ({
     </Box>
   );
 };
+

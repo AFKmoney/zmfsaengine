@@ -39,3 +39,4 @@ describe('tokenLimit', () => {
     expect(DEFAULT_TOKEN_LIMIT).toBe(1_048_576);
   });
 });
+

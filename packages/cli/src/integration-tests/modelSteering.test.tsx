@@ -8,7 +8,7 @@ import { describe, it, afterEach } from 'vitest';
 import { AppRig } from '../test-utils/AppRig.js';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { PolicyDecision } from '@google/gemini-cli-core';
+import { PolicyDecision } from '@zmsfa/core';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -78,3 +78,4 @@ describe('Model Steering Integration', () => {
     await rig.waitForOutput('Task complete.');
   });
 });
+

@@ -40,3 +40,4 @@ describe('RawMarkdownIndicator', () => {
     unmount();
   });
 });
+

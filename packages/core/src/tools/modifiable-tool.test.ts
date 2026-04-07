@@ -414,3 +414,4 @@ describe('isModifiableTool', () => {
     expect(isModifiableDeclarativeTool(mockTool)).toBe(false);
   });
 });
+

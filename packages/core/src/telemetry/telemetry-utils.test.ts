@@ -46,3 +46,4 @@ describe('getProgrammingLanguage', () => {
     expect(language).toBe(expected);
   });
 });
+

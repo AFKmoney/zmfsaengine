@@ -32,3 +32,4 @@ export const VARIABLE_SCHEMA = {
   '/': PATH_SEPARATOR_DEFINITION,
   pathSeparator: PATH_SEPARATOR_DEFINITION,
 } as const;
+

@@ -84,3 +84,4 @@ describe('useBatchedScroll', () => {
     expect(result.current.setPendingScrollTop).toBe(initialSetPendingScrollTop);
   });
 });
+

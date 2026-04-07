@@ -8,7 +8,7 @@ import {
   debugLogger,
   flatMapTextParts,
   readPathFromWorkspace,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { CommandContext } from '../../ui/commands/types.js';
 import { MessageType } from '../../ui/types.js';
 import {
@@ -96,3 +96,4 @@ export class AtFileProcessor implements IPromptProcessor {
     });
   }
 }
+

@@ -5,7 +5,7 @@
  */
 
 import { vi, describe, it, expect, beforeEach } from 'vitest';
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 
 // --- Mocks (hoisted) ---
 
@@ -75,7 +75,7 @@ const mockOpenBrowserSecurely = vi.hoisted(() =>
   vi.fn(() => Promise.resolve()),
 );
 
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   debugLogger: {
     log: vi.fn(),
     debug: vi.fn(),
@@ -90,7 +90,7 @@ vi.mock('ws', () => ({
   default: MockWebSocket,
 }));
 
-vi.mock('@google/gemini-cli-devtools', () => ({
+vi.mock('@zmsfa/devtools', () => ({
   DevTools: {
     getInstance: () => mockDevToolsInstance,
   },
@@ -530,3 +530,4 @@ describe('devtoolsService', () => {
     });
   });
 });
+

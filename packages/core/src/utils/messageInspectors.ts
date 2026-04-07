@@ -21,3 +21,4 @@ export function isFunctionCall(content: Content): boolean {
     content.parts.every((part) => !!part.functionCall)
   );
 }
+

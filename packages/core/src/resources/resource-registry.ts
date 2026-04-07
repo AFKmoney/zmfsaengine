@@ -83,3 +83,4 @@ export class ResourceRegistry {
     return serverResources.sort((a, b) => a.uri.localeCompare(b.uri));
   }
 }
+

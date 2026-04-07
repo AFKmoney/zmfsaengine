@@ -104,3 +104,4 @@ describe('npmProvider', () => {
     expect(result.suggestions).toHaveLength(0);
   });
 });
+

@@ -96,3 +96,4 @@ export async function createTmpDir(
 export async function cleanupTmpDir(dir: string) {
   await fs.rm(dir, { recursive: true, force: true });
 }
+

@@ -52,3 +52,4 @@ export async function fetchJson<T>(
       .on('error', reject);
   });
 }
+

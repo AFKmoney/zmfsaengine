@@ -17,7 +17,7 @@ import {
   type ListDirectoryResult,
   type ReadManyFilesResult,
   makeFakeConfig,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type {
   SerializableConfirmationDetails,
   ToolResultDisplay,
@@ -573,3 +573,4 @@ describe('DenseToolMessage', () => {
     });
   });
 });
+

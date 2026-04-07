@@ -44,3 +44,4 @@ describe('getErrorMessage with timeout errors', () => {
     expect(message).toBe('[object Object]');
   });
 });
+

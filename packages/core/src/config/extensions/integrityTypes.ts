@@ -77,3 +77,4 @@ export interface IExtensionIntegrity {
     metadata: ExtensionInstallMetadata,
   ): Promise<void>;
 }
+

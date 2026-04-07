@@ -12,7 +12,7 @@ import type {
   SlashCommandActionReturn,
 } from './types.js';
 import { CommandKind } from './types.js';
-import { performInit } from '@google/gemini-cli-core';
+import { performInit } from '@zmsfa/core';
 
 export const initCommand: SlashCommand = {
   name: 'init',
@@ -52,3 +52,4 @@ export const initCommand: SlashCommand = {
     return result as SlashCommandActionReturn;
   },
 };
+

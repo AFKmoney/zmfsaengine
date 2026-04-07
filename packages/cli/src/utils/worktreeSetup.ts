@@ -9,7 +9,7 @@ import {
   createWorktreeService,
   writeToStderr,
   type WorktreeInfo,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 /**
  * Sets up a git worktree for parallel sessions.
@@ -41,3 +41,4 @@ export async function setupWorktree(
     process.exit(1);
   }
 }
+

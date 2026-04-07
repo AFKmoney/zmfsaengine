@@ -114,7 +114,7 @@ jobs:
         run: 'npm run build:binary'
 
       - name: 'Build Core Package'
-        run: 'npm run build -w @google/gemini-cli-core'
+        run: 'npm run build -w @zmsfa/core'
 
       - name: 'Verify Output Exists'
         run: |
@@ -158,3 +158,4 @@ jobs:
           name: 'gemini-cli-${{ matrix.platform_name }}'
           path: 'dist/${{ matrix.platform_name }}/'
           retention-days: 5
+

@@ -129,3 +129,4 @@ export const DetailedMessagesDisplay: React.FC<
     </Box>
   );
 };
+

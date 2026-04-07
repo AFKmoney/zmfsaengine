@@ -11,7 +11,7 @@ import {
   ValidationRequiredError,
   isAccountSuspendedError,
   ProjectIdRequiredError,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import type { AccountSuspensionInfo } from '../ui/contexts/UIStateContext.js';
 
@@ -71,3 +71,4 @@ export async function performInitialAuth(
 
   return { authError: null, accountSuspensionInfo: null };
 }
+

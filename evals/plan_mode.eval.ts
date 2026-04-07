@@ -5,7 +5,7 @@
  */
 
 import { describe, expect } from 'vitest';
-import { ApprovalMode } from '@google/gemini-cli-core';
+import { ApprovalMode } from '@zmsfa/core';
 import { evalTest } from './test-helper.js';
 import {
   assertModelHasOutput,
@@ -361,3 +361,4 @@ describe('plan_mode', () => {
     },
   });
 });
+

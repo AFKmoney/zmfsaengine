@@ -176,3 +176,4 @@ describe('SkillManager Alias', () => {
     expect(skills[0].description).toBe('agent-desc');
   });
 });
+

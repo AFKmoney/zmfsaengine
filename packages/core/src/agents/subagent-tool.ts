@@ -234,3 +234,4 @@ class SubAgentInvocation extends BaseToolInvocation<AgentInputs, ToolResult> {
     return wrapper.build(agentArgs);
   }
 }
+

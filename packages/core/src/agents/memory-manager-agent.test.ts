@@ -158,3 +158,4 @@ describe('MemoryManagerAgent', () => {
     expect(agent.workspaceDirectories).toContain(globalGeminiDir);
   });
 });
+

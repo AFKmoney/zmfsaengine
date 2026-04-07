@@ -357,3 +357,4 @@ export class LSTool extends BaseDeclarativeTool<LSToolParams, ToolResult> {
     return resolveToolDeclaration(LS_DEFINITION, modelId);
   }
 }
+

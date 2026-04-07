@@ -160,3 +160,4 @@ describe('Core System Prompt Substitution', () => {
     expect(prompt).toBe('Use ${write_file_ToolName}.');
   });
 });
+

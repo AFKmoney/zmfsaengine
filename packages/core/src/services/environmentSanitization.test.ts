@@ -450,3 +450,4 @@ describe('getSecureSanitizationConfig', () => {
     expect(config.enableEnvironmentVariableRedaction).toBe(false);
   });
 });
+

@@ -139,3 +139,4 @@ describe('Runtime Hooks', () => {
     expect(hookSystem.getAllHooks()[0].config.name).toBe('persist-hook');
   });
 });
+

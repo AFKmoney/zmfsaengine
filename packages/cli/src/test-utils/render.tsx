@@ -42,8 +42,8 @@ import {
   type OverflowState,
 } from '../ui/contexts/OverflowContext.js';
 
-import { makeFakeConfig } from '@google/gemini-cli-core';
-import { type Config } from '@google/gemini-cli-core';
+import { makeFakeConfig } from '@zmsfa/core';
+import { type Config } from '@zmsfa/core';
 import { FakePersistentState } from './persistentStateFake.js';
 import { AppContext, type AppState } from '../ui/contexts/AppContext.js';
 import { createMockSettings } from './settings.js';
@@ -936,3 +936,4 @@ export async function renderHookWithProviders<Result, Props>(
     generateSvg: () => renderResult.generateSvg(),
   };
 }
+

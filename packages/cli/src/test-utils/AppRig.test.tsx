@@ -8,7 +8,7 @@ import { describe, it, afterEach, expect } from 'vitest';
 import { AppRig } from './AppRig.js';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
@@ -80,3 +80,4 @@ describe('AppRig', () => {
     await rig.waitForOutput('Hello! How can I help you today?');
   });
 });
+

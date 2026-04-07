@@ -52,3 +52,4 @@ describe('theme', () => {
     expect(themeManager.findThemeByName).not.toHaveBeenCalled();
   });
 });
+

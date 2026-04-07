@@ -327,3 +327,4 @@ describe('bfsFileSearchSync', () => {
     expect(result).toEqual([targetFilePath]);
   });
 });
+

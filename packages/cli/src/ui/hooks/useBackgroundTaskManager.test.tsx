@@ -189,3 +189,4 @@ describe('useBackgroundTaskManager', () => {
     expect(result.current.activeBackgroundTaskPid).toBe(456);
   });
 });
+

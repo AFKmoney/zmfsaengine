@@ -187,3 +187,4 @@ describe('isDirectorySecure', () => {
     expect(result.secure).toBe(true);
   });
 });
+

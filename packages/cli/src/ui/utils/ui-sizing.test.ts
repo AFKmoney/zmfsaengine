@@ -6,7 +6,7 @@
 
 import { describe, it, expect } from 'vitest';
 import { calculateMainAreaWidth } from './ui-sizing.js';
-import type { Config } from '@google/gemini-cli-core';
+import type { Config } from '@zmsfa/core';
 
 describe('ui-sizing', () => {
   describe('calculateMainAreaWidth', () => {
@@ -28,3 +28,4 @@ describe('ui-sizing', () => {
     );
   });
 });
+

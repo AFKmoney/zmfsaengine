@@ -39,9 +39,9 @@ runs:
     - name: 'pack @google/gemini-cli'
       shell: 'bash'
       run: 'npm pack -w @google/gemini-cli --pack-destination ./packages/cli/dist'
-    - name: 'pack @google/gemini-cli-core'
+    - name: 'pack @zmsfa/core'
       shell: 'bash'
-      run: 'npm pack -w @google/gemini-cli-core --pack-destination ./packages/core/dist'
+      run: 'npm pack -w @zmsfa/core --pack-destination ./packages/core/dist'
     - name: 'Log in to GitHub Container Registry'
       uses: 'docker/login-action@184bdaa0721073962dff0199f1fb9940f07167d1' # ratchet:docker/login-action@v3
       with:
@@ -78,3 +78,4 @@ runs:
           --title "Docker build failed" \
           --body "The docker build failed. See the full run for details: ${DETAILS_URL}" \
           --label "release-failure"
+

@@ -9,7 +9,7 @@ import { readStdin } from './readStdin.js';
 import { EventEmitter } from 'node:events';
 
 // Mock debugLogger to avoid clutter
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   debugLogger: {
     warn: vi.fn(),
   },
@@ -90,3 +90,4 @@ describe('readStdin EIO Reproduction', () => {
     expect(customErrorHandler).toHaveBeenCalledWith(error);
   });
 });
+

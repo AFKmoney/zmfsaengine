@@ -438,3 +438,4 @@ describe('OpenFilesManager', () => {
     expect(manager.state.workspaceState!.openFiles).toHaveLength(0);
   });
 });
+

@@ -122,3 +122,4 @@ export const Dracula: Theme = new Theme(
   },
   draculaColors,
 );
+

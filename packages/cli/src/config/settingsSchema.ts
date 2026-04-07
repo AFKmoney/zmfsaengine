@@ -21,7 +21,7 @@ import {
   type AgentOverride,
   type CustomTheme,
   type SandboxConfig,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { SessionRetentionSettings } from './settings.js';
 import { DEFAULT_MIN_RETENTION } from '../utils/sessionCleanup.js';
 
@@ -3325,4 +3325,5 @@ type InferMergedSettings<T extends SettingsSchema> = {
 
 export type Settings = InferSettings<SettingsSchemaType>;
 export type MergedSettings = InferMergedSettings<SettingsSchemaType>;
+
 

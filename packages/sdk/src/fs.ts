@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { Config as CoreConfig } from '@google/gemini-cli-core';
+import type { Config as CoreConfig } from '@zmsfa/core';
 import type { AgentFilesystem } from './types.js';
 import fs from 'node:fs/promises';
 
@@ -33,3 +33,4 @@ export class SdkAgentFilesystem implements AgentFilesystem {
     await fs.writeFile(path, content, 'utf-8');
   }
 }
+

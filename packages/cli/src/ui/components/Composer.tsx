@@ -179,3 +179,4 @@ export const Composer = ({ isFocused = true }: { isFocused?: boolean }) => {
     </Box>
   );
 };
+

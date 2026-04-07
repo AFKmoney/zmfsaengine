@@ -44,3 +44,4 @@ export interface AgentLoopContext {
   /** The service used to prepare commands for sandboxed execution. */
   readonly sandboxManager: SandboxManager;
 }
+

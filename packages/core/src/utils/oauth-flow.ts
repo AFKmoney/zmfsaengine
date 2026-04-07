@@ -518,3 +518,4 @@ export async function refreshAccessToken(
 
   return parseTokenEndpointResponse(response, 'Token refresh', 'unknown_error');
 }
+

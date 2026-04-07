@@ -23,7 +23,7 @@ import {
   type GeminiCLIExtension,
   type ExtensionInstallMetadata,
   IntegrityDataStatus,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 vi.mock('./storage.js', () => ({
   ExtensionStorage: {
@@ -478,3 +478,4 @@ describe('Extension Update Logic', () => {
     });
   });
 });
+

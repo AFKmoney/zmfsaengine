@@ -474,3 +474,4 @@ describe('HookAggregator', () => {
     });
   });
 });
+

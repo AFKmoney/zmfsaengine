@@ -60,7 +60,7 @@ import {
   type PolicyRule,
   type SafetyCheckerRule,
   HookType,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { maybeRequestConsentOrFail } from './extensions/consent.js';
 import { resolveEnvVarsInObject } from '../utils/envVarResolver.js';
 import { ExtensionStorage } from './extensions/storage.js';
@@ -1354,3 +1354,4 @@ export function getExtensionId(
 export function hashValue(value: string): string {
   return createHash('sha256').update(value).digest('hex');
 }
+

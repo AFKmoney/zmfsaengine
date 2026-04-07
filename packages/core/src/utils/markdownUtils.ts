@@ -145,3 +145,4 @@ function renderTable(data: Array<Record<string, unknown>>, indent = 0): string {
   );
   return [header, separator, ...rows].join('\n');
 }
+

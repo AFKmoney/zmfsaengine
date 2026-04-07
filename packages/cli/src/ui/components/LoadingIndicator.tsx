@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import type { ThoughtSummary } from '@google/gemini-cli-core';
+import type { ThoughtSummary } from '@zmsfa/core';
 import type React from 'react';
 import { Box, Text } from 'ink';
 import { theme } from '../semantic-colors.js';
@@ -180,3 +180,4 @@ export const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
     </Box>
   );
 };
+

@@ -9,7 +9,7 @@ import {
   hasValidEditorCommand,
   type EditorType,
   EDITOR_DISPLAY_NAMES,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export interface EditorDisplay {
   name: string;
@@ -55,3 +55,4 @@ class EditorSettingsManager {
 }
 
 export const editorSettingsManager = new EditorSettingsManager();
+

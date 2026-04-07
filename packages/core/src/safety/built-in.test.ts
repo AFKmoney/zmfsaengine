@@ -241,3 +241,4 @@ describe('AllowedPathChecker', () => {
     expect(result.decision).toBe(SafetyCheckDecision.ALLOW);
   });
 });
+

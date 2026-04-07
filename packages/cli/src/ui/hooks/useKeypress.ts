@@ -42,3 +42,4 @@ export function useKeypress(
     };
   }, [isActive, onKeypress, subscribe, unsubscribe, priority]);
 }
+

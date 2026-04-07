@@ -292,3 +292,4 @@ export function stopGlobalActivityMonitoring(): void {
     globalActivityMonitor.stop();
   }
 }
+

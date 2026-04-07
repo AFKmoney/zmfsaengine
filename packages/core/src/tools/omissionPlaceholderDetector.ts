@@ -104,3 +104,4 @@ export function detectOmissionPlaceholders(text: string): string[] {
 
   return matches;
 }
+

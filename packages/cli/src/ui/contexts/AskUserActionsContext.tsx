@@ -6,7 +6,7 @@
 
 import type React from 'react';
 import { createContext, useContext, useMemo } from 'react';
-import type { Question } from '@google/gemini-cli-core';
+import type { Question } from '@zmsfa/core';
 
 export interface AskUserState {
   questions: Question[];
@@ -74,3 +74,4 @@ export const AskUserActionsProvider: React.FC<AskUserActionsProviderProps> = ({
     </AskUserActionsContext.Provider>
   );
 };
+

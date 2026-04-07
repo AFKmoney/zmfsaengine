@@ -6,7 +6,7 @@
 
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { Storage, coreEvents } from '@google/gemini-cli-core';
+import { Storage, coreEvents } from '@zmsfa/core';
 
 /**
  * Stored in JSON file - represents persistent enablement state.
@@ -385,3 +385,4 @@ export class McpServerEnablementManager {
     await fs.writeFile(this.configFilePath, JSON.stringify(config, null, 2));
   }
 }
+

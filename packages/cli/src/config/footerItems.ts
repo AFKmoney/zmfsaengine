@@ -145,3 +145,4 @@ export function resolveFooterState(settings: MergedSettings): {
     selectedIds: new Set(source),
   };
 }
+

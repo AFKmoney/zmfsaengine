@@ -161,3 +161,4 @@ describe('SuggestionsDisplay', () => {
     expect(frame).toContain('-- checkpoints --');
   });
 });
+

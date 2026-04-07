@@ -30,7 +30,7 @@ import {
   type TelemetryTarget,
   type ConfigParameters,
   type ExtensionLoader,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 import { logger } from '../utils/logger.js';
 import type { Settings } from './settings.js';
@@ -318,3 +318,4 @@ async function refreshAuthentication(
     throw new Error(errorMessage);
   }
 }
+

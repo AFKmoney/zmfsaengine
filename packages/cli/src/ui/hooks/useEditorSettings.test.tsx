@@ -26,13 +26,13 @@ import {
   type EditorType,
   hasValidEditorCommand,
   allowEditorTypeInSandbox,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { UseHistoryManagerReturn } from './useHistoryManager.js';
 
 import { SettingPaths } from '../../config/settingPaths.js';
 
-vi.mock('@google/gemini-cli-core', async () => {
-  const actual = await vi.importActual('@google/gemini-cli-core');
+vi.mock('@zmsfa/core', async () => {
+  const actual = await vi.importActual('@zmsfa/core');
   return {
     ...actual,
     hasValidEditorCommand: vi.fn(() => true),
@@ -284,3 +284,4 @@ describe('useEditorSettings', () => {
     expect(result.isEditorDialogOpen).toBe(true);
   });
 });
+

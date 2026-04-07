@@ -108,3 +108,4 @@ export function formatCommand(
   // Use the first binding as the primary one for display
   return formatKeyBinding(bindings[0], platform);
 }
+

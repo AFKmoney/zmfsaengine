@@ -51,3 +51,4 @@ export const HintMessage: React.FC<HintMessageProps> = ({ text }) => {
     </HalfLinePaddedBox>
   );
 };
+

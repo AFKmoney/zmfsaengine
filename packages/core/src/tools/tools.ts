@@ -1135,3 +1135,4 @@ export interface ToolLocation {
   // Which line (if known)
   line?: number;
 }
+

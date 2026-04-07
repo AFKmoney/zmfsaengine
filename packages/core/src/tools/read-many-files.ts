@@ -550,3 +550,4 @@ export class ReadManyFilesTool extends BaseDeclarativeTool<
     return resolveToolDeclaration(READ_MANY_FILES_DEFINITION, modelId);
   }
 }
+

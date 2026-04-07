@@ -112,3 +112,4 @@ export function getDiffStatFromPatch(patch: string): DiffStat {
     user_removed_chars: 0,
   };
 }
+

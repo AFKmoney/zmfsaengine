@@ -125,3 +125,4 @@ describe('useSnowfall', () => {
     expect(debugState.debugNumAnimatedComponents).toBe(0);
   });
 });
+

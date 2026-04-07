@@ -70,3 +70,4 @@ describe('GetInternalDocsTool (Integration)', () => {
     expect(result.error?.type).toBe(ToolErrorType.EXECUTION_FAILED);
   });
 });
+

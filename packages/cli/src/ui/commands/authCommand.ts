@@ -10,7 +10,7 @@ import type {
   LogoutActionReturn,
 } from './types.js';
 import { CommandKind } from './types.js';
-import { clearCachedCredentialFile } from '@google/gemini-cli-core';
+import { clearCachedCredentialFile } from '@zmsfa/core';
 import { SettingScope } from '../../config/settings.js';
 
 const authLoginCommand: SlashCommand = {
@@ -56,3 +56,4 @@ export const authCommand: SlashCommand = {
     // Default to login if no subcommand is provided
     authLoginCommand.action!(context, args),
 };
+

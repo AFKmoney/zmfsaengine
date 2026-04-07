@@ -121,3 +121,4 @@ describe('Background Tools Integration', () => {
     controller.abort();
   });
 });
+

@@ -6,7 +6,7 @@
 
 import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { Config, type ConfigParameters } from './config.js';
-import { createTmpDir, cleanupTmpDir } from '@google/gemini-cli-test-utils';
+import { createTmpDir, cleanupTmpDir } from '@zmsfa/test-utils';
 import * as path from 'node:path';
 import * as fs from 'node:fs/promises';
 import { SubagentTool } from '../agents/subagent-tool.js';
@@ -244,3 +244,4 @@ Test System Prompt`;
     expect(toolRegistry.getAllToolNames()).toContain(agentName);
   });
 });
+

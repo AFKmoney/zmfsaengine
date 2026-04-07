@@ -6,9 +6,9 @@
 
 import { vi, describe, expect, it, beforeEach, afterEach } from 'vitest';
 import { readStdin } from './readStdin.js';
-import { debugLogger } from '@google/gemini-cli-core';
+import { debugLogger } from '@zmsfa/core';
 
-vi.mock('@google/gemini-cli-core', () => ({
+vi.mock('@zmsfa/core', () => ({
   debugLogger: {
     warn: vi.fn(),
   },
@@ -147,3 +147,4 @@ describe('readStdin', () => {
     await expect(promise).rejects.toThrow('stdin error');
   });
 });
+

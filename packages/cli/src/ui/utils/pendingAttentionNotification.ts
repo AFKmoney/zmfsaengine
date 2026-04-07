@@ -124,3 +124,4 @@ export function getPendingAttentionNotification(
 
   return null;
 }
+

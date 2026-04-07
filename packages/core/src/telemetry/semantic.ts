@@ -429,3 +429,4 @@ class GenericPart {
     Object.assign(this, data);
   }
 }
+

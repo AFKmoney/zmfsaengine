@@ -112,3 +112,4 @@ export function getMockMessageBusInstance(
 ): MockMessageBus {
   return messageBus as unknown as MockMessageBus;
 }
+

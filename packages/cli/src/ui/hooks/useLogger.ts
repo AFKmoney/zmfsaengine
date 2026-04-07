@@ -9,7 +9,7 @@ import {
   sessionId as globalSessionId,
   Logger,
   type Storage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { ConfigContext } from '../contexts/ConfigContext.js';
 
 /**
@@ -38,3 +38,4 @@ export const useLogger = (storage: Storage): Logger | null => {
 
   return logger;
 };
+

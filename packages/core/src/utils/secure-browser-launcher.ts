@@ -189,3 +189,4 @@ export function shouldLaunchBrowser(): boolean {
   // unless other signals (like SSH) suggest otherwise.
   return true;
 }
+

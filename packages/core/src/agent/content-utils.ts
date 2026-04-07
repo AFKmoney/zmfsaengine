@@ -137,3 +137,4 @@ export function buildToolResponseData(response: {
     parts['contentLength'] = response.contentLength;
   return Object.keys(parts).length > 0 ? parts : undefined;
 }
+

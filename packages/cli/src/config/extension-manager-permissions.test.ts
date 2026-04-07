@@ -131,3 +131,4 @@ describe('copyExtension permissions', () => {
     fs.chmodSync(symlinkTarget, 0o644);
   });
 });
+

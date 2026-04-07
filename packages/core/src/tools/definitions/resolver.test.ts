@@ -70,3 +70,4 @@ describe('resolveToolDeclaration', () => {
     expect(result).toEqual(mockDefinition.base);
   });
 });
+

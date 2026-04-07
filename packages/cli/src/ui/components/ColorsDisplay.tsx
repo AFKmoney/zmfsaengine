@@ -275,3 +275,4 @@ function renderBackgroundRow({ name, value }: BackgroundColorRow) {
     </Box>
   );
 }
+

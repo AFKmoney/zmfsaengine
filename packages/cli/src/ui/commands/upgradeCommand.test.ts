@@ -13,11 +13,11 @@ import {
   openBrowserSecurely,
   shouldLaunchBrowser,
   UPGRADE_URL_PAGE,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
-vi.mock('@google/gemini-cli-core', async (importOriginal) => {
+vi.mock('@zmsfa/core', async (importOriginal) => {
   const actual =
-    await importOriginal<typeof import('@google/gemini-cli-core')>();
+    await importOriginal<typeof import('@zmsfa/core')>();
   return {
     ...actual,
     openBrowserSecurely: vi.fn(),
@@ -138,3 +138,4 @@ describe('upgradeCommand', () => {
     expect(openBrowserSecurely).not.toHaveBeenCalled();
   });
 });
+

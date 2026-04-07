@@ -156,3 +156,4 @@ export class AllowedPathChecker implements InProcessChecker {
     return paths;
   }
 }
+

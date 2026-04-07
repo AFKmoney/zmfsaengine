@@ -119,3 +119,4 @@ export class Ignore {
     return this.allPatterns.join('\n');
   }
 }
+

@@ -8,7 +8,7 @@ import {
   coreEvents,
   ExitCodes,
   getAdminErrorMessage,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { runExitCleanup } from './utils/cleanup.js';
 import type { MergedSettings } from './config/settings.js';
 import process from 'node:process';
@@ -97,3 +97,4 @@ export function defer<T = object, U = object>(
     },
   };
 }
+

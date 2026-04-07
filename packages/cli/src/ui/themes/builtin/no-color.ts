@@ -133,3 +133,4 @@ export const NoColorTheme: Theme = new Theme(
   noColorColorsTheme,
   noColorSemanticColors,
 );
+

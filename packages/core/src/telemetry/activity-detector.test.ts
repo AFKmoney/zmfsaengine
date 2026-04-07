@@ -162,3 +162,4 @@ describe('Global Activity Detector Functions', () => {
     });
   });
 });
+

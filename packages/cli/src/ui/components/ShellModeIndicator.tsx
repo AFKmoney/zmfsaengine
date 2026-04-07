@@ -16,3 +16,4 @@ export const ShellModeIndicator: React.FC = () => (
     </Text>
   </Box>
 );
+

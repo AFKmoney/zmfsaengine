@@ -63,3 +63,4 @@ describe('getPackageJson', () => {
     expect(result).toEqual(expected);
   });
 });
+

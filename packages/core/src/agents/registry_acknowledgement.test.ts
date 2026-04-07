@@ -167,3 +167,4 @@ describe('AgentRegistry Acknowledgement', () => {
     expect(registry.getDefinition('ProjectAgent')).toBeDefined();
   });
 });
+

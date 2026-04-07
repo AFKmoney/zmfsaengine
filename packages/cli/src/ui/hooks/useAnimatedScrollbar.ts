@@ -128,3 +128,4 @@ export function useAnimatedScrollbar(
 
   return { scrollbarColor, flashScrollbar, scrollByWithAnimation };
 }
+

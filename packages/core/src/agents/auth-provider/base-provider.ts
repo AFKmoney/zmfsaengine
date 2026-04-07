@@ -60,3 +60,4 @@ export abstract class BaseA2AAuthProvider implements A2AAuthProvider {
     // Default: no-op
   }
 }
+

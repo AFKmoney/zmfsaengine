@@ -83,3 +83,4 @@ export function getFsErrorMessage(
   // For non-Node errors, return the error message or string representation
   return getErrorMessage(error);
 }
+

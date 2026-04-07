@@ -16,7 +16,7 @@ import {
   IDEConnectionStatus,
   ideContextStore,
   type IDEConnectionState,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import { useSettings } from '../contexts/SettingsContext.js';
 import { isWorkspaceTrusted } from '../../config/trustedFolders.js';
 
@@ -90,3 +90,4 @@ export function useIdeTrustListener() {
 
   return { isIdeTrusted, needsRestart, restartReason };
 }
+

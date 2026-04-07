@@ -16,7 +16,7 @@ import {
   UserAccountManager,
   debugLogger,
   getVersion,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 
 export const aboutCommand: SlashCommand = {
   name: 'about',
@@ -75,3 +75,4 @@ async function getIdeClientName(context: CommandContext) {
   const ideClient = await IdeClient.getInstance();
   return ideClient?.getDetectedIdeDisplayName() ?? '';
 }
+

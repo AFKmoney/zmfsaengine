@@ -68,3 +68,4 @@ export function recordUserActivity(): void {
 export function isUserActive(): boolean {
   return globalActivityDetector.isUserActive();
 }
+

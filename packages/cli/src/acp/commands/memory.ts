@@ -9,7 +9,7 @@ import {
   listMemoryFiles,
   refreshMemory,
   showMemory,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type {
   Command,
   CommandContext,
@@ -122,3 +122,4 @@ export class AddMemoryCommand implements Command {
     }
   }
 }
+

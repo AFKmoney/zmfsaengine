@@ -7,7 +7,7 @@
 import { describe, it, expect } from 'vitest';
 import { z } from 'zod';
 import { SdkTool, tool, ModelVisibleError } from './tool.js';
-import type { MessageBus } from '@google/gemini-cli-core';
+import type { MessageBus } from '@zmsfa/core';
 
 // Mock MessageBus
 const mockMessageBus = {} as unknown as MessageBus;
@@ -141,3 +141,4 @@ describe('SdkTool Execution', () => {
     expect(result.llmContent).toContain('Error: Standard error');
   });
 });
+

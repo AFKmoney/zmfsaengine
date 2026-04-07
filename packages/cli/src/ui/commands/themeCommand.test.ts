@@ -36,3 +36,4 @@ describe('themeCommand', () => {
     expect(themeCommand.description).toBe('Change the theme');
   });
 });
+

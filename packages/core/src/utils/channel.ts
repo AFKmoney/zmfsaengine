@@ -53,3 +53,4 @@ export async function isPreview(cwd: string): Promise<boolean> {
 export async function isStable(cwd: string): Promise<boolean> {
   return (await getReleaseChannel(cwd)) === ReleaseChannel.STABLE;
 }
+

@@ -52,3 +52,4 @@ export function expandEnvVars(
 
   return result.parsed?.[dummyKey] ?? '';
 }
+

@@ -85,3 +85,4 @@ export const DefaultAppLayout: React.FC = () => {
     </Box>
   );
 };
+

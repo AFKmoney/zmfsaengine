@@ -726,3 +726,4 @@ export enum EventMetadataKey {
   // Logs the duration of the onboarding process in milliseconds.
   GEMINI_CLI_ONBOARDING_DURATION_MS = 194,
 }
+

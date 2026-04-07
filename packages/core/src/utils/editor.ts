@@ -355,3 +355,4 @@ export async function openDiff(
     });
   });
 }
+

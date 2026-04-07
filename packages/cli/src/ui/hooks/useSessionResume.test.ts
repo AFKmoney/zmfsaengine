@@ -13,7 +13,7 @@ import type {
   ResumedSessionData,
   ConversationRecord,
   MessageRecord,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import type { UseHistoryManagerReturn } from './useHistoryManager.js';
 import type { HistoryItemWithoutId } from '../types.js';
 
@@ -537,4 +537,5 @@ describe('useSessionResume', () => {
     });
   });
 });
+
 

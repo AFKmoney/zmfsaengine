@@ -17,3 +17,4 @@ export type GeminiCodeRequest = PartListUnion;
 export function partListUnionToString(value: PartListUnion): string {
   return partToString(value, { verbose: true });
 }
+

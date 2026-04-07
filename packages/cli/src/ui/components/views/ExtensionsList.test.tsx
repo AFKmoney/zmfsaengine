@@ -167,3 +167,4 @@ describe('<ExtensionsList />', () => {
     unmount();
   });
 });
+

@@ -416,3 +416,4 @@ export class Storage {
     return path.join(this.getProjectTempDir(), 'shell_history');
   }
 }
+

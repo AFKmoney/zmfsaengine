@@ -495,3 +495,4 @@ describe('Shell Command Processor - Encoding Functions', () => {
     });
   });
 });
+

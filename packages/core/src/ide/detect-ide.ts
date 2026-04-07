@@ -172,3 +172,4 @@ export function detectIde(
     ? verifyJetBrains(ide, ideProcessInfo)
     : verifyVSCode(ide, ideProcessInfo);
 }
+

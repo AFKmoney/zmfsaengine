@@ -125,3 +125,4 @@ export async function removeAutomationOverlay(
     debugLogger.warn('Error removing automation overlay:', error);
   }
 }
+

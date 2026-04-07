@@ -18,7 +18,7 @@ import { MessageType, type HistoryItem } from '../types.js';
 import {
   refreshServerHierarchicalMemory,
   type Config,
-} from '@google/gemini-cli-core';
+} from '@zmsfa/core';
 import {
   expandHomeDir,
   getDirectorySuggestions,
@@ -300,3 +300,4 @@ export const directoryCommand: SlashCommand = {
     },
   ],
 };
+
