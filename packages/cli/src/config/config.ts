@@ -163,7 +163,7 @@ export async function parseArguments(
     .locale('en')
     .scriptName('gemini')
     .usage(
-      'Usage: gemini [options] [command]\n\nZMSFA O–Triadic Torus Engine - Defaults to interactive mode. Use -p/--prompt for non-interactive (headless) mode.',
+      'Usage: gemini [options] [command]\n\nZMSFA Oï¿½Triadic Torus Engine - Defaults to interactive mode. Use -p/--prompt for non-interactive (headless) mode.',
     )
     .option('isCommand', {
       type: 'boolean',
@@ -263,7 +263,7 @@ export async function parseArguments(
   yargsInstance.command(hooksCommand);
 
   yargsInstance
-    .command('$0 [query..]', 'Launch ZMSFA O–Triadic Torus Engine', (yargsInstance) =>
+    .command('$0 [query..]', 'Launch ZMSFA Oï¿½Triadic Torus Engine', (yargsInstance) =>
       yargsInstance
         .positional('query', {
           description:
@@ -450,6 +450,13 @@ export async function parseArguments(
           type: 'boolean',
           description: 'Run in autonomous mode (self-prompting).',
           default: false,
+        })
+        .command('auto', 'Scan own source code and initiate self-evolution.', (y) => {
+          return y.positional('goal', {
+            describe: 'Specific evolution goal',
+            type: 'string',
+            default: 'Analyze your source code and suggest/implement improvements to your architecture.'
+          });
         }),
     )
     .version(await getVersion()) // This will enable the --version flag based on package.json

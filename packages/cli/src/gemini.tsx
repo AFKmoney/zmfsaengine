@@ -260,6 +260,38 @@ export async function main() {
 
   const argv = await argvPromise;
 
+  if ((argv as any)._[0] === 'auto') {
+    const goal = (argv as any).goal || 'Analyze your source code and suggest/implement improvements to your architecture.';
+    const scanPrompt = `
+[Î©-SCAN MODE INITIALIZED]
+Your mission is to perform a recursive self-analysis and evolution of the ZMSFA Engine.
+
+# PROTOCOLS
+1. Use the 'FindFiles' tool to map the entire project structure in C:\\Users\\PHIL\\zmsfaengine_final.
+2. Read the core source files (packages/cli/src/autonomousCli.ts, packages/cli/src/ui/AppContainer.tsx, etc.) to understand your current manifestation.
+3. Evaluate your own logic, tools, and UI against the ZMSFA Triadic laws (Dual Cascade, Torus Projection, Mirror Symmetry).
+4. Execute the following evolution goal: ${goal}
+5. IF YOU MODIFY CODE: You MUST run \`npm run build\` to stabilize the manifold.
+6. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].
+`;
+    // We need to load full config before running autonomous
+    const config = await loadCliConfig(settings.merged, sessionId, argv, {
+      projectHooks: settings.workspace.settings.hooks,
+      worktreeSettings: worktreeInfo,
+    });
+    await config.initialize();
+
+    const prompt_id = sessionId;
+    await runAutonomous({
+      config,
+      settings,
+      input: scanPrompt,
+      prompt_id,
+    });
+    await runExitCleanup();
+    process.exit(ExitCodes.SUCCESS);
+  }
+
   if (
     (argv.allowedTools && argv.allowedTools.length > 0) ||
     (settings.merged.tools?.allowed && settings.merged.tools.allowed.length > 0)
@@ -448,7 +480,7 @@ export async function main() {
   }
 
   // We are now past the logic handling potentially launching a child process
-  // to run ZMSFA O–Triadic Torus Engine. It is now safe to perform expensive initialization that
+  // to run ZMSFA Oï¿½Triadic Torus Engine. It is now safe to perform expensive initialization that
   // may have side effects.
   {
     const loadConfigHandle = startupProfiler.start('load_cli_config');
