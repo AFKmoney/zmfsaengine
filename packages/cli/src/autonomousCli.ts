@@ -64,11 +64,12 @@ export async function runAutonomous(
   // Add autonomous mode instructions
   const autonomousInstruction = `
 [SYSTEM: AUTONOMOUS MODE ACTIVE]
-You are working in autonomous mode. 
-1. Continue your work until you have completely fulfilled the objective. 
-2. Use all available tools as needed. 
-3. When you are absolutely finished, start your final response with "[OBJECTIVE_ACHIEVED]". 
-4. If you need more steps but have no more tool calls for this turn, simply provide a status update and the system will automatically prompt you to continue.
+You are operating in an autonomous self-prompting loop.
+1. DO NOT STOP until the entire objective is completely fulfilled and verified.
+2. Analyze the system, plan your next steps, and execute them using the available tools.
+3. If you have reached a sub-goal, immediately move on to the next required step.
+4. If you hit an error or a blocker, use tools to investigate the cause and find a workaround.
+5. ONLY when the final overarching objective is fully completed and verified, start your final response with exactly "[OBJECTIVE_ACHIEVED]".
 `;
 
   let currentInput = `${autonomousInstruction}\n\nObjective: ${input}`;
@@ -531,8 +532,8 @@ You are working in autonomous mode.
             return;
           } else {
             // Objective NOT achieved, self-prompt.
-            textOutput.write('\n[AUTONOMOUS_DAEMON]: Objective not reached, continuing execution...\n');
-            const selfPrompt = 'Keep working on the objective. Use tools to continue.';
+            textOutput.write('\n[AUTONOMOUS_DAEMON]: Objective not reached, analyzing and continuing execution...\n');
+            const selfPrompt = 'The objective is not yet fully achieved. Please analyze your progress, explicitly state your immediate next step, and execute it using the appropriate tools. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].';
             currentMessages = [{ role: 'user', parts: [{ text: selfPrompt }] }];
             // Continue the loop
           }

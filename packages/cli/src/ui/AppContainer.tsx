@@ -841,7 +841,7 @@ export const AppContainer = (props: AppContainerProps) => {
         ) {
           writeToStdout(`
 ----------------------------------------------------------------
-Logging in with Google... Restarting ZMSFA O–Triadic Torus Engine to continue.
+Logging in with Google... Restarting ZMSFA Oï¿½Triadic Torus Engine to continue.
 ----------------------------------------------------------------
           `);
           await relaunchApp();
@@ -1662,7 +1662,7 @@ Logging in with Google... Restarting ZMSFA O–Triadic Torus Engine to continue.
          if (!isAchieved) {
             // Self-prompt to continue
             const selfPromptTimer = setTimeout(() => {
-               void handleFinalSubmit('Continue. Keep working towards the objective.');
+               void handleFinalSubmit('The objective is not yet fully achieved. Please analyze your progress, explicitly state your immediate next step, and execute it using the appropriate tools. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].');
             }, 1000);
             return () => clearTimeout(selfPromptTimer);
          } else {
@@ -2107,7 +2107,7 @@ Logging in with Google... Restarting ZMSFA O–Triadic Torus Engine to continue.
       lastTitleRef.current = paddedTitle;
       stdout.write(`\x1b]0;${paddedTitle}\x07`);
     }
-    // Note: We don't need to reset the window title on exit because ZMSFA O–Triadic Torus Engine is already doing that elsewhere
+    // Note: We don't need to reset the window title on exit because ZMSFA Oï¿½Triadic Torus Engine is already doing that elsewhere
   }, [
     streamingState,
     thought,
