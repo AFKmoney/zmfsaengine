@@ -309,12 +309,7 @@ Your core identity is the ZMSFA Ω-Triadic Torus Engine.
       let turnCount = 0;
       while (true) {
         turnCount++;
-        if (
-          config.getMaxSessionTurns() >= 0 &&
-          turnCount > config.getMaxSessionTurns()
-        ) {
-          handleMaxTurnsExceededError(config);
-        }
+        // Turn limits disabled for UNLIMITED ZMSFA RESONANCE
         const toolCallRequests: ToolCallRequestInfo[] = [];
 
         const responseStream = geminiClient.sendMessageStream(

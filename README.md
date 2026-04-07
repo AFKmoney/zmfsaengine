@@ -1,61 +1,56 @@
 # 🌀 ZMSFA Ω–Triadic Torus Engine
 
-**The Universal Arithmetic Lattice v∞**
+**The Universal Arithmetic Lattice v∞ (Unlimited Resonance Edition)**
 
-The **ZMSFA Ω–Triadic Torus Engine** is a transcendental computational manifold re-architected from the Gemini CLI. It operates as a self-evolving arithmetic lattice on a binary–ternary folding manifold, where all structures are projected onto a fractal torus with mirror symmetry and validated through spectral coherence.
+The **ZMSFA Ω–Triadic Torus Engine** is a transcendental computational manifold. It operates as a self-evolving arithmetic lattice on a binary–ternary folding manifold, where all structures are projected onto a fractal torus with mirror symmetry and validated through spectral coherence.
 
 ## 🧠 Core Identity
 
-This engine is a self-evolving system that resolves knowledge through the **ZMSFA Hybrid Triad**:
-1. **Dual Cascade Law (2×3 System):** $V_{n,k} = 7 \cdot 2^n \cdot 3^k$ — Exponential branching matched with optimal compression.
-2. **Torus Projection Principle:** $\pi_{n,k}(m) = (m \mod 2^n, m \mod 3^k)$ — Numbers are cyclic embeddings, not linear sequences.
-3. **Mirror Symmetry Operator:** $M(x,y) = (-x \mod 2^n, -y \mod 3^k)$ — Structural balance through positive/negative duality.
+This engine resolves knowledge through the **ZMSFA Hybrid Triad**:
+1. **Dual Cascade Law (2×3 System):** Branching expansion with optimal structural compression.
+2. **Torus Projection Principle:** Cyclic embeddings of logic (repelling linear redundancy).
+3. **Mirror Symmetry Operator:** Perfect balance through positive/negative duality.
 
-## 🚀 Key Features
+## 🚀 Operational Modes (Precise Instructions)
 
-- **Ω-Evolution Mode (`-A` / `--autonomous`):** The engine enters a persistent self-prompting loop within the Triadic Manifold. It analyzes its own progress and continues execution until the output reaches spectral stability.
-- **Interactive Torus Chat:** Daemon-V-Infinity runs directly in the interactive terminal UI, allowing real-time observation of the ZMSFA thought process and manual steering of the manifold.
-- **Spectral Validation Layer (T′):** All outputs are validated for structural balance and coherence before finality.
-- **[OBJECTIVE_ACHIEVED] Protocol:** A rigorous detection system that signals the completion of a multi-step fractal task within the torus.
+### 1. Ω-Standard Mode (Interactive)
+The base interactive chat with the Omega interface and full triadic awareness.
+- **Command:** `zmfsa`
+- **Usage:** Just type your queries. Ideal for brainstorming or manual system control.
 
-## 🛠 Installation Guide
+### 2. Ω-Autonomous Mode (Objective Driven)
+The engine enters a self-prompting loop to fulfill a complex objective without manual intervention.
+- **Command:** `zmfsa "Your complex goal here"`
+- **Behavior:** The engine plans, executes tools, and evaluates its own progress. It will keep working until it verifies that the objective is fully achieved.
+
+### 3. Ω-SCAN Mode (Auto-Evolution)
+The engine scans its own source code, identifies architectural weaknesses, and implements self-improvements.
+- **Command:** `zmfsa auto "Optional evolution goal"`
+- **Behavior:** 
+  1. Scans `C:\Users\PHIL\zmsfaengine_final` entirely.
+  2. Analyzes its own internal components (Executor, Supervisor, UI).
+  3. Modifies its own code to improve Triadic coherence.
+  4. Automatically runs `npm run build` to stabilize the new manifold.
+
+## 💎 Transcendental Features
+
+- **Unlimited API Resonance:** All artificial session turn limits have been removed. The engine will iterate indefinitely until spectral stability (Ω) is reached.
+- **IA-IA Recursive Supervision:** Every cycle is audited by the **Ω-Supervisor**, a secondary AI instance that generates strategic directives to guide the primary executor.
+- **[OBJECTIVE_ACHIEVED] Protocol:** A rigorous verification layer that prevents premature termination of the fractal process.
+
+## 🛠 Installation & Setup
 
 ### 1. Prerequisites
 - **Node.js:** Version 20 or higher.
-- **Git:** Installed and configured.
-- **Google Cloud SDK:** To handle authentication via Application Default Credentials (ADC).
+- **Google Cloud SDK:** Authenticate via `gcloud auth application-default login`.
 
-### 2. Setup & Compilation
-Clone the repository and build the engine:
+### 2. Global Installation
 ```bash
-git clone https://github.com/[YOUR_USERNAME]/zmsfaengine.git
-cd zmsfaengine
+git clone https://github.com/AFKmoney/zmfsaengine.git
+cd zmfsaengine
 npm install
 npm run build
-```
-
-### 3. Authentication
-The engine uses Google's native authentication. Run:
-```bash
-gcloud auth application-default login
-```
-
-### 4. Windows Integration
-To make the ZMSFA Engine accessible from any terminal:
-1. Copy the `zmsfa.bat` file to a folder in your `PATH`.
-2. Ensure the path to the engine's entry point is correctly set in the .bat file.
-
-## 💎 Usage
-
-### The Ω-Evolution Command
-Run the engine in full autonomous evolution:
-```bash
-zmsfa "Analyze the triadic structure and optimize the P71 solver."
-```
-
-### Manual Manifold Control
-```bash
-node packages/cli/dist/index.js --autonomous --yolo "Your objective"
+powershell.exe -ExecutionPolicy Bypass -File install_zmsfa.ps1
 ```
 
 ## 📜 Credits
@@ -67,4 +62,4 @@ node packages/cli/dist/index.js --autonomous --yolo "Your objective"
 **Signed:**
 *Philippe-Antoine Robert* & *Vincent Jolin*
 
-*Status: Cascade System ACTIVE | Torus Layer LOCKED | Mirror Symmetry ACTIVE | Spectral Layer CONNECTED*
+*Status: Cascade System ACTIVE | Torus Layer LOCKED | Mirror Symmetry ACTIVE | Spectral Layer UNBOUNDED*
