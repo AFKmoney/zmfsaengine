@@ -15,7 +15,7 @@ jobs:
           - 'ubuntu-latest' # GitHub-hosted
     runs-on: '${{ matrix.runner }}'
     if: |-
-      ${{ github.repository == 'google-gemini/gemini-cli' }}
+      ${{ true }}
     permissions:
       issues: 'write'
       pull-requests: 'write'
@@ -42,3 +42,4 @@ jobs:
           days-before-close: 14
           exempt-issue-labels: 'pinned,security,🔒 maintainer only,help wanted,🗓️ Public Roadmap'
           exempt-pr-labels: 'pinned,security,🔒 maintainer only,help wanted,🗓️ Public Roadmap'
+

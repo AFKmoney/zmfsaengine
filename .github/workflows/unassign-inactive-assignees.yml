@@ -32,7 +32,7 @@ defaults:
 
 jobs:
   unassign-inactive-assignees:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     runs-on: 'ubuntu-latest'
     permissions:
       issues: 'write'
@@ -313,3 +313,4 @@ jobs:
             }
 
             core.info(`\nDone. Total assignees ${dryRun ? 'that would be' : ''} unassigned: ${totalUnassigned}`);
+

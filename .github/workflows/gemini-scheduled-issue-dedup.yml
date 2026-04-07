@@ -16,7 +16,7 @@ defaults:
 jobs:
   refresh-embeddings:
     if: |-
-      ${{ vars.TRIAGE_DEDUPLICATE_ISSUES != '' && github.repository == 'google-gemini/gemini-cli' }}
+      ${{ vars.TRIAGE_DEDUPLICATE_ISSUES != '' && true }}
     permissions:
       contents: 'read'
       id-token: 'write' # Required for WIF, see https://docs.github.com/en/actions/how-tos/secure-your-work/security-harden-deployments/oidc-in-google-cloud-platform#adding-permissions-settings
@@ -113,3 +113,4 @@ jobs:
             - Only use the `refresh` tool.
             - Do not attempt to find duplicates or modify any issues.
             - Your only task is to call the `refresh` tool and log its output.
+

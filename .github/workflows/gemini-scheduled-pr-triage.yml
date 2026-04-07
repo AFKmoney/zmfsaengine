@@ -9,7 +9,7 @@ jobs:
   audit-prs:
     timeout-minutes: 15
     if: |-
-      ${{ github.repository == 'google-gemini/gemini-cli' }}
+      ${{ true }}
     permissions:
       contents: 'read'
       id-token: 'write'
@@ -43,3 +43,4 @@ jobs:
           if [[ -z "$(grep 'prs_needing_comment' "${GITHUB_OUTPUT}" | cut -d'=' -f2-)" ]]; then
             echo "prs_needing_comment=[]" >> "${GITHUB_OUTPUT}"
           fi
+

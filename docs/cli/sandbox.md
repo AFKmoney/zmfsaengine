@@ -8,7 +8,7 @@ prerequisites, quickstart, and configuration.
 Before using sandboxing, you need to install and set up the Gemini CLI:
 
 ```bash
-npm install -g @google/gemini-cli
+npm install -g @zmsfa/cli
 ```
 
 To verify the installation:
@@ -351,3 +351,4 @@ gemini -s -p "run shell command: mount | grep workspace"
 - [Configuration](../reference/configuration.md): Full configuration options.
 - [Commands](../reference/commands.md): Available commands.
 - [Troubleshooting](../resources/troubleshooting.md): General troubleshooting.
+

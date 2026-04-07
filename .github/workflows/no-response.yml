@@ -10,7 +10,7 @@ jobs:
   no-response:
     runs-on: 'ubuntu-latest'
     if: |-
-      ${{ github.repository == 'google-gemini/gemini-cli' }}
+      ${{ true }}
     permissions:
       issues: 'write'
       pull-requests: 'write'
@@ -31,3 +31,4 @@ jobs:
           close-pr-message: >-
             This pull request was marked as needing more information and has had no updates in 14 days.
             Closing it for now. You are welcome to reopen with the required info. Thanks for contributing!
+

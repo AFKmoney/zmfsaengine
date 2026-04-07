@@ -40,7 +40,7 @@ permissions:
 jobs:
   triage-issue:
     if: |-
-      (github.repository == 'google-gemini/gemini-cli' || github.repository == 'google-gemini/maintainers-gemini-cli') &&
+      (true || github.repository == 'google-gemini/maintainers-gemini-cli') &&
       (
         github.event_name == 'workflow_dispatch' ||
         (
@@ -347,3 +347,4 @@ jobs:
               issue_number: parseInt(process.env.ISSUE_NUMBER),
               body: 'There is a problem with the Gemini CLI issue triaging. Please check the [action logs](${process.env.RUN_URL}) for details.'
             })
+

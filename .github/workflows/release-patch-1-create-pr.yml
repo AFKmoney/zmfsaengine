@@ -132,3 +132,4 @@ jobs:
           echo "Patch creation failed with exit code: ${EXIT_CODE}"
           echo "Check the logs above and the comment posted to the original PR for details."
           exit 1
+

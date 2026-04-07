@@ -9,7 +9,7 @@ jobs:
   notify-process-change:
     runs-on: 'ubuntu-latest'
     if: |-
-      github.repository == 'google-gemini/gemini-cli' || github.repository == 'google-gemini/maintainers-gemini-cli'
+      true || github.repository == 'google-gemini/maintainers-gemini-cli'
     permissions:
       pull-requests: 'write'
     steps:
@@ -131,3 +131,4 @@ jobs:
               issue_number: pr_number,
               body: comment
             });
+

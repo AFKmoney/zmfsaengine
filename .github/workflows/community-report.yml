@@ -14,7 +14,7 @@ jobs:
   generate-report:
     name: 'Generate Report 📝'
     if: |-
-      ${{ github.repository == 'google-gemini/gemini-cli' }}
+      ${{ true }}
     runs-on: 'ubuntu-latest'
     permissions:
       issues: 'write'
@@ -195,3 +195,4 @@ jobs:
 
             Report:
             ${{ steps.report.outputs.report_body }}
+

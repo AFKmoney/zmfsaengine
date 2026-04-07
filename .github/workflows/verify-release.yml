@@ -28,7 +28,7 @@ on:
 
 jobs:
   verify-release:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     environment: "${{ github.event.inputs.environment || 'prod' }}"
     strategy:
       fail-fast: false
@@ -54,3 +54,4 @@ jobs:
           npm-registry-url: '${{ vars.NPM_REGISTRY_URL }}'
           github-token: '${{ secrets.GITHUB_TOKEN }}'
           npm-registry-scope: '${{ vars.NPM_REGISTRY_SCOPE }}'
+

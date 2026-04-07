@@ -15,7 +15,7 @@ Equivalent to `gemini -p "what does this project do?"`. Loads all workspace and
 user settings.
 
 ```ts
-import { GeminiCliAgent } from '@google/gemini-cli-sdk';
+import { GeminiCliAgent } from '@zmsfa/sdk';
 
 const simpleAgent = new GeminiCliAgent({
   cwd: '/path/to/some/dir',
@@ -45,7 +45,7 @@ System instructions can be provided by a static string OR dynamically via a
 function:
 
 ```ts
-import { GeminiCliAgent } from "@google/gemini-cli-sdk";
+import { GeminiCliAgent } from "@zmsfa/sdk";
 
 const agent = new GeminiCliAgent({
   instructions: "This is a static string instruction"; // this is valid
@@ -65,7 +65,7 @@ Validation:
 > tool definitions and execution.
 
 ```ts
-import { GeminiCliAgent, tool, z } from "@google/gemini-cli-sdk";
+import { GeminiCliAgent, tool, z } from "@zmsfa/sdk";
 
 const addTool = tool({
   name: 'add',
@@ -96,7 +96,7 @@ Validation:
 SDK users can provide programmatic custom hooks
 
 ```ts
-import { GeminiCliAgent, hook, z } from '@google/gemini-cli-sdk';
+import { GeminiCliAgent, hook, z } from '@zmsfa/sdk';
 import { reformat } from './reformat.js';
 
 const myHook = hook(
@@ -129,7 +129,7 @@ SDK Hooks can also run as standalone scripts to implement userland "command"
 style hooks:
 
 ```ts
-import { hook } from "@google/gemini-cli-sdk";
+import { hook } from "@zmsfa/sdk";
 
 // define a hook as above
 const myHook = hook({...}, (hook) => {...});
@@ -182,7 +182,7 @@ const agent = new GeminiCliAgent({
 > **Status:** Not Implemented.
 
 ```ts
-import { GeminiCliAgent, subagent } from "@google/gemini-cli";
+import { GeminiCliAgent, subagent } from "@zmsfa/cli";
 
 const mySubagent = subagent({
   name: "my-subagent",
@@ -211,7 +211,7 @@ Potentially the most important feature of the Gemini CLI SDK is support for
 extensions, which modularly encapsulate all of the primitives listed above:
 
 ```ts
-import { GeminiCliAgent, extension } from "@google/gemini-cli-sdk";
+import { GeminiCliAgent, extension } from "@zmsfa/sdk";
 
 const myExtension = extension({
   name: "my-extension",
@@ -233,8 +233,8 @@ The SDK will include a wrapper utility to interact with the agent via ACP
 instead of the SDK's natural API.
 
 ```ts
-import { GeminiCliAgent } from "@google/gemini-cli-sdk";
-import { GeminiCliAcpServer } from "@google/gemini-cli-sdk/acp";
+import { GeminiCliAgent } from "@zmsfa/sdk";
+import { GeminiCliAcpServer } from "@zmsfa/sdk/acp";
 
 const server = new GeminiCliAcpServer(new GeminiCliAgent({...}));
 server.start(); // calling start runs a stdio ACP server
@@ -338,3 +338,4 @@ a `hooks` option to `GeminiCliAgentOptions`.
 
 IMPORTANT: Hook signatures should be strongly typed all the way through. You'll
 need to create a mapping of the string event name to the request/response types.
+

@@ -8,7 +8,7 @@ release may not be as stable as our [latest weekly release](latest.md).
 To install the preview release:
 
 ```
-npm install -g @google/gemini-cli@preview
+npm install -g @zmsfa/cli@preview
 ```
 
 ## Highlights
@@ -420,3 +420,4 @@ npm install -g @google/gemini-cli@preview
 
 **Full Changelog**:
 https://github.com/google-gemini/gemini-cli/compare/v0.36.0-preview.8...v0.37.0-preview.1
+

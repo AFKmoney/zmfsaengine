@@ -42,7 +42,7 @@ on:
 
 jobs:
   change-tags:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     environment: "${{ github.event.inputs.environment || 'prod' }}"
     runs-on: 'ubuntu-latest'
     permissions:
@@ -240,3 +240,4 @@ jobs:
           Would have deleted the github release with tag ${ORIGIN_TAG}
           Would have added tag ${ORIGIN_TAG}-rollback to ${ORIGIN_HASH}
           "
+

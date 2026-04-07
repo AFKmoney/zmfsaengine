@@ -7,7 +7,7 @@ context.
 ## Install
 
 ```bash
-npm install -g @google/gemini-cli
+npm install -g @zmsfa/cli
 ```
 
 ## Get started
@@ -137,3 +137,4 @@ Support, release history, and legal information.
 - **[Release notes](./changelogs/index.md):** Release notes for all versions.
 - **[Stable release](./changelogs/latest.md):** The latest stable release.
 - **[Preview release](./changelogs/preview.md):** The latest preview release.
+

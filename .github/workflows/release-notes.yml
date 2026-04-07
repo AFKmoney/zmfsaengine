@@ -22,7 +22,7 @@ on:
 
 jobs:
   generate-release-notes:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     runs-on: 'ubuntu-latest'
     permissions:
       contents: 'write'
@@ -101,3 +101,4 @@ jobs:
           base: 'main'
           team-reviewers: 'gemini-cli-docs, gemini-cli-maintainers'
           delete-branch: true
+

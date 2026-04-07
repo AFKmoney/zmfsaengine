@@ -21,7 +21,7 @@ defaults:
 
 jobs:
   close-stale-issues:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     runs-on: 'ubuntu-latest'
     permissions:
       issues: 'write'
@@ -157,3 +157,4 @@ jobs:
             }
 
             core.info(`\nTotal issues processed: ${processedCount}`);
+

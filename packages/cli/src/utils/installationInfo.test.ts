@@ -204,7 +204,7 @@ describe('getInstallationInfo', () => {
   });
 
   it('should detect global pnpm installation', () => {
-    const pnpmPath = `/Users/test/.pnpm/global/5/node_modules/.pnpm/some-hash/node_modules/@google/gemini-cli/dist/index.js`;
+    const pnpmPath = `/Users/test/.pnpm/global/5/node_modules/.pnpm/some-hash/node_modules/@zmsfa/cli/dist/index.js`;
     process.argv[1] = pnpmPath;
     mockedRealPathSync.mockReturnValue(pnpmPath);
     mockedExecSync.mockImplementation(() => {
@@ -215,7 +215,7 @@ describe('getInstallationInfo', () => {
     const info = getInstallationInfo(projectRoot, true);
     expect(info.packageManager).toBe(PackageManager.PNPM);
     expect(info.isGlobal).toBe(true);
-    expect(info.updateCommand).toBe('pnpm add -g @google/gemini-cli@latest');
+    expect(info.updateCommand).toBe('pnpm add -g @zmsfa/cli@latest');
     expect(info.updateMessage).toContain('Attempting to automatically update');
 
     // isAutoUpdateEnabled = false -> "Please run..."
@@ -224,7 +224,7 @@ describe('getInstallationInfo', () => {
   });
 
   it('should detect global yarn installation', () => {
-    const yarnPath = `/Users/test/.yarn/global/node_modules/@google/gemini-cli/dist/index.js`;
+    const yarnPath = `/Users/test/.yarn/global/node_modules/@zmsfa/cli/dist/index.js`;
     process.argv[1] = yarnPath;
     mockedRealPathSync.mockReturnValue(yarnPath);
     mockedExecSync.mockImplementation(() => {
@@ -236,7 +236,7 @@ describe('getInstallationInfo', () => {
     expect(info.packageManager).toBe(PackageManager.YARN);
     expect(info.isGlobal).toBe(true);
     expect(info.updateCommand).toBe(
-      'yarn global add @google/gemini-cli@latest',
+      'yarn global add @zmsfa/cli@latest',
     );
     expect(info.updateMessage).toContain('Attempting to automatically update');
 
@@ -246,7 +246,7 @@ describe('getInstallationInfo', () => {
   });
 
   it('should detect global bun installation', () => {
-    const bunPath = `/Users/test/.bun/install/global/node_modules/@google/gemini-cli/dist/index.js`;
+    const bunPath = `/Users/test/.bun/install/global/node_modules/@zmsfa/cli/dist/index.js`;
     process.argv[1] = bunPath;
     mockedRealPathSync.mockReturnValue(bunPath);
     mockedExecSync.mockImplementation(() => {
@@ -257,7 +257,7 @@ describe('getInstallationInfo', () => {
     const info = getInstallationInfo(projectRoot, true);
     expect(info.packageManager).toBe(PackageManager.BUN);
     expect(info.isGlobal).toBe(true);
-    expect(info.updateCommand).toBe('bun add -g @google/gemini-cli@latest');
+    expect(info.updateCommand).toBe('bun add -g @zmsfa/cli@latest');
     expect(info.updateMessage).toContain('Attempting to automatically update');
 
     // isAutoUpdateEnabled = false -> "Please run..."
@@ -344,7 +344,7 @@ describe('getInstallationInfo', () => {
     const info = getInstallationInfo(projectRoot, true);
     expect(info.packageManager).toBe(PackageManager.NPM);
     expect(info.isGlobal).toBe(true);
-    expect(info.updateCommand).toBe('npm install -g @google/gemini-cli@latest');
+    expect(info.updateCommand).toBe('npm install -g @zmsfa/cli@latest');
     expect(info.updateMessage).toContain('Attempting to automatically update');
 
     // isAutoUpdateEnabled = false -> "Please run..."
@@ -358,7 +358,7 @@ describe('getInstallationInfo', () => {
     });
     // Path looks like standard global NPM
     const cliPath =
-      '/usr/local/lib/node_modules/@google/gemini-cli/dist/index.js';
+      '/usr/local/lib/node_modules/@zmsfa/cli/dist/index.js';
     process.argv[1] = cliPath;
 
     // Setup mocks
@@ -387,4 +387,5 @@ describe('getInstallationInfo', () => {
     expect(info.packageManager).toBe(PackageManager.NPM);
   });
 });
+
 

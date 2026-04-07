@@ -92,3 +92,4 @@ jobs:
           DRY_RUN: '${{ github.event.inputs.dry_run }}'
         run: |
           node scripts/releasing/patch-trigger.js --dry-run="${DRY_RUN}"
+

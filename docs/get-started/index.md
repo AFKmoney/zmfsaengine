@@ -15,7 +15,7 @@ editing documents.
 The standard method to install and run Gemini CLI uses `npm`:
 
 ```bash
-npm install -g @google/gemini-cli
+npm install -g @zmsfa/cli
 ```
 
 Once Gemini CLI is installed, run Gemini CLI from your command line:
@@ -206,3 +206,4 @@ For more information on the `/stats` command and its subcommands, see the
   start working with your codebase.
 - See [Shell commands](../cli/tutorials/shell-commands.md) to learn about
   terminal integration.
+

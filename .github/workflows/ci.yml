@@ -36,8 +36,8 @@ jobs:
   merge_queue_skipper:
     permissions: 'read-all'
     name: 'Merge Queue Skipper'
-    runs-on: 'gemini-cli-ubuntu-16-core'
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    runs-on: 'ubuntu-latest'
+    if: "true"
     outputs:
       skip: '${{ steps.merge-queue-ci-skipper.outputs.skip-check }}'
     steps:
@@ -48,9 +48,9 @@ jobs:
 
   lint:
     name: 'Lint'
-    runs-on: 'gemini-cli-ubuntu-16-core'
+    runs-on: 'ubuntu-latest'
     needs: 'merge_queue_skipper'
-    if: "github.repository == 'google-gemini/gemini-cli' && needs.merge_queue_skipper.outputs.skip == 'false'"
+    if: "true && needs.merge_queue_skipper.outputs.skip == 'false'"
     env:
       GEMINI_LINT_TEMP_DIR: '${{ github.workspace }}/.gemini-linters'
     steps:
@@ -120,7 +120,7 @@ jobs:
   link_checker:
     name: 'Link Checker'
     runs-on: 'ubuntu-latest'
-    if: "github.repository == 'google-gemini/gemini-cli'"
+    if: "true"
     steps:
       - name: 'Checkout'
         uses: 'actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8' # ratchet:actions/checkout@v5
@@ -131,10 +131,10 @@ jobs:
           fail: true
   test_linux:
     name: 'Test (Linux) - ${{ matrix.node-version }}, ${{ matrix.shard }}'
-    runs-on: 'gemini-cli-ubuntu-16-core'
+    runs-on: 'ubuntu-latest'
     needs:
       - 'merge_queue_skipper'
-    if: "github.repository == 'google-gemini/gemini-cli' && needs.merge_queue_skipper.outputs.skip == 'false'"
+    if: "true && needs.merge_queue_skipper.outputs.skip == 'false'"
     permissions:
       contents: 'read'
       checks: 'write'
@@ -175,10 +175,10 @@ jobs:
           NO_COLOR: true
         run: |
           if [[ "${{ matrix.shard }}" == "cli" ]]; then
-            npm run test:ci --workspace "@google/gemini-cli"
+            npm run test:ci --workspace "@zmsfa/cli"
           else
             # Explicitly list non-cli packages to ensure they are sharded correctly
-            npm run test:ci --workspace "@zmsfa/core" --workspace "@google/gemini-cli-a2a-server" --workspace "gemini-cli-vscode-ide-companion" --workspace "@google/gemini-cli-test-utils" --if-present -- --coverage.enabled=false
+            npm run test:ci --workspace "@zmsfa/core" --workspace "@zmsfa/a2a-server" --workspace "@zmsfa/vscode-ide-companion" --workspace "@zmsfa/test-utils" --if-present -- --coverage.enabled=false
             npm run test:scripts
           fi
 
@@ -186,7 +186,7 @@ jobs:
         run: 'npm run bundle'
 
       - name: 'Smoke test bundle'
-        run: 'node ./bundle/gemini.js --version'
+        run: 'node ./packages/cli/dist/index.js --version'
 
       - name: 'Smoke test npx installation'
         run: |
@@ -227,7 +227,7 @@ jobs:
     runs-on: 'macos-latest'
     needs:
       - 'merge_queue_skipper'
-    if: "github.repository == 'google-gemini/gemini-cli' && needs.merge_queue_skipper.outputs.skip == 'false'"
+    if: "true && needs.merge_queue_skipper.outputs.skip == 'false'"
     permissions:
       contents: 'read'
       checks: 'write'
@@ -263,10 +263,10 @@ jobs:
           NO_COLOR: true
         run: |
           if [[ "${{ matrix.shard }}" == "cli" ]]; then
-            npm run test:ci --workspace "@google/gemini-cli" -- --coverage.enabled=false
+            npm run test:ci --workspace "@zmsfa/cli" -- --coverage.enabled=false
           else
             # Explicitly list non-cli packages to ensure they are sharded correctly
-            npm run test:ci --workspace "@zmsfa/core" --workspace "@google/gemini-cli-a2a-server" --workspace "gemini-cli-vscode-ide-companion" --workspace "@google/gemini-cli-test-utils" --if-present -- --coverage.enabled=false
+            npm run test:ci --workspace "@zmsfa/core" --workspace "@zmsfa/a2a-server" --workspace "@zmsfa/vscode-ide-companion" --workspace "@zmsfa/test-utils" --if-present -- --coverage.enabled=false
             npm run test:scripts
           fi
 
@@ -274,7 +274,7 @@ jobs:
         run: 'npm run bundle'
 
       - name: 'Smoke test bundle'
-        run: 'node ./bundle/gemini.js --version'
+        run: 'node ./packages/cli/dist/index.js --version'
 
       - name: 'Smoke test npx installation'
         run: |
@@ -320,9 +320,9 @@ jobs:
 
   codeql:
     name: 'CodeQL'
-    runs-on: 'gemini-cli-ubuntu-16-core'
+    runs-on: 'ubuntu-latest'
     needs: 'merge_queue_skipper'
-    if: "github.repository == 'google-gemini/gemini-cli' && needs.merge_queue_skipper.outputs.skip == 'false'"
+    if: "true && needs.merge_queue_skipper.outputs.skip == 'false'"
     permissions:
       actions: 'read'
       contents: 'read'
@@ -345,8 +345,8 @@ jobs:
   bundle_size:
     name: 'Check Bundle Size'
     needs: 'merge_queue_skipper'
-    if: "github.repository == 'google-gemini/gemini-cli' && github.event_name == 'pull_request' && needs.merge_queue_skipper.outputs.skip == 'false'"
-    runs-on: 'gemini-cli-ubuntu-16-core'
+    if: "true && github.event_name == 'pull_request' && needs.merge_queue_skipper.outputs.skip == 'false'"
+    runs-on: 'ubuntu-latest'
     permissions:
       contents: 'read' # For checkout
       pull-requests: 'write' # For commenting
@@ -368,9 +368,9 @@ jobs:
 
   test_windows:
     name: 'Slow Test - Win - ${{ matrix.shard }}'
-    runs-on: 'gemini-cli-windows-16-core'
+    runs-on: 'windows-latest'
     needs: 'merge_queue_skipper'
-    if: "github.repository == 'google-gemini/gemini-cli' && needs.merge_queue_skipper.outputs.skip == 'false'"
+    if: "true && needs.merge_queue_skipper.outputs.skip == 'false'"
     timeout-minutes: 60
     strategy:
       matrix:
@@ -429,11 +429,11 @@ jobs:
           NODE_ENV: 'test'
         run: |
           if ("${{ matrix.shard }}" -eq "cli") {
-            npm run test:ci --workspace "@google/gemini-cli" -- --coverage.enabled=false
+            npm run test:ci --workspace "@zmsfa/cli" -- --coverage.enabled=false
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           } else {
             # Explicitly list non-cli packages to ensure they are sharded correctly
-            npm run test:ci --workspace "@zmsfa/core" --workspace "@google/gemini-cli-a2a-server" --workspace "gemini-cli-vscode-ide-companion" --workspace "@google/gemini-cli-test-utils" --if-present -- --coverage.enabled=false
+            npm run test:ci --workspace "@zmsfa/core" --workspace "@zmsfa/a2a-server" --workspace "@zmsfa/vscode-ide-companion" --workspace "@zmsfa/test-utils" --if-present -- --coverage.enabled=false
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
             npm run test:scripts
             if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
@@ -445,7 +445,7 @@ jobs:
         shell: 'pwsh'
 
       - name: 'Smoke test bundle'
-        run: 'node ./bundle/gemini.js --version'
+        run: 'node ./packages/cli/dist/index.js --version'
         shell: 'pwsh'
 
       - name: 'Smoke test npx installation'
@@ -465,7 +465,7 @@ jobs:
 
   ci:
     name: 'CI'
-    if: "github.repository == 'google-gemini/gemini-cli' && always()"
+    if: "true && always()"
     needs:
       - 'lint'
       - 'link_checker'
@@ -474,7 +474,7 @@ jobs:
       - 'test_windows'
       - 'codeql'
       - 'bundle_size'
-    runs-on: 'gemini-cli-ubuntu-16-core'
+    runs-on: 'ubuntu-latest'
     steps:
       - name: 'Check all job results'
         run: |
@@ -497,4 +497,5 @@ jobs:
           NEEDS_TEST_WINDOWS_RESULT: '${{ needs.test_windows.result }}'
           NEEDS_CODEQL_RESULT: '${{ needs.codeql.result }}'
           NEEDS_BUNDLE_SIZE_RESULT: '${{ needs.bundle_size.result }}'
+
 

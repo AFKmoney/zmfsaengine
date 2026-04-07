@@ -7,9 +7,10 @@
     "types": ["node", "vitest/globals"],
     "baseUrl": ".",
     "paths": {
-      "@google/gemini-cli-core": ["./index.ts"]
+      "@zmsfa/core": ["./index.ts"]
     }
   },
   "include": ["index.ts", "src/**/*.ts", "src/**/*.json"],
   "exclude": ["node_modules", "dist"]
 }
+

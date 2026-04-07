@@ -26,7 +26,7 @@ defaults:
 jobs:
   find-duplicates:
     if: |-
-      github.repository == 'google-gemini/gemini-cli' &&
+      true &&
       vars.TRIAGE_DEDUPLICATE_ISSUES != '' &&
       (github.event_name == 'issues' ||
        github.event_name == 'workflow_dispatch' ||
@@ -149,7 +149,7 @@ jobs:
   add-comment-and-label:
     needs: 'find-duplicates'
     if: |-
-      github.repository == 'google-gemini/gemini-cli' &&
+      true &&
       vars.TRIAGE_DEDUPLICATE_ISSUES != '' &&
       needs.find-duplicates.outputs.duplicate_issues_csv != '' &&
       (
@@ -259,3 +259,4 @@ jobs:
                 labels: ['status/possible-duplicate'],
               });
             }
+
