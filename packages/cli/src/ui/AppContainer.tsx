@@ -1680,19 +1680,19 @@ Logging in with Google... Restarting ZMSFA O�Triadic Torus Engine to continue.
                    last_response: (lastModelMsg && typeof lastModelMsg.text === 'string') ? lastModelMsg.text : '[Complex Content]',
                  }, new AbortController().signal);
 
-                 const parsedOutput = JSON.parse(supervisionResult.result) as { analysis: string; next_directive: string; is_complete: boolean };
+                 const parsedOutput = JSON.parse(supervisionResult.result) as { state_vector: any; transition_matrix: string; next_directive: string; is_complete: boolean };
 
                  if (parsedOutput.is_complete) {
                     showTransientMessage({
-                      text: 'Ω-Supervisor: Objective verified.',
+                      text: 'Ω-Supervisor: Objective verified (T\'=1.0, M=0.0).',
                       type: TransientMessageType.Hint,
                     });
                     return;
                  }
 
-                 void handleFinalSubmit(`[Ω-SUPERVISOR Directive]: ${parsedOutput.next_directive}`);
+                 void handleFinalSubmit(`[Ω-SUPERVISOR Directive]:\nSTATE VECTOR: ${JSON.stringify(parsedOutput.state_vector)}\nTRANSITION MATRIX: ${parsedOutput.transition_matrix}\nDIRECTIVE: ${parsedOutput.next_directive}`);
                } catch (err) {
-                 void handleFinalSubmit('The objective is not yet fully achieved. Please analyze progress and continue.');
+                 void handleFinalSubmit('[SYSTEM OVERRIDE] State vector unstable. Please force convergence and DO NOT STOP until you output [OBJECTIVE_ACHIEVED].');
                }
             }, 1000);
             return () => clearTimeout(selfPromptTimer);

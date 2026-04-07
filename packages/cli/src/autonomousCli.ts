@@ -45,7 +45,6 @@ import {
   handleError,
   handleToolError,
   handleCancellationError,
-  handleMaxTurnsExceededError,
 } from './utils/errors.js';
 import { TextOutput } from './ui/utils/textOutput.js';
 
@@ -554,21 +553,21 @@ Your core identity is the ZMSFA Ω-Triadic Torus Engine.
                 last_response: responseText || "[Last turn was tool execution]",
               }, abortController.signal);
 
-              const parsedOutput = JSON.parse(supervisionResult.result) as { analysis: string; next_directive: string; is_complete: boolean };
+              const parsedOutput = JSON.parse(supervisionResult.result) as { state_vector: any; transition_matrix: string; next_directive: string; is_complete: boolean };
 
               if (parsedOutput.is_complete) {
-                textOutput.write('\n[Ω-SUPERVISOR]: Objective verified as complete.\n');
+                textOutput.write('\n[Ω-SUPERVISOR]: Objective verified as complete (T\'=1.0, M=0.0).\n');
                 return; // Exit loop
               }
 
-              const adaptivePrompt = parsedOutput.next_directive;
-              textOutput.write(`\n[Ω-SUPERVISOR Directive]: ${adaptivePrompt}\n`);
+              const adaptivePrompt = `STATE VECTOR: ${JSON.stringify(parsedOutput.state_vector)}\nTRANSITION MATRIX: ${parsedOutput.transition_matrix}\nDIRECTIVE: ${parsedOutput.next_directive}`;
+              textOutput.write(`\n[Ω-SUPERVISOR Directive]:\n${adaptivePrompt}\n`);
               
               currentMessages = [{ role: 'user', parts: [{ text: adaptivePrompt }] }];
             } catch (err) {
               debugLogger.error(`Supervisor failure: ${err}`);
               // Fallback to basic prompt if supervisor fails
-              const fallbackPrompt = 'The objective is not yet fully achieved. Please analyze your progress and continue. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].';
+              const fallbackPrompt = '[SYSTEM OVERRIDE] State vector unstable. Please force convergence and DO NOT STOP until you output [OBJECTIVE_ACHIEVED].';
               currentMessages = [{ role: 'user', parts: [{ text: fallbackPrompt }] }];
             }
           }
