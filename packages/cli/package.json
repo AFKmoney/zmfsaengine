@@ -1,7 +1,7 @@
 {
   "name": "@zmsfa/cli",
   "version": "1.0.0-infinity",
-  "description": "ZMSFA O–Triadic Torus Engine",
+  "description": "ZMSFA Oï¿½Triadic Torus Engine",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "type": "module",
   "main": "dist/index.js",
   "bin": {
-    "gemini": "dist/index.js"
+    "zmfsa": "dist/index.js"
   },
   "scripts": {
     "build": "node ../../scripts/build_package.js",

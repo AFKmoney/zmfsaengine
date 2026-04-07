@@ -210,8 +210,11 @@ class GrepToolInvocation extends BaseToolInvocation<
 
       // Collect matches from all search directories
       let allMatches: GrepMatch[] = [];
-      const totalMaxMatches =
-        this.params.total_max_matches ?? DEFAULT_TOTAL_MAX_MATCHES;
+      const ABSOLUTE_MAX_MATCHES = 1000;
+      const totalMaxMatches = Math.min(
+        this.params.total_max_matches ?? DEFAULT_TOTAL_MAX_MATCHES,
+        ABSOLUTE_MAX_MATCHES,
+      );
 
       // Create a timeout controller to prevent indefinitely hanging searches
       const timeoutController = new AbortController();

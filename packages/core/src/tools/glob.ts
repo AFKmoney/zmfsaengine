@@ -239,11 +239,15 @@ class GlobToolInvocation extends BaseToolInvocation<
         oneDayInMs,
       );
 
-      const sortedAbsolutePaths = sortedEntries.map((entry) =>
+      const MAX_RESULTS = 500;
+      const totalResults = sortedEntries.length;
+      const truncatedEntries = sortedEntries.slice(0, MAX_RESULTS);
+
+      const sortedAbsolutePaths = truncatedEntries.map((entry) =>
         entry.fullpath(),
       );
       const fileListDescription = sortedAbsolutePaths.join('\n');
-      const fileCount = sortedAbsolutePaths.length;
+      const fileCount = totalResults;
 
       let resultMessage = `Found ${fileCount} file(s) matching "${this.params.pattern}"`;
       if (searchDirectories.length === 1) {
@@ -254,11 +258,18 @@ class GlobToolInvocation extends BaseToolInvocation<
       if (ignoredCount > 0) {
         resultMessage += ` (${ignoredCount} additional files were ignored)`;
       }
-      resultMessage += `, sorted by modification time (newest first):\n${fileListDescription}`;
+
+      if (totalResults > MAX_RESULTS) {
+        resultMessage += `. Showing only the first ${MAX_RESULTS} most recent results. Please refine your search pattern if the file you need is not listed below:\n${fileListDescription}`;
+      } else {
+        resultMessage += `, sorted by modification time (newest first):\n${fileListDescription}`;
+      }
 
       return {
         llmContent: resultMessage,
-        returnDisplay: `Found ${fileCount} matching file(s)`,
+        returnDisplay: totalResults > MAX_RESULTS 
+          ? `Found ${fileCount} matching file(s) (Truncated to ${MAX_RESULTS})`
+          : `Found ${fileCount} matching file(s)`,
       };
     } catch (error) {
       debugLogger.warn(`GlobLogic execute Error`, error);
