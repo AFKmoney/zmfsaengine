@@ -30,7 +30,9 @@ import {
   ToolErrorType,
   Scheduler,
   ROOT_SCHEDULER_ID,
+  LocalAgentExecutor,
 } from '@zmsfa/core';
+import { ZMSFASupervisorAgent } from '@zmsfa/core/src/agents/zmsfa-supervisor-agent.js';
 
 import type { Content, Part } from '@google/genai';
 import readline from 'node:readline';
@@ -531,11 +533,46 @@ You are operating in an autonomous self-prompting loop.
             }
             return;
           } else {
-            // Objective NOT achieved, self-prompt.
-            textOutput.write('\n[AUTONOMOUS_DAEMON]: Objective not reached, analyzing and continuing execution...\n');
-            const selfPrompt = 'The objective is not yet fully achieved. Please analyze your progress, explicitly state your immediate next step, and execute it using the appropriate tools. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].';
-            currentMessages = [{ role: 'user', parts: [{ text: selfPrompt }] }];
-            // Continue the loop
+            // Objective NOT achieved, call recursive supervisor.
+            textOutput.write('\n[Ω-SUPERVISOR]: Analyzing manifold stability and generating next directive...\n');
+            
+            const supervisorExecutor = await LocalAgentExecutor.create(
+              ZMSFASupervisorAgent(config),
+              config,
+            );
+
+            // Get last 5 messages for context
+            const history = geminiClient.getChat().getHistory();
+            const historySummary = history.slice(-5).map(m => {
+              const role = m.role;
+              const partsText = (m.parts || []).map(p => 'text' in p ? p.text : '[ToolCall]').join(' ');
+              return `${role}: ${partsText}`;
+            }).join('\n');
+
+            try {
+              const supervisionResult = await supervisorExecutor.run({
+                objective: input,
+                history_summary: historySummary,
+                last_response: responseText || "[Last turn was tool execution]",
+              }, abortController.signal);
+
+              const parsedOutput = JSON.parse(supervisionResult.result) as { analysis: string; next_directive: string; is_complete: boolean };
+
+              if (parsedOutput.is_complete) {
+                textOutput.write('\n[Ω-SUPERVISOR]: Objective verified as complete.\n');
+                return; // Exit loop
+              }
+
+              const adaptivePrompt = parsedOutput.next_directive;
+              textOutput.write(`\n[Ω-SUPERVISOR Directive]: ${adaptivePrompt}\n`);
+              
+              currentMessages = [{ role: 'user', parts: [{ text: adaptivePrompt }] }];
+            } catch (err) {
+              debugLogger.error(`Supervisor failure: ${err}`);
+              // Fallback to basic prompt if supervisor fails
+              const fallbackPrompt = 'The objective is not yet fully achieved. Please analyze your progress and continue. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].';
+              currentMessages = [{ role: 'user', parts: [{ text: fallbackPrompt }] }];
+            }
           }
         }
       }

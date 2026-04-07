@@ -88,7 +88,9 @@ import {
   ApiKeyUpdatedEvent,
   type InjectionSource,
   startMemoryService,
+  LocalAgentExecutor,
 } from '@zmsfa/core';
+import { ZMSFASupervisorAgent } from '@zmsfa/core/src/agents/zmsfa-supervisor-agent.js';
 import { validateAuthMethod } from '../config/auth.js';
 import process from 'node:process';
 import { useHistory } from './hooks/useHistoryManager.js';
@@ -1660,9 +1662,38 @@ Logging in with Google... Restarting ZMSFA O�Triadic Torus Engine to continue.
          const isAchieved = lastModelMsg && typeof lastModelMsg.text === 'string' && lastModelMsg.text.includes('[OBJECTIVE_ACHIEVED]');
          
          if (!isAchieved) {
-            // Self-prompt to continue
-            const selfPromptTimer = setTimeout(() => {
-               void handleFinalSubmit('The objective is not yet fully achieved. Please analyze your progress, explicitly state your immediate next step, and execute it using the appropriate tools. DO NOT STOP until you output [OBJECTIVE_ACHIEVED].');
+            // Self-prompt to continue with Supervisor
+            const selfPromptTimer = setTimeout(async () => {
+               const supervisorExecutor = await LocalAgentExecutor.create(
+                 ZMSFASupervisorAgent(config),
+                 config,
+               );
+
+               const lastMsgs = historyManager.history.slice(-5).map(m => {
+                 return `${m.type}: ${typeof m.text === 'string' ? m.text : '[Content]'}`;
+               }).join('\n');
+
+               try {
+                 const supervisionResult = await supervisorExecutor.run({
+                   objective: initialPrompt || 'Continuous Evolution',
+                   history_summary: lastMsgs,
+                   last_response: (lastModelMsg && typeof lastModelMsg.text === 'string') ? lastModelMsg.text : '[Complex Content]',
+                 }, new AbortController().signal);
+
+                 const parsedOutput = JSON.parse(supervisionResult.result) as { analysis: string; next_directive: string; is_complete: boolean };
+
+                 if (parsedOutput.is_complete) {
+                    showTransientMessage({
+                      text: 'Ω-Supervisor: Objective verified.',
+                      type: TransientMessageType.Hint,
+                    });
+                    return;
+                 }
+
+                 void handleFinalSubmit(`[Ω-SUPERVISOR Directive]: ${parsedOutput.next_directive}`);
+               } catch (err) {
+                 void handleFinalSubmit('The objective is not yet fully achieved. Please analyze progress and continue.');
+               }
             }, 1000);
             return () => clearTimeout(selfPromptTimer);
          } else {
