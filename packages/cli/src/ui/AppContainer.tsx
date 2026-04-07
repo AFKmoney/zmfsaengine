@@ -89,8 +89,8 @@ import {
   type InjectionSource,
   startMemoryService,
   LocalAgentExecutor,
+  ZMSFASupervisorAgent,
 } from '@zmsfa/core';
-import { ZMSFASupervisorAgent } from '@zmsfa/core/src/agents/zmsfa-supervisor-agent.js';
 import { validateAuthMethod } from '../config/auth.js';
 import process from 'node:process';
 import { useHistory } from './hooks/useHistoryManager.js';

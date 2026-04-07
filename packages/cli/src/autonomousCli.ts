@@ -31,8 +31,8 @@ import {
   Scheduler,
   ROOT_SCHEDULER_ID,
   LocalAgentExecutor,
+  ZMSFASupervisorAgent,
 } from '@zmsfa/core';
-import { ZMSFASupervisorAgent } from '@zmsfa/core/src/agents/zmsfa-supervisor-agent.js';
 
 import type { Content, Part } from '@google/genai';
 import readline from 'node:readline';
